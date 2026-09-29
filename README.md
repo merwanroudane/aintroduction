@@ -114,6 +114,23 @@ universities is often a different person from the lecturer:
 - **An assessment rubric** that weights understanding, the applied part and the discussion
   of limits — not slide design, which is the easiest thing to generate.
 
+## Screenshots
+
+<div align="center">
+<img src="screenshots/01-home.png" alt="الصفحة الرئيسية" width="85%">
+<br><em>الصفحة الرئيسية · Home</em>
+<br><br>
+<img src="screenshots/09-knowledge-map.png" alt="الخريطة الشاملة للمقرر" width="85%">
+<br><em>الخريطة الشاملة: المحاور الثلاثة عشر وعلاقات التمهيد بينها</em>
+</div>
+
+More in [`screenshots/`](screenshots/) — 16 captures at 1600px × 2x covering both modes,
+with an index describing what each one shows. Regenerate them after any interface change:
+
+```bash
+python scripts/capture_screenshots.py
+```
+
 ## A colour system, not a colour scheme
 
 The thirteen modules walk once around the colour wheel — 337° of it, no gap under 16°,

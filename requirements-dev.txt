@@ -1,8 +1,16 @@
-# Development dependencies — not needed to run the app.
+# Development and authoring dependencies — NOT needed to run the app.
 #
-#   pip install -r requirements.txt -r requirements-dev.txt
+#   pip install -r requirements-dev.txt        # installs the runtime ones too
 #   python -m pytest tests/ -q
+#   python scripts/capture_screenshots.py
+#
+# Keeping these out of requirements.txt matters for deployment: a host installs
+# requirements.txt to serve the app, and has no use for a test runner or a headless
+# browser.
 
 -r requirements.txt
 
-pytest>=8.0               # 8.4.2 — the 93-test suite in tests/
+pytest>=8.0               # 8.4.2  — the 96-test suite in tests/
+playwright>=1.40          # 1.62.0 — scripts/capture_screenshots.py only.
+                          #          Needs a browser too, once:
+                          #              python -m playwright install chromium

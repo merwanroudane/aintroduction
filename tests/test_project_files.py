@@ -50,22 +50,25 @@ def test_requirements_cover_every_third_party_import():
     lands on whoever clones the repo rather than on us.
 
     The split matters for deployment: requirements.txt is what a host installs to *run*
-    the app, so a test-only package there is dead weight in production. Anything imported
-    by the app must be in requirements.txt; anything imported only by the tests may live
-    in requirements-dev.txt instead.
+    the app, so a package used only by the tests or the authoring scripts is dead weight
+    in production — a headless browser especially. Anything the app imports must be in
+    requirements.txt; anything imported only under tests/ or scripts/ may live in
+    requirements-dev.txt instead.
     """
     alias = {"yaml": "pyyaml"}  # import name → distribution name
     runtime = _read("requirements.txt").lower()
     dev = _read("requirements-dev.txt").lower()
 
-    app_imports = _imports_under("app.py", "app_pages", "components", "utils", "scripts")
+    # What the deployed app imports must be in requirements.txt.
+    app_imports = _imports_under("app.py", "app_pages", "components", "utils")
     missing = [m for m in sorted(app_imports) if alias.get(m, m) not in runtime]
     assert not missing, f"imported by the app but not in requirements.txt: {missing}"
 
-    test_imports = _imports_under("tests")
-    unpinned = [m for m in sorted(test_imports)
+    # The tests and the authoring scripts never run on the host, so either file will do.
+    tooling = _imports_under("tests", "scripts")
+    unpinned = [m for m in sorted(tooling)
                 if alias.get(m, m) not in runtime and alias.get(m, m) not in dev]
-    assert not unpinned, f"imported by the tests but pinned nowhere: {unpinned}"
+    assert not unpinned, f"imported by tests/ or scripts/ but pinned nowhere: {unpinned}"
 
 
 def test_dev_requirements_include_the_runtime_ones():
