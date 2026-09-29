@@ -1,0 +1,17 @@
+# مقدمة في الذكاء الاصطناعي — dependencies
+#
+# Direct imports only. Verified on Python 3.11.0 with the versions in the comments,
+# which are the versions the platform was developed and checked against on 2026-09-29.
+#
+# The app runs fully offline: no paid API, no network call at runtime. The scripts in
+# scripts/ do reach the network (Crossref, arXiv, YouTube oEmbed) — but only when you
+# run them to re-verify sources, never while the app is serving.
+
+streamlit>=1.57,<2        # 1.63.0 — st.navigation, st.pills, st.segmented_control,
+                          #          st.container(key=...), st.html(Path)
+plotly>=5.18,<7           # 6.5.2  — every quantitative figure
+numpy>=1.26,<3            # 2.2.6  — offline lab simulations
+PyYAML>=6.0,<7            # 6.0.3  — all content metadata, quizzes, glossaries, references
+
+# The test suite's dependencies live in requirements-dev.txt, so a deployment installs
+# only what the app actually imports.

@@ -1,0 +1,182 @@
+# Module 1 sources. Verified 2026-09-26: arXiv metadata via the arXiv API, DOIs via Crossref/doi.org.
+references:
+  - id: m01_legg_hutter_2007
+    authors: Legg, S., & Hutter, M.
+    year: 2007
+    title: A Collection of Definitions of Intelligence
+    venue: arXiv:0706.3639
+    type: preprint
+    url: https://arxiv.org/abs/0706.3639
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m01_legg_hutter_2007b
+    authors: Legg, S., & Hutter, M.
+    year: 2007
+    title: "Universal Intelligence: A Definition of Machine Intelligence"
+    venue: arXiv:0712.3329 (Minds and Machines, 17(4))
+    type: article
+    url: https://arxiv.org/abs/0712.3329
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m01_wang_2019
+    authors: Wang, P.
+    year: 2019
+    title: On Defining Artificial Intelligence
+    venue: Journal of Artificial General Intelligence, 10(2), 1–37
+    type: article
+    doi: 10.2478/jagi-2019-0002
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m01_brynjolfsson_2022
+    authors: Brynjolfsson, E.
+    year: 2022
+    title: "The Turing Trap: The Promise & Peril of Human-Like Artificial Intelligence"
+    venue: Daedalus, 151(2), 272–287
+    type: article
+    doi: 10.1162/daed_a_01915
+    topic: Economics + AI
+    verified: "2026-09-26"
+  - id: m01_mitchell_2021
+    authors: Mitchell, M.
+    year: 2021
+    title: Why AI is Harder Than We Think
+    venue: arXiv:2104.12871
+    type: preprint
+    url: https://arxiv.org/abs/2104.12871
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m01_silver_2016
+    authors: Silver, D., Huang, A., Maddison, C. J., et al.
+    year: 2016
+    title: Mastering the game of Go with deep neural networks and tree search
+    venue: Nature, 529, 484–489
+    type: article
+    doi: 10.1038/nature16961
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m01_jumper_2021
+    authors: Jumper, J., Evans, R., Pritzel, A., et al.
+    year: 2021
+    title: Highly accurate protein structure prediction with AlphaFold
+    venue: Nature, 596, 583–589
+    type: article
+    doi: 10.1038/s41586-021-03819-2
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m01_esteva_2017
+    authors: Esteva, A., Kuprel, B., Novoa, R. A., et al.
+    year: 2017
+    title: Dermatologist-level classification of skin cancer with deep neural networks
+    venue: Nature, 542, 115–118
+    type: article
+    doi: 10.1038/nature21056
+    topic: Deep Learning
+    verified: "2026-09-26"
+  - id: m01_topol_2019
+    authors: Topol, E. J.
+    year: 2019
+    title: "High-performance medicine: the convergence of human and artificial intelligence"
+    venue: Nature Medicine, 25, 44–56
+    type: article
+    doi: 10.1038/s41591-018-0300-7
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m01_bender_2021
+    authors: Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S.
+    year: 2021
+    title: "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?"
+    venue: Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT)
+    type: article
+    doi: 10.1145/3442188.3445922
+    topic: AI Ethics
+    verified: "2026-09-26"
+  - id: m01_schaeffer_2023
+    authors: Schaeffer, R., Miranda, B., & Koyejo, S.
+    year: 2023
+    title: Are Emergent Abilities of Large Language Models a Mirage?
+    venue: arXiv:2304.15004 (NeurIPS 2023)
+    type: preprint
+    url: https://arxiv.org/abs/2304.15004
+    topic: LLMs
+    verified: "2026-09-26"
+  - id: m01_kaplan_2020
+    authors: Kaplan, J., McCandlish, S., Henighan, T., et al.
+    year: 2020
+    title: Scaling Laws for Neural Language Models
+    venue: arXiv:2001.08361
+    type: preprint
+    url: https://arxiv.org/abs/2001.08361
+    topic: LLMs
+    verified: "2026-09-26"
+  - id: m01_nobel_2024
+    authors: The Royal Swedish Academy of Sciences
+    year: 2024
+    title: "Press release: The Nobel Prize in Chemistry 2024"
+    venue: NobelPrize.org
+    type: web
+    url: https://www.nobelprize.org/prizes/chemistry/2024/press-release/
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m01_obermeyer_2019
+    authors: Obermeyer, Z., Powers, B., Vogeli, C., & Mullainathan, S.
+    year: 2019
+    title: Dissecting racial bias in an algorithm used to manage the health of populations
+    venue: Science, 366(6464), 447–453
+    type: article
+    doi: 10.1126/science.aax2342
+    topic: AI Ethics
+    verified: "2026-09-26"
+  - id: m01_brynjolfsson_2025
+    authors: Brynjolfsson, E., Li, D., & Raymond, L.
+    year: 2025
+    title: Generative AI at Work
+    venue: The Quarterly Journal of Economics, 140(2)
+    type: article
+    doi: 10.1093/qje/qjae044
+    topic: Economics + AI
+    verified: "2026-09-26"
+  - id: m01_noy_zhang_2023
+    authors: Noy, S., & Zhang, W.
+    year: 2023
+    title: Experimental evidence on the productivity effects of generative artificial intelligence
+    venue: Science, 381(6654), 187–192
+    type: article
+    doi: 10.1126/science.adh2586
+    topic: Economics + AI
+    verified: "2026-09-26"
+  - id: m01_merchant_2023
+    authors: Merchant, A., Batzner, S., Schoenholz, S. S., et al.
+    year: 2023
+    title: Scaling deep learning for materials discovery
+    venue: Nature, 624, 80–85
+    type: article
+    doi: 10.1038/s41586-023-06735-9
+    topic: Deep Learning
+    verified: "2026-09-26"
+  - id: m01_unesco_2023_genai
+    authors: UNESCO (Miao, F., & Holmes, W.)
+    year: 2023
+    title: Guidance for generative AI in education and research
+    venue: UNESCO, Paris
+    type: standard
+    url: https://unesdoc.unesco.org/ark:/48223/pf0000386693
+    topic: AI Education
+    verified: "2026-09-26"
+  - id: m01_fda_ai_devices
+    authors: U.S. Food and Drug Administration
+    year: 2025
+    title: Artificial Intelligence-Enabled Medical Devices
+    venue: FDA
+    type: documentation
+    url: https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-enabled-medical-devices
+    topic: AI Governance
+    verified: "2026-09-26"
+  - id: m01_hoffmann_2022
+    authors: Hoffmann, J., Borgeaud, S., Mensch, A., et al.
+    year: 2022
+    title: Training Compute-Optimal Large Language Models
+    venue: arXiv:2203.15556 (NeurIPS 2022)
+    type: preprint
+    url: https://arxiv.org/abs/2203.15556
+    topic: LLMs
+    verified: "2026-09-26"

@@ -1,0 +1,64 @@
+terms:
+  - {ar: لعبة المحاكاة, en: Imitation Game, module: 2, lecture: m02-l01,
+     definition: "التسمية الأصلية التي استعملها تورينغ سنة 1950 لما عُرف لاحقًا باختبار تورينغ: محقق يحاور كتابيًا إنسانًا وآلة ويحاول تمييزهما.",
+     related: [Turing Test]}
+  - {ar: ورشة Dartmouth, en: Dartmouth Workshop, module: 2, lecture: m02-l01,
+     definition: "ورشة بحثية عُقدت صيف 1956 بناءً على مقترح 1955 لـ McCarthy و Minsky و Rochester و Shannon، وفيه ظهر مصطلح Artificial Intelligence لأول مرة.",
+     related: [Artificial Intelligence]}
+  - {ar: الغرفة الصينية, en: Chinese Room, module: 2, lecture: m02-l01,
+     definition: "تجربة ذهنية طرحها Searle سنة 1980 ليجادل بأن معالجة الرموز وفق قواعد (النحو) لا تنتج فهمًا للمعنى (الدلالة).",
+     related: [Turing Test, Symbolic AI]}
+  - {ar: الذكاء الاصطناعي الرمزي, en: Symbolic AI, acronym: GOFAI, module: 2, lecture: m02-l02,
+     definition: "مقاربة تمثل المعرفة في رموز وقواعد صريحة وتنتج السلوك الذكي بالاستدلال المنطقي والبحث؛ ميزتها قابلية تتبع القرار.",
+     related: [Expert Systems, Search]}
+  - {ar: فضاء الحالات, en: State Space, module: 2, lecture: m02-l02,
+     definition: "صياغة للمسألة بحالة ابتدائية وأفعال تنقل بين الحالات واختبار هدف، وحلّها إيجاد سلسلة أفعال توصل إلى الهدف.",
+     related: [Search, Heuristic]}
+  - {ar: الانفجار التوافقي, en: Combinatorial Explosion, module: 2, lecture: m02-l02,
+     definition: "النمو الأسّي لعدد الحالات مع عمق البحث (من رتبة b^d)، وهو ما يجعل النتائج المخبرية على مسائل صغيرة غير قابلة للتوسع.",
+     related: [State Space, Heuristic]}
+  - {ar: البيرسبترون, en: Perceptron, module: 2, lecture: m02-l02,
+     definition: "نموذج قدّمه Rosenblatt سنة 1958 يتعلم أوزانه من الأمثلة بتعديلها بعد كل خطأ؛ أحادي الطبقة منه يفصل خطيًا فقط.",
+     related: [Artificial Neuron, XOR]}
+  - {ar: شتاء الذكاء الاصطناعي, en: AI Winter, module: 2, lecture: m02-l02,
+     definition: "فترة تراجع حاد في تمويل أبحاث الذكاء الاصطناعي والاهتمام بها بعد مرحلة من التفاؤل المفرط ووعود غير متحققة.",
+     related: [Lighthill Report]}
+  - {ar: تقرير Lighthill, en: Lighthill Report, module: 2, lecture: m02-l02,
+     definition: "تقييم بريطاني مستقل صدر سنة 1973 انتقد قابلية نتائج الحقل للتوسع مستندًا إلى حجة الانفجار التوافقي، وأسهم في الشتاء الأول.",
+     related: [AI Winter]}
+  - {ar: النظام الخبير, en: Expert System, module: 2, lecture: m02-l03,
+     definition: "برنامج يجمع معرفة خبراء مجال في قواعد «إذا… فإن…» ويطبقها بمحرك استدلال، مع واجهة تشرح مسار الاستنتاج.",
+     related: [Knowledge Base, Inference Engine]}
+  - {ar: محرك الاستدلال, en: Inference Engine, module: 2, lecture: m02-l03,
+     definition: "مكوّن النظام الخبير الذي يطابق القواعد مع الوقائع ويستنتج نتائج جديدة، بتسلسل أمامي أو خلفي.",
+     related: [Expert System, Knowledge Base]}
+  - {ar: عنق زجاجة اكتساب المعرفة, en: Knowledge Acquisition Bottleneck, module: 2, lecture: m02-l03,
+     definition: "صعوبة وبطء وكلفة استخراج معرفة الخبراء وصياغتها في قواعد صريحة، وهي من أهم أسباب تراجع الأنظمة الخبيرة.",
+     related: [Expert System]}
+  - {ar: الهشاشة, en: Brittleness, module: 2, lecture: m02-l03,
+     definition: "فشل النظام فشلًا مفاجئًا خارج نطاق ما صُمم له، دون أن يدرك أنه خارج نطاقه أو يعبّر عن عدم يقينه.",
+     related: [Expert System, Out-of-distribution]}
+  - {ar: الانتشار العكسي, en: Backpropagation, module: 2, lecture: m02-l03,
+     definition: "خوارزمية تدريب الشبكات متعددة الطبقات بحساب مشتقة الخسارة بالنسبة إلى كل وزن عبر قاعدة السلسلة، ونشرها من المخرج إلى الطبقات السابقة.",
+     related: [Gradient Descent, Neural Network]}
+  - {ar: هندسة السمات, en: Feature Engineering, module: 2, lecture: m02-l04,
+     definition: "تصميم خبير المجال يدويًا للمتغيرات التي تصف البيانات الخام قبل إدخالها إلى النموذج؛ استعاض عنها التعلم العميق بتعلّم التمثيلات.",
+     related: [Representation Learning]}
+  - {ar: تعلّم التمثيلات, en: Representation Learning, module: 2, lecture: m02-l04,
+     definition: "قدرة الشبكات العميقة على اكتشاف سمات وسيطة مفيدة بنفسها من البيانات، بتسلسل هرمي من البسيط إلى المركب.",
+     related: [Deep Learning, Feature Engineering]}
+  - {ar: ImageNet, en: ImageNet, module: 2, lecture: m02-l04,
+     definition: "قاعدة صور واسعة منظمة وفق WordNet نُشرت سنة 2009، وفّرت معيار تقييم مشتركًا كان شرطًا لقياس تقدم الرؤية الحاسوبية.",
+     related: [AlexNet, Benchmark]}
+  - {ar: آلية الانتباه, en: Attention Mechanism, module: 2, lecture: m02-l05,
+     definition: "آلية تحسب أوزانًا تحدد صلة كل عنصر من المدخل بما يُنتج الآن، فتغني عن ضغط المدخل كله في تمثيل واحد ثابت.",
+     related: [Transformer, Self-Attention]}
+  - {ar: المحوّل, en: Transformer, module: 2, lecture: m02-l05,
+     definition: "بنية قدّمها Vaswani وزملاؤه سنة 2017 تعتمد الانتباه الذاتي دون تكرار، فتعالج الرموز بالتوازي وتصبح قابلة للتوسع.",
+     related: [Attention Mechanism, Large Language Model]}
+  - {ar: التعلم الذاتي الإشراف, en: Self-supervised Learning, module: 2, lecture: m02-l05,
+     definition: "نمط تعلم يُشتق فيه هدف التدريب من البيانات نفسها (كالتنبؤ بكلمة محذوفة) دون وسم بشري، فيتيح التعلم من بيانات ضخمة غير موسومة.",
+     related: [Foundation Models, Pretraining]}
+  - {ar: التجانس, en: Homogenization, module: 2, lecture: m02-l05,
+     definition: "اعتماد عدد كبير من التطبيقات على عدد قليل من النماذج التأسيسية، مما يركّز المخاطر: عيب في نموذج واحد ينتقل إلى ما بُني عليه.",
+     related: [Foundation Models]}

@@ -1,0 +1,93 @@
+# Module 5 sources. Verified 2026-09-28: arXiv via the arXiv API, vendor guides fetched and read.
+# Vendor guidance changes: every claim drawn from a vendor page carries the verification date.
+references:
+  - id: m05_brown_2020
+    authors: Brown, T. B., Mann, B., Ryder, N., et al.
+    year: 2020
+    title: Language Models are Few-Shot Learners
+    venue: arXiv:2005.14165 (NeurIPS 2020)
+    type: preprint
+    url: https://arxiv.org/abs/2005.14165
+    topic: Prompt Engineering
+    verified: "2026-09-28"
+  - id: m05_wei_2022_cot
+    authors: Wei, J., Wang, X., Schuurmans, D., et al.
+    year: 2022
+    title: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+    venue: arXiv:2201.11903 (NeurIPS 2022)
+    type: preprint
+    url: https://arxiv.org/abs/2201.11903
+    topic: Prompt Engineering
+    verified: "2026-09-28"
+  - id: m05_wang_2022_sc
+    authors: Wang, X., Wei, J., Schuurmans, D., et al.
+    year: 2022
+    title: Self-Consistency Improves Chain of Thought Reasoning in Language Models
+    venue: arXiv:2203.11171 (ICLR 2023)
+    type: preprint
+    url: https://arxiv.org/abs/2203.11171
+    topic: Prompt Engineering
+    verified: "2026-09-28"
+  - id: m05_white_2023
+    authors: White, J., Fu, Q., Hays, S., et al.
+    year: 2023
+    title: A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT
+    venue: arXiv:2302.11382
+    type: preprint
+    url: https://arxiv.org/abs/2302.11382
+    topic: Prompt Engineering
+    verified: "2026-09-28"
+  - id: m05_schulhoff_2024
+    authors: Schulhoff, S., Ilie, M., Balepur, N., et al.
+    year: 2024
+    title: "The Prompt Report: A Systematic Survey of Prompt Engineering Techniques"
+    venue: arXiv:2406.06608
+    type: preprint
+    url: https://arxiv.org/abs/2406.06608
+    topic: Prompt Engineering
+    verified: "2026-09-28"
+  - id: m05_zhou_2022
+    authors: Zhou, Y., Muresanu, A. I., Han, Z., et al.
+    year: 2022
+    title: Large Language Models Are Human-Level Prompt Engineers
+    venue: arXiv:2211.01910 (ICLR 2023)
+    type: preprint
+    url: https://arxiv.org/abs/2211.01910
+    topic: Prompt Engineering
+    verified: "2026-09-28"
+  - id: m05_anthropic_prompting
+    authors: Anthropic
+    year: 2026
+    title: Prompting best practices (Claude documentation)
+    venue: Anthropic / Claude Platform Docs
+    type: documentation
+    url: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices
+    topic: Official Product Documentation
+    verified: "2026-09-28"
+  - id: m05_google_prompting
+    authors: Google
+    year: 2026
+    title: Prompt design strategies (Gemini API documentation)
+    venue: Google AI for Developers
+    type: documentation
+    url: https://ai.google.dev/gemini-api/docs/prompting-strategies
+    topic: Official Product Documentation
+    verified: "2026-09-28"
+  - id: m05_openai_prompting
+    authors: OpenAI
+    year: 2026
+    title: Prompt engineering (API documentation)
+    venue: OpenAI Developers
+    type: documentation
+    url: https://developers.openai.com/api/docs/guides/prompt-engineering
+    topic: Official Product Documentation
+    verified: "2026-09-28"
+  - id: m05_prompting_guide
+    authors: DAIR.AI
+    year: 2026
+    title: Prompt Engineering Guide
+    venue: promptingguide.ai
+    type: web
+    url: https://www.promptingguide.ai/
+    topic: Prompt Engineering
+    verified: "2026-09-28"

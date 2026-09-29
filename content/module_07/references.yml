@@ -1,0 +1,123 @@
+# Module 7 sources. Verified 2026-09-28 (arXiv API, Crossref, vendor help centres and docs fetched).
+# WARNING: product features change. Every vendor claim in the lectures carries this date.
+references:
+  - id: m07_vaswani_2017
+    authors: Vaswani, A., Shazeer, N., Parmar, N., et al.
+    year: 2017
+    title: Attention Is All You Need
+    venue: arXiv:1706.03762 (NeurIPS 2017)
+    type: preprint
+    url: https://arxiv.org/abs/1706.03762
+    topic: LLMs
+    verified: "2026-09-28"
+  - id: m07_sennrich_2015
+    authors: Sennrich, R., Haddow, B., & Birch, A.
+    year: 2015
+    title: Neural Machine Translation of Rare Words with Subword Units
+    venue: arXiv:1508.07909 (ACL 2016)
+    type: preprint
+    url: https://arxiv.org/abs/1508.07909
+    topic: LLMs
+    verified: "2026-09-28"
+  - id: m07_devlin_2018
+    authors: Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K.
+    year: 2018
+    title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    venue: arXiv:1810.04805 (NAACL 2019)
+    type: preprint
+    url: https://arxiv.org/abs/1810.04805
+    topic: LLMs
+    verified: "2026-09-28"
+  - id: m07_ouyang_2022
+    authors: Ouyang, L., Wu, J., Jiang, X., et al.
+    year: 2022
+    title: Training language models to follow instructions with human feedback
+    venue: arXiv:2203.02155 (NeurIPS 2022)
+    type: preprint
+    url: https://arxiv.org/abs/2203.02155
+    topic: LLMs
+    verified: "2026-09-28"
+  - id: m07_lewis_2020
+    authors: Lewis, P., Perez, E., Piktus, A., et al.
+    year: 2020
+    title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+    venue: arXiv:2005.11401 (NeurIPS 2020)
+    type: preprint
+    url: https://arxiv.org/abs/2005.11401
+    topic: LLMs
+    verified: "2026-09-28"
+  - id: m07_ji_2023
+    authors: Ji, Z., Lee, N., Frieske, R., et al.
+    year: 2023
+    title: Survey of Hallucination in Natural Language Generation
+    venue: ACM Computing Surveys, 55(12), 1–38
+    type: article
+    doi: 10.1145/3571730
+    topic: LLMs
+    verified: "2026-09-28"
+  - id: m07_huang_2023
+    authors: Huang, L., Yu, W., Ma, W., et al.
+    year: 2023
+    title: "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions"
+    venue: arXiv:2311.05232
+    type: preprint
+    url: https://arxiv.org/abs/2311.05232
+    topic: LLMs
+    verified: "2026-09-28"
+  - id: m07_openai_models
+    authors: OpenAI
+    year: 2026
+    title: Models (API documentation)
+    venue: OpenAI
+    type: documentation
+    url: https://platform.openai.com/docs/models
+    topic: Official Product Documentation
+    verified: "2026-09-28"
+  - id: m07_openai_help
+    authors: OpenAI
+    year: 2026
+    title: ChatGPT Help Center (capabilities, file uploads, memory, projects, data controls)
+    venue: OpenAI Help Center
+    type: documentation
+    url: https://help.openai.com/en/collections/3742473-chatgpt
+    bot_blocked: true
+    browser_verified: "2026-09-29"
+    note: "مركز المساعدة يرفض الطلبات الآلية (403)؛ قُرئت الصفحة في متصفح."
+    topic: Official Product Documentation
+    verified: "2026-09-28"
+  - id: m07_google_models
+    authors: Google
+    year: 2026
+    title: Models (Gemini API documentation)
+    venue: Google AI for Developers
+    type: documentation
+    url: https://ai.google.dev/gemini-api/docs/models
+    topic: Official Product Documentation
+    verified: "2026-09-28"
+  - id: m07_google_help
+    authors: Google
+    year: 2026
+    title: Gemini Apps Help
+    venue: Google Support
+    type: documentation
+    url: https://support.google.com/gemini
+    topic: Official Product Documentation
+    verified: "2026-09-28"
+  - id: m07_anthropic_models
+    authors: Anthropic
+    year: 2026
+    title: Models overview (Claude documentation)
+    venue: Anthropic / Claude Platform Docs
+    type: documentation
+    url: https://platform.claude.com/docs/en/docs/about-claude/models/overview
+    topic: Official Product Documentation
+    verified: "2026-09-28"
+  - id: m07_anthropic_help
+    authors: Anthropic
+    year: 2026
+    title: Claude Help Center (features, projects, memory, privacy, usage limits)
+    venue: Anthropic
+    type: documentation
+    url: https://support.claude.com/en/
+    topic: Official Product Documentation
+    verified: "2026-09-28"

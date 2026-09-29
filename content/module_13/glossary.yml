@@ -1,0 +1,85 @@
+terms:
+  - {ar: الرقابة البشرية, en: Human Oversight, module: 13, lecture: m13-l01,
+     definition: "تدابير تجعل قرار النظام قابلًا للمراجعة والمخالفة والإيقاف. وليست خاصية يكفي إعلانها: فالسؤال أي دور، وبأي شروط، وبأي قياس.",
+     related: [Human in the Loop, Rubber-stamping, Review Conditions]}
+  - {ar: إنسان في الحلقة, en: Human in the Loop, module: 13, lecture: m13-l01,
+     definition: "دور لا يُنفَّذ فيه القرار بلا موافقة بشرية في كل حالة. أقوى حماية وأغلى كلفة، ونمط فشله أن يتحول إلى موافقة آلية عند كثرة الحجم أو ضيق الوقت.",
+     related: [Human on the Loop, Human in Command, Rubber-stamping]}
+  - {ar: إنسان على الحلقة, en: Human on the Loop, module: 13, lecture: m13-l01,
+     definition: "دور ينفّذ فيه النظام والإنسان يراقب ويتدخل ويراجع عيّنة. يناسب الحجم الكبير والأثر المتوسط، ونمط فشله ألا يلاحظ الخطأ لأنه لا يفحص كل حالة.",
+     related: [Human in the Loop, Control Sample, Omission Errors]}
+  - {ar: إنسان آمِر, en: Human in Command, module: 13, lecture: m13-l01,
+     definition: "دور يعمل فيه النظام باستقلالية، والإنسان يحدد الغرض والحدود ويملك سلطة الإيقاف ويُحاسَب. حماية بنيوية لا حالية، ونمط فشله الإشراف الاسمي بلا معلومات ولا سلطة.",
+     related: [Human on the Loop, Autonomy Levels]}
+  - {ar: المراجعة الشكلية, en: Rubber-stamping, module: 13, lecture: m13-l01,
+     definition: "موافقة بلا فحص فعلي. أخطر من غياب المراجعة لثلاث آليات: تنقل المسؤولية إلى من لم يفحص فينجو التصميم، وتمنح غطاءً يصعب الطعن فيه، وتزاحم الضوابط الفعلية.",
+     related: [Human Oversight, Override Rate, Review Conditions]}
+  - {ar: تحيّز الأتمتة, en: Automation Bias, module: 13, lecture: m13-l02,
+     definition: "الاعتماد المفرط على مخرج نظام آلي فيُقبَل حتى مع وجود معلومات تخالفه. بصورتين: أخطاء الإغفال وأخطاء الإذعان. وقد وُصف وسُمّي في أدبيات العوامل البشرية في التسعينيات.",
+     related: [Omission Errors, Commission Errors, Complacency, Calibrated Trust]}
+  - {ar: أخطاء الإغفال, en: Omission Errors, module: 13, lecture: m13-l02,
+     definition: "ألا ينتبه المراجع إلى مشكلة لم ينبّهه النظام إليها، لأنه أوكل إليه توجيه انتباهه فصار صمته يعني «لا يوجد شيء». أخفى من أخطاء الإذعان وأخطر، لأنها لا تُنتج قرارًا يمكن تتبّعه.",
+     related: [Automation Bias, Commission Errors, Control Sample]}
+  - {ar: أخطاء الإذعان, en: Commission Errors, module: 13, lecture: m13-l02,
+     definition: "أن يتبع المراجع اقتراح النظام رغم دليل متاح يخالفه. تُكتشف أحيانًا لأنها تنتج قرارًا موثّقًا، وعلاجها تسجيل الحكم البشري قبل عرض الاقتراح.",
+     related: [Automation Bias, Omission Errors]}
+  - {ar: مفارقة الأتمتة, en: Automation Paradox, module: 13, lecture: m13-l02,
+     definition: "كلما قلّ خطأ النظام، قلّ تدرّب المراجع على كشف الخطأ، فارتفعت نسبة ما يمرّ دون كشف، وارتفعت الثقة فانخفض التشكيك. فتحسين النظام يوجب إعادة تصميم المراجعة لا الاطمئنان إليها.",
+     related: [Skill Degradation, Complacency, Seeded Cases]}
+  - {ar: الرضا الزائف, en: Complacency, module: 13, lecture: m13-l02,
+     definition: "انخفاض اليقظة مع طول التعامل مع نظام موثوق. ليس تقصيرًا أخلاقيًا بل نتيجة توزيع الانتباه على مهام متعددة، ولهذا يُعالَج بالتصميم لا بالتوصية.",
+     related: [Automation Bias, Automation Paradox]}
+  - {ar: تآكل المهارة, en: Skill Degradation, module: 13, lecture: m13-l02,
+     definition: "ضعف المهارة التي لم تُمارَس لأن النظام يؤديها — وهي المهارة نفسها اللازمة للمراجعة. فالأتمتة تُضعف شرط نجاحها. وعلامته أن يكون المراجعون الجدد أفضل من القدامى في الحالات الشاذة.",
+     related: [Automation Paradox, Seeded Cases]}
+  - {ar: إجهاد التنبيهات, en: Alert Fatigue, module: 13, lecture: m13-l02,
+     definition: "تحوّل طلبات التأكيد إلى ضغطات آلية بسبب كثرتها. فعدد التنبيهات يتناسب عكسًا مع الانتباه لكل تنبيه، ولهذا تخفض زيادة التأكيدات الرقابة لا ترفعها.",
+     related: [Human Confirmation, Complacency]}
+  - {ar: سلطة بلا قدرة, en: Authority without Ability, module: 13, lecture: m13-l02,
+     definition: "أن يملك المراجع صلاحية الرفض نظريًا ولا يملك معلومات ولا وقتًا ولا غطاءً لاستعمالها. أشيع فشل في المؤسسات، وعلامته فجوة بين كشف الأخطاء وعدم مخالفتها.",
+     related: [Review Conditions, Rubber-stamping]}
+  - {ar: الثقة المعايَرة, en: Calibrated Trust, module: 13, lecture: m13-l02,
+     definition: "أن تكون ثقة المستخدم مطابقة لجدارة النظام بها: عالية حيث هو جيد، منخفضة حيث هو ضعيف، متغيرة بتغيّر الظروف. والهدف هو المعايرة لا الثقة العالية، وتُبنى بمعرفة حدود النظام لا قدراته.",
+     related: [Automation Bias, Automation Disuse, Model Card]}
+  - {ar: إهمال الأتمتة, en: Automation Disuse, module: 13, lecture: m13-l02,
+     definition: "عدم استعمال نظام نافع، أو مخالفته بلا فحص، بسبب ثقة ناقصة. الانحراف المعاكس لتحيّز الأتمتة، وكلاهما خروج عن الثقة المعايَرة.",
+     related: [Calibrated Trust, Automation Bias]}
+  - {ar: معدل المخالفة, en: Override Rate, module: 13, lecture: m13-l02,
+     definition: "نسبة الحالات التي خالف فيها المراجع اقتراح النظام. أقوى مؤشر على جدية المراجعة لأنه مخرج لا مدخل. ومعدل صفر فرضية عطب، ومعدل مرتفع جدًا يُقرأ مع نصيب المخالفات المبرَّرة كتابةً.",
+     related: [Rubber-stamping, Seeded Cases, Review Conditions]}
+  - {ar: الحالات المزروعة, en: Seeded Cases, module: 13, lecture: m13-l02,
+     definition: "حالات معروفة الجواب تُدخَل في تدفق العمل الحقيقي بنسبة صغيرة لقياس كشفها. أنفع إجراء عملي في المحور: يقيس اليقظة ويحفظ التدرّب الذي تُفقده مفارقة الأتمتة.",
+     related: [Automation Paradox, Override Rate, Skill Degradation]}
+  - {ar: مستويات الاستقلالية, en: Autonomy Levels, module: 13, lecture: m13-l03,
+     definition: "ست درجات من عدم المساعدة إلى التنفيذ الكامل: لا مساعدة، واقتراح، وتوصية مرتّبة، وتنفيذ بموافقة، وتنفيذ بمهلة اعتراض، وتنفيذ كامل. والانتقال بين درجتين قرار يحتاج مبررًا مكتوبًا.",
+     related: [Proportionality, Veto Window, Ranking Effect]}
+  - {ar: التناسب, en: Proportionality, module: 13, lecture: m13-l03,
+     definition: "أن يحدد الأثر على من يتأثر وقابلية التراجع عن الفعل المستوى الأقصى المسموح للاستقلالية — لا دقة النظام ولا قدرته ولا كلفة المراجعة. وما كان غير قابل للتراجع ويمسّ أشخاصًا لا يتجاوز الاقتراح.",
+     related: [Autonomy Levels, Reversibility, Risk-based Regulation]}
+  - {ar: قابلية التراجع, en: Reversibility, module: 13, lecture: m13-l03,
+     definition: "إمكان إبطال أثر الفعل، وبأي كلفة وفي أي مدة. و«قابل نظريًا» لا يكفي: فإعادة حساب مُغلَق لا تُعيد الضرر الواقع في أثناء إغلاقه.",
+     related: [Proportionality, Consequential Action]}
+  - {ar: أثر الترتيب, en: Ranking Effect, module: 13, lecture: m13-l03,
+     definition: "توجيه الترتيب للقرار حتى مع بقاء الاختيار بشريًا: فهو يوزّع الانتباه، ويُقرأ بوصفه حكمًا، ويجعل اختيار الأول بلا تبرير واختيار الأخير محتاجًا إليه. فيصير المستوى 2 عمليًا أقرب إلى 3.",
+     related: [Autonomy Levels, Automation Bias]}
+  - {ar: مهلة الاعتراض, en: Veto Window, module: 13, lecture: m13-l03,
+     definition: "مدة يُنفَّذ بعدها الفعل إن لم يعترض الإنسان. تعتمد على شرطين: مهلة تكفي للفهم والتحقق والقرار، وإشعار يُقرأ. وبفشلهما تصير تنفيذًا كاملًا بمسؤولية منقولة.",
+     related: [Autonomy Levels, Alert Fatigue, Rubber-stamping]}
+  - {ar: الانحراف التدريجي, en: Autonomy Creep, module: 13, lecture: m13-l03,
+     definition: "ارتفاع المستوى الفعلي لاستقلالية النظام بمرور الوقت بلا قرار صريح، بضغط الحجم وارتفاع الثقة. فالمستوى الفعلي يُقاس بالمؤشرات ولا يُقرأ من الوثيقة.",
+     related: [Autonomy Levels, Override Rate, Oversight Document]}
+  - {ar: شروط المراجعة الأربعة, en: Review Conditions, module: 13, lecture: m13-l04,
+     definition: "معلومات كافية، ووقت كافٍ، وسلطة فعلية، وحوافز سليمة. وغياب أي واحد يُنتج النتيجة نفسها: «يوافق». وأكثر ما يغيب الوقت ثم الحوافز، وهما الأقل ذكرًا في السياسات.",
+     related: [Rubber-stamping, Perverse Incentives, Oversight Document]}
+  - {ar: الحوافز المنحرفة, en: Perverse Incentives, module: 13, lecture: m13-l04,
+     definition: "تفاوت كلفة الخطأين: أن يُحاسَب المراجع على رفض خاطئ ولا يُسأل عن موافقة على خطأ النظام. وحينها يُنتج الإجراء موافقة بالضرورة، بلا علاقة بأخلاق المراجع.",
+     related: [Review Conditions, Override Rate]}
+  - {ar: الحالات الحدّية, en: Borderline Cases, module: 13, lecture: m13-l04,
+     definition: "الحالات القريبة من عتبة القرار. يتركز فيها الخطأ بحكم البنية، فتُراجَع مراجعة كاملة، ويضيف الحكم البشري فيها أكثر ما يمكن.",
+     related: [Control Sample, Review Conditions]}
+  - {ar: العيّنة الرقابية, en: Control Sample, module: 13, lecture: m13-l04,
+     definition: "عيّنة عشوائية من الحالات التي لم يعرضها النظام، تُراجَع مراجعة كاملة. الضابط الوحيد على أخطاء الإغفال: فبلا عيّنة، يراجع المراجع اختيار النظام للحالات لا الحالات.",
+     related: [Omission Errors, Borderline Cases, Feedback Loop]}
+  - {ar: وثيقة الرقابة, en: Oversight Document, module: 13, lecture: m13-l04,
+     definition: "صفحة تحدد النظام والفعل والمستوى ومبرره والدور وما يُراجَع والمعلومات والوقت المحسوب والسلطة والمؤشرات بعتباتها والإجراء عند التجاوز ومراجعة الوثيقة نفسها. والبند الأخير هو ما يمنع الانحراف التدريجي.",
+     related: [Review Conditions, Autonomy Creep, Model Card]}

@@ -1,0 +1,193 @@
+# Module 10 sources. Every DOI verified through the Crossref API on 2026-09-28 (title, journal,
+# year, volume, pages and author list compared against the entry). Institutional pages fetched.
+references:
+  - id: m10_mullainathan_2017
+    authors: Mullainathan, S., & Spiess, J.
+    year: 2017
+    title: "Machine Learning: An Applied Econometric Approach"
+    venue: "Journal of Economic Perspectives, 31(2), 87–106"
+    type: article
+    doi: 10.1257/jep.31.2.87
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_athey_imbens_2019
+    authors: Athey, S., & Imbens, G. W.
+    year: 2019
+    title: Machine Learning Methods That Economists Should Know About
+    venue: "Annual Review of Economics, 11, 685–725"
+    type: article
+    doi: 10.1146/annurev-economics-080217-053433
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_varian_2014
+    authors: Varian, H. R.
+    year: 2014
+    title: "Big Data: New Tricks for Econometrics"
+    venue: "Journal of Economic Perspectives, 28(2), 3–28"
+    type: article
+    doi: 10.1257/jep.28.2.3
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_kleinberg_2015
+    authors: Kleinberg, J., Ludwig, J., Mullainathan, S., & Obermeyer, Z.
+    year: 2015
+    title: Prediction Policy Problems
+    venue: "American Economic Review, 105(5), 491–495"
+    type: article
+    doi: 10.1257/aer.p20151023
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_chernozhukov_2018
+    authors: Chernozhukov, V., Chetverikov, D., Demirer, M., Duflo, E., Hansen, C., Newey, W., & Robins, J.
+    year: 2018
+    title: Double/debiased machine learning for treatment and structural parameters
+    venue: "The Econometrics Journal, 21(1), C1–C68"
+    type: article
+    doi: 10.1111/ectj.12097
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_wager_athey_2018
+    authors: Wager, S., & Athey, S.
+    year: 2018
+    title: Estimation and Inference of Heterogeneous Treatment Effects using Random Forests
+    venue: "Journal of the American Statistical Association, 113(523), 1228–1242"
+    type: article
+    doi: 10.1080/01621459.2017.1319839
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_belloni_2014
+    authors: Belloni, A., Chernozhukov, V., & Hansen, C.
+    year: 2014
+    title: High-Dimensional Methods and Inference on Structural and Treatment Effects
+    venue: "Journal of Economic Perspectives, 28(2), 29–50"
+    type: article
+    doi: 10.1257/jep.28.2.29
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_gentzkow_2019
+    authors: Gentzkow, M., Kelly, B., & Taddy, M.
+    year: 2019
+    title: Text as Data
+    venue: "Journal of Economic Literature, 57(3), 535–574"
+    type: article
+    doi: 10.1257/jel.20181020
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_baker_2016_epu
+    authors: Baker, S. R., Bloom, N., & Davis, S. J.
+    year: 2016
+    title: Measuring Economic Policy Uncertainty
+    venue: "The Quarterly Journal of Economics, 131(4), 1593–1636"
+    type: article
+    doi: 10.1093/qje/qjw024
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_loughran_2011
+    authors: Loughran, T., & McDonald, B.
+    year: 2011
+    title: "When Is a Liability Not a Liability? Textual Analysis, Dictionaries, and 10-Ks"
+    venue: "The Journal of Finance, 66(1), 35–65"
+    type: article
+    doi: 10.1111/j.1540-6261.2010.01625.x
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_giannone_2008
+    authors: Giannone, D., Reichlin, L., & Small, D.
+    year: 2008
+    title: "Nowcasting: The real-time informational content of macroeconomic data"
+    venue: "Journal of Monetary Economics, 55(4), 665–676"
+    type: article
+    doi: 10.1016/j.jmoneco.2008.05.010
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_einav_levin_2014
+    authors: Einav, L., & Levin, J.
+    year: 2014
+    title: Economics in the age of big data
+    venue: "Science, 346(6210)"
+    type: article
+    doi: 10.1126/science.1243089
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_korinek_2023
+    authors: Korinek, A.
+    year: 2023
+    title: "Generative AI for Economic Research: Use Cases and Implications for Economists"
+    venue: "Journal of Economic Literature, 61(4), 1281–1317"
+    type: article
+    doi: 10.1257/jel.20231736
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_acemoglu_restrepo_2019
+    authors: Acemoglu, D., & Restrepo, P.
+    year: 2019
+    title: "Automation and New Tasks: How Technology Displaces and Reinstates Labor"
+    venue: "Journal of Economic Perspectives, 33(2), 3–30"
+    type: article
+    doi: 10.1257/jep.33.2.3
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_autor_2015
+    authors: Autor, D. H.
+    year: 2015
+    title: "Why Are There Still So Many Jobs? The History and Future of Workplace Automation"
+    venue: "Journal of Economic Perspectives, 29(3), 3–30"
+    type: article
+    doi: 10.1257/jep.29.3.3
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_mokyr_2015
+    authors: Mokyr, J., Vickers, C., & Ziebarth, N. L.
+    year: 2015
+    title: "The History of Technological Anxiety and the Future of Economic Growth: Is This Time Different?"
+    venue: "Journal of Economic Perspectives, 29(3), 31–50"
+    type: article
+    doi: 10.1257/jep.29.3.31
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_brynjolfsson_2021_jcurve
+    authors: Brynjolfsson, E., Rock, D., & Syverson, C.
+    year: 2021
+    title: "The Productivity J-Curve: How Intangibles Complement General Purpose Technologies"
+    venue: "American Economic Journal: Macroeconomics, 13(1), 333–372"
+    type: article
+    doi: 10.1257/mac.20180386
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_brynjolfsson_2025_genai_work
+    authors: Brynjolfsson, E., Li, D., & Raymond, L.
+    year: 2025
+    title: Generative AI at Work
+    venue: "The Quarterly Journal of Economics, 140(2), 889–942"
+    type: article
+    doi: 10.1093/qje/qjae044
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_acemoglu_2024_macro
+    authors: Acemoglu, D.
+    year: 2024
+    title: The simple macroeconomics of AI
+    venue: "Economic Policy, 40(121), 13–58"
+    type: article
+    doi: 10.1093/epolic/eiae042
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_kapoor_2023_leakage
+    authors: Kapoor, S., & Narayanan, A.
+    year: 2023
+    title: Leakage and the reproducibility crisis in machine-learning-based science
+    venue: "Patterns, 4(9), 100804"
+    type: article
+    doi: 10.1016/j.patter.2023.100804
+    topic: Economics + AI
+    verified: "2026-09-28"
+  - id: m10_ilo_2023_genai_jobs
+    authors: Gmyrek, P., Berg, J., & Bescond, D.
+    year: 2023
+    title: "Generative AI and Jobs: A global analysis of potential effects on job quantity and quality"
+    venue: "ILO Working Paper 96, International Labour Organization"
+    type: report
+    doi: 10.54394/FHEM8239
+    url: https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and
+    topic: Economics + AI
+    verified: "2026-09-28"

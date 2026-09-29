@@ -1,0 +1,57 @@
+[server]
+runOnSave = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+# Light, multi-colour academic theme. The canvas is near-neutral so that the thirteen
+# module hues (components/layout.py: MODULE_COLORS) read as thirteen distinct hues
+# instead of all drifting toward a single tint. Nothing here is dark.
+[theme]
+base = "light"
+primaryColor = "#3E8FD0"
+backgroundColor = "#FCFBF9"
+secondaryBackgroundColor = "#F5F3F0"
+textColor = "#2F2C33"
+linkColor = "#2E7BBF"
+borderColor = "#E8E4DF"
+codeBackgroundColor = "#F6F4F1"
+codeTextColor = "#41474F"
+font = "Tajawal:https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+headingFont = "Cairo:https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&display=swap"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+baseFontSize = 17
+baseRadius = "12px"
+showWidgetBorder = true
+
+# Streamlit's named colours, pulled from the same spectrum so :red-badge[…] and friends
+# never introduce a hue the rest of the app does not use.
+redColor = "#E4695A"
+orangeColor = "#D97D2E"
+yellowColor = "#B98A0E"
+greenColor = "#46AB68"
+blueColor = "#3E8FD0"
+violetColor = "#A257C8"
+grayColor = "#6E6A75"
+
+# Charts step through the spectrum in course order, so a series keeps the same hue
+# wherever it appears.
+chartCategoricalColors = [
+  "#E4695A", "#3E8FD0", "#46AB68", "#A257C8", "#D97D2E",
+  "#2E9FB8", "#D95B7E", "#7F9C2B", "#7B5FD6", "#B98A0E",
+  "#2FA391", "#C455A6", "#4A72D8",
+]
+# A single-hue ramp for magnitude, light to saturated — never dark at either end.
+chartSequentialColors = [
+  "#EEF6FC", "#DCEBF7", "#C6DEF1", "#AAD0EB", "#8BC0E4",
+  "#6BAEDC", "#4E9AD3", "#3E8FD0", "#2E76B4", "#215B92",
+]
+dataframeHeaderBackgroundColor = "#EDF1F6"
+
+[theme.sidebar]
+backgroundColor = "#F7F5F2"
+secondaryBackgroundColor = "#EEEBE7"
+borderColor = "#E3DFDA"

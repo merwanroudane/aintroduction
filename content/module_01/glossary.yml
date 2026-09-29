@@ -1,0 +1,79 @@
+terms:
+  - {ar: الذكاء الاصطناعي, en: Artificial Intelligence, acronym: AI, module: 1, lecture: m01-l01,
+     definition: "حقل علمي وهندسي يدرس ويبني أنظمة قادرة على أداء مهام تستدعي عادةً قدرات نربطها بالذكاء البشري، كالإدراك والاستدلال والتعلم والتخطيط وفهم اللغة واتخاذ القرار.",
+     related: [Machine Learning, Rational Agent, AI System]}
+  - {ar: نظام الذكاء الاصطناعي, en: AI System, module: 1, lecture: m01-l01,
+     definition: "وفق OECD: نظام قائم على الآلة يستنتج، لأهداف صريحة أو ضمنية، من المدخلات كيف يولّد مخرجات (تنبؤات، محتوى، توصيات، قرارات) تؤثر في بيئات مادية أو افتراضية، ويتفاوت في الاستقلالية والتكيف.",
+     related: [AI Model, Autonomy], see_also: [Artificial Intelligence]}
+  - {ar: نموذج الذكاء الاصطناعي, en: AI Model, module: 1, lecture: m01-l01,
+     definition: "المكوّن الذي تعلّم من البيانات ويحوّل المدخلات إلى مخرجات؛ يدخل في نظام أوسع يضم الواجهة والتعليمات والضوابط وآليات الرقابة.",
+     related: [AI System, Foundation Model]}
+  - {ar: الوكيل العقلاني, en: Rational Agent, module: 1, lecture: m01-l01,
+     definition: "كيان يدرك بيئته عبر حساسات ويؤثر فيها عبر مشغلات، ويختار الفعل الذي يُتوقع أن يحقق أفضل نتيجة وفق مقياس أداء بالنظر إلى ما يعرفه.",
+     related: [Agent, Utility]}
+  - {ar: اختبار تورينغ, en: Turing Test, module: 1, lecture: m01-l01,
+     definition: "معيار سلوكي اقترحه Alan Turing سنة 1950 باسم «لعبة المحاكاة»: تُعدّ الآلة ناجحة إذا عجز محقق يحاورها كتابيًا عن تمييزها من إنسان.",
+     related: [Imitation Game, Acting humanly]}
+  - {ar: مشكلة المواءمة بين القيم, en: Value Alignment Problem, module: 1, lecture: m01-l01,
+     definition: "صعوبة ضمان أن الهدف المبرمج في نظام يطابق ما يريده البشر فعلًا؛ النظام الأقوى في تحسين هدف خاطئ قد ينتج نتائج أسوأ.",
+     related: [Rational Agent, AI Safety]}
+  - {ar: الأتمتة, en: Automation, module: 1, lecture: m01-l02,
+     definition: "أن يؤدي النظام مهمة بدل الإنسان، جزئيًا أو كليًا.",
+     related: [Augmentation, Automation Bias]}
+  - {ar: التعزيز, en: Augmentation, module: 1, lecture: m01-l02,
+     definition: "أن يزيد النظام قدرة الإنسان على أداء مهمة مع بقائه صاحب القرار.",
+     related: [Automation, Human-AI Collaboration]}
+  - {ar: التنبؤ, en: Prediction, module: 1, lecture: m01-l02,
+     definition: "تقدير قيمة غير معروفة (مستقبلية أو غير مقيسة أو مفقودة) انطلاقًا من معلومات معروفة.",
+     related: [Classification, Regression]}
+  - {ar: التصنيف, en: Classification, module: 1, lecture: m01-l02,
+     definition: "تنبؤ يكون مخرجه فئة من مجموعة محددة من الفئات.",
+     related: [Prediction, Regression]}
+  - {ar: الانحدار, en: Regression, module: 1, lecture: m01-l02,
+     definition: "تنبؤ يكون مخرجه قيمة عددية مستمرة.",
+     related: [Classification, Loss Function]}
+  - {ar: التحسين, en: Optimization, module: 1, lecture: m01-l02,
+     definition: "البحث عن أفضل حل ممكن وفق معيار محدد ضمن قيود.",
+     related: [Search, Planning]}
+  - {ar: خط الأساس, en: Baseline, module: 1, lecture: m01-l02,
+     definition: "نموذج أو قاعدة بسيطة تُقارن بها نتائج نموذج أعقد؛ إن لم يتفوق النموذج المعقد عليها بوضوح فلا مبرر لتعقيده.",
+     related: [Evaluation]}
+  - {ar: معالجة اللغة الطبيعية, en: Natural Language Processing, acronym: NLP, module: 1, lecture: m01-l03,
+     definition: "فرع يهتم بتمكين الحاسوب من فهم اللغات البشرية ومعالجتها وتوليدها: الترجمة، والتلخيص، واستخراج المعلومات، وتحليل المشاعر.",
+     related: [Large Language Model, Speech Recognition]}
+  - {ar: الرؤية الحاسوبية, en: Computer Vision, acronym: CV, module: 1, lecture: m01-l03,
+     definition: "فرع يهتم بتمكين الحاسوب من تحليل الصور والفيديو: التصنيف، والكشف، والتجزئة، والتعرف على الوجوه والحروف.",
+     related: [Deep Learning, Object Detection]}
+  - {ar: التعرف الآلي على الكلام, en: Automatic Speech Recognition, acronym: ASR, module: 1, lecture: m01-l03,
+     definition: "تحويل الإشارة الصوتية للكلام إلى نص مكتوب.",
+     related: [Text-to-Speech, NLP]}
+  - {ar: الأنظمة الخبيرة, en: Expert Systems, module: 1, lecture: m01-l03,
+     definition: "برامج تجمع معرفة خبراء مجال في قواعد من نوع «إذا… فإن…» وتستنتج منها توصيات؛ ازدهرت في الثمانينيات.",
+     related: [Symbolic AI, Knowledge Representation]}
+  - {ar: أنظمة التوصية, en: Recommender Systems, module: 1, lecture: m01-l03,
+     definition: "أنظمة تقترح على المستخدم عناصر يُتوقع أن تهمه، بالتصفية التعاونية أو القائمة على المحتوى.",
+     related: [Collaborative Filtering]}
+  - {ar: الدالة التقديرية, en: Heuristic, module: 1, lecture: m01-l03,
+     definition: "قاعدة أو دالة تقدّر مدى قرب حالة ما من الهدف، لتوجيه البحث نحو المسارات الواعدة دون استكشاف شامل.",
+     related: [Search, A* Algorithm]}
+  - {ar: النماذج التأسيسية, en: Foundation Models, module: 1, lecture: m01-l03,
+     definition: "نماذج كبيرة تُدرّب على بيانات واسعة (غالبًا بالتعلم الذاتي الإشراف) ويمكن تكييفها لطيف واسع من المهام.",
+     related: [Large Language Model, Multimodal Model]}
+  - {ar: النماذج متعددة الوسائط, en: Multimodal Models, module: 1, lecture: m01-l03,
+     definition: "نماذج تعالج أكثر من نوع من البيانات (نص، صورة، صوت) وتربط بينها في نموذج واحد.",
+     related: [Foundation Models]}
+  - {ar: الصيانة التنبؤية, en: Predictive Maintenance, module: 1, lecture: m01-l04,
+     definition: "التنبؤ بعطل آلة قبل وقوعه انطلاقًا من قراءات الحساسات لجدولة الصيانة في الوقت المناسب.",
+     related: [Prediction]}
+  - {ar: تحيز القياس, en: Measurement Bias, module: 1, lecture: m01-l04,
+     definition: "تحيز ينشأ حين يقيس المتغير المستعمل مفهومًا مختلفًا عن المفهوم المقصود، أو يقيسه بدقة متفاوتة بين الفئات.",
+     related: [Proxy Variable, Algorithmic Bias]}
+  - {ar: الهلوسة, en: Hallucination, module: 1, lecture: m01-l05,
+     definition: "إنتاج نموذج لغوي معلومات غير صحيحة أو مختلقة بصياغة مقنعة، كمراجع أو أرقام أو اقتباسات لا وجود لها.",
+     related: [Grounding, Verification]}
+  - {ar: الأنسنة, en: Anthropomorphism, module: 1, lecture: m01-l05,
+     definition: "نسبة صفات بشرية (الفهم، القصد، المشاعر) إلى أنظمة غير بشرية؛ وتسمى صورتها في المحادثة الآلية «أثر إليزا».",
+     related: [ELIZA effect]}
+  - {ar: قوانين التوسع, en: Scaling Laws, module: 1, lecture: m01-l05,
+     definition: "علاقات تجريبية تصف كيف يتحسن أداء النماذج مع زيادة حجمها وكمية بيانات تدريبها والحوسبة المستعملة.",
+     related: [Foundation Models, Compute]}

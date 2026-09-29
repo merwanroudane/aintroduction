@@ -1,0 +1,100 @@
+terms:
+  - {ar: البيانات الشخصية, en: Personal Data, module: 12, lecture: m12-l01,
+     definition: "كل ما يتعلق بشخص يمكن التعرّف عليه، مباشرةً أو غير مباشرة. والمعيار قابلية التعرّف لا وجود الاسم، فالاسم إحدى طرق التعرّف لا شرطها.",
+     related: [Identifiability, Pseudonymisation, Anonymisation]}
+  - {ar: قابلية التعرّف, en: Identifiability, module: 12, lecture: m12-l01,
+     definition: "إمكان التوصل إلى فرد بعينه من البيانات، وحدها أو بربطها بمعلومة أخرى متاحة. وتقييمها نسبي إلى ما هو متاح في العالم الآن، فيتغير مع الزمن.",
+     related: [Personal Data, Re-identification, Quasi-identifier]}
+  - {ar: المعرّف شبه الفريد, en: Quasi-identifier, module: 12, lecture: m12-l01,
+     definition: "صفة لا تُعرّف وحدها لكنها تُعرّف مجتمعةً مع غيرها: العمر، والبلدية، والمهنة. وعدد التركيبات ينمو أسيًّا مع كل صفة تُضاف.",
+     related: [Identifiability, Generalisation, k-Anonymity]}
+  - {ar: إعادة التعرّف, en: Re-identification, module: 12, lecture: m12-l01,
+     definition: "استعادة هوية أفراد من مجموعة «مجهولة الهوية» بربطها بمصدر خارجي يشترك معها في صفات عامة. ولا تخترق شيئًا: مجموعتان مشروعتان تُفشيان معًا.",
+     related: [Identifiability, Linkage, Anonymisation]}
+  - {ar: الربط, en: Linkage, module: 12, lecture: m12-l01,
+     definition: "مطابقة سجلات بين مجموعتين على الصفات المشتركة، فيُطابَق كل فرد فريد فيها مطابقة وحيدة. الأداة الأساسية في إعادة التعرّف.",
+     related: [Re-identification, Quasi-identifier]}
+  - {ar: إخفاء الهوية, en: Anonymisation, module: 12, lecture: m12-l01,
+     definition: "أن يصير التعرّف غير ممكن عمليًا بأي وسيلة معقولة. شرط صعب الإثبات، وأغلب ما يُوصف به لا يستوفيه — ولهذا لا توجد شهادة نهائية به.",
+     related: [Pseudonymisation, Generalisation, k-Anonymity]}
+  - {ar: الأسماء المستعارة, en: Pseudonymisation, module: 12, lecture: m12-l01,
+     definition: "استبدال المعرّف برمز مع بقاء إمكان الربط بمفتاح أو بالصفات. والنتيجة **تبقى بيانات شخصية** وكل الالتزامات قائمة عليها — وهذا أشيع ما يُخطأ فيه.",
+     related: [Anonymisation, Separation, Personal Data]}
+  - {ar: التعميم, en: Generalisation, module: 12, lecture: m12-l01,
+     definition: "استبدال القيمة الدقيقة بفئة أوسع: فئة عمرية بدل سنة الميلاد، وولاية بدل بلدية. يخفض قابلية التعرّف خفضًا حادًا بثمن في الدقة التحليلية.",
+     related: [k-Anonymity, Data Minimisation, Cell Threshold]}
+  - {ar: مقياس k, en: k-Anonymity, module: 12, lecture: m12-l01,
+     definition: "أن لا يُميَّز كل سجل عن k−1 سجلًا آخر على الأقل في الصفات القابلة للربط. ضابط نافع لا شهادة: يفشل مع التجانس في الصفة الحسّاسة، ومع المعرفة الخارجية، ومع تعدد النشرات.",
+     related: [Generalisation, Anonymisation, Cell Threshold]}
+  - {ar: دورة حياة البيانات, en: Data Lifecycle, module: 12, lecture: m12-l02,
+     definition: "مسار البيانات من الجمع إلى الحذف مرورًا بالإرسال والمعالجة والاحتفاظ والتحسين والمشاركة. ولكل مرحلة سؤالها، والإرسال هو المرحلة التي لا رجعة فيها.",
+     related: [Data Retention, Data Minimisation]}
+  - {ar: مدة الاحتفاظ, en: Data Retention, module: 12, lecture: m12-l02,
+     definition: "المدة التي تبقى فيها البيانات محفوظة قبل الحذف. تُحدَّد في بداية المشروع بتاريخ صريح، وتُنسى نسخها في البريد والتخزين السحابي والملفات الوسيطة.",
+     related: [Data Lifecycle, Processing Record]}
+  - {ar: تقليل البيانات, en: Data Minimisation, module: 12, lecture: m12-l02,
+     definition: "ألا يُجمع ولا يُعالَج إلا ما هو لازم فعلًا للغرض المحدد. أقوى ضابط في الخصوصية لأنه يُلغي الخطر لا يديره، وكلفته قد تكون سالبة: عمل أقل وتحليل أنضبط.",
+     related: [Purpose Limitation, Data Lifecycle, Separation]}
+  - {ar: تحديد الغرض, en: Purpose Limitation, module: 12, lecture: m12-l02,
+     definition: "أن تُجمع البيانات لغرض محدد ولا تُستعمل لغيره بلا أساس جديد. أكثر المبادئ خرقًا في البحث: بيانات إدارية تُستعمل بحثيًا بلا أساس.",
+     related: [Data Minimisation, Lawful Basis]}
+  - {ar: حقن الأوامر, en: Prompt Injection, module: 12, lecture: m12-l03,
+     definition: "إدخال نص يعامله النموذج تعليماتٍ وكان يجب أن يعامله بياناتٍ. ينشأ لأن كل ما يصل النموذج نص في سياق واحد بلا حدّ صلب، فلا حل كامل بتحصين النموذج.",
+     related: [Indirect Prompt Injection, Least Privilege, Untrusted Content]}
+  - {ar: الحقن غير المباشر, en: Indirect Prompt Injection, module: 12, lecture: m12-l03,
+     definition: "تعليمات مدسوسة في محتوى تقرأه الأداة — صفحة، أو ملف، أو بريد، أو تعليق — فينفّذها بصلاحيات المستخدم بلا علمه. أخطر من المباشر لأن المستخدم ضحية لا فاعل.",
+     related: [Prompt Injection, Untrusted Content, Least Privilege]}
+  - {ar: المحتوى غير الموثوق, en: Untrusted Content, module: 12, lecture: m12-l03,
+     definition: "كل ما يكتبه طرف ثالث وتقرأه الأداة. يُعالَج في سياق معزول عن السياق الذي يملك الصلاحيات، ولا تُمرَّر مخرجاته أوامرَ.",
+     related: [Indirect Prompt Injection, Isolation, Least Privilege]}
+  - {ar: مبدأ الصلاحية الأدنى, en: Principle of Least Privilege, module: 12, lecture: m12-l03,
+     definition: "ألا يُمنح أي مكوّن إلا أدنى الصلاحيات اللازمة لوظيفته المحددة. والقاعدة الجامعة: ما لا تملكه الأداة لا يمكن أن يُستعمل ضدك — لا بحقن ولا بخطأ.",
+     related: [Prompt Injection, Consequential Action, Human Confirmation]}
+  - {ar: الفعل ذو الأثر, en: Consequential Action, module: 12, lecture: m12-l03,
+     definition: "فعل لا يمكن التراجع عنه: إرسال، أو حذف، أو دفع، أو نشر. يحتاج تأكيدًا بشريًا لكل حالة وتسجيلًا كاملًا، وقد لا يجوز تفويضه للأداة إطلاقًا.",
+     related: [Least Privilege, Human Confirmation]}
+  - {ar: التأكيد البشري, en: Human Confirmation, module: 12, lecture: m12-l03,
+     definition: "طلب موافقة صريحة قبل كل فعل ذي أثر، مع عرض ما سيُفعَل ولمن. ينفع بشرط ألا يتكرر حتى يصير ضغطة آلية — وهذا هو تحيّز الأتمتة.",
+     related: [Consequential Action, Least Privilege]}
+  - {ar: استنتاج العضوية, en: Membership Inference, module: 12, lecture: m12-l04,
+     definition: "هجوم يستنتج هل كان شخص بعينه في بيانات التدريب، من اختلاف سلوك النموذج بين ما رآه وما لم يره. والعضوية وحدها إفشاء حين تكون المجموعة معرّفة بخصيصة حسّاسة.",
+     related: [Memorisation, Overfitting, Differential Privacy]}
+  - {ar: الحفظ الحرفي, en: Memorisation, module: 12, lecture: m12-l04,
+     definition: "احتفاظ النموذج بنصوص من بيانات تدريبه بحيث تُستخرَج حرفيًا. ينمو لوغاريتميًا-خطيًا مع سعة النموذج ومع تكرار المثال ومع طول السياق، والنماذج الأكبر أكثر عرضة.",
+     related: [Training Data Extraction, Membership Inference]}
+  - {ar: استخراج بيانات التدريب, en: Training Data Extraction, module: 12, lecture: m12-l04,
+     definition: "استعادة أمثلة فردية من بيانات التدريب بمجرد استعلام النموذج. أُثبت عمليًا باستخراج مئات النصوص الحرفية، ومنها معرّفات شخصية وردت في وثيقة واحدة فقط.",
+     related: [Memorisation, Membership Inference]}
+  - {ar: استنتاج الصفات, en: Attribute Inference, module: 12, lecture: m12-l04,
+     definition: "استنتاج صفة لم يُصرّح بها من صفات صُرّح بها. لا اختراق فيه ولا خرق سياسة، فلا تكفيه حماية البيانات ولا الموافقة — وضابطه في حدّ الغرض، فالقدرة على الاستنتاج ليست إذنًا به.",
+     related: [Personal Data, Purpose Limitation]}
+  - {ar: الخصوصية التفاضلية, en: Differential Privacy, module: 12, lecture: m12-l04,
+     definition: "ضمان رياضي بأن مخرج التحليل لا يتغيّر تغيّرًا معتبرًا بإضافة فرد أو إزالته، يُحقَّق بضجيج معاير. قابل للإثبات ولا يبطل بظهور بيانات جديدة، وثمنه يصيب الفئات الصغيرة أولًا.",
+     related: [Privacy Budget, Membership Inference]}
+  - {ar: ميزانية الخصوصية, en: Privacy Budget, module: 12, lecture: m12-l04,
+     definition: "معلمة قوة ضمان الخصوصية التفاضلية. ميزانية بالمعنى الحرفي: كل استعلام ينفق منها ومجموع الإنفاق هو ما يُحسَب، فلا عدد غير محدود من التحليلات على المجموعة نفسها.",
+     related: [Differential Privacy]}
+  - {ar: الفصل, en: Separation, module: 12, lecture: m12-l05,
+     definition: "حفظ جدول المعرّفات منفصلًا عن جدول البيانات بمفتاح ربط مقيّد الوصول، فيحتاج الاختراق موضعين. يُبطله رمز مشتق من البيانات، أو مفتاح في المجلد نفسه، أو عمود معرّف «مؤقت».",
+     related: [Pseudonymisation, Data Minimisation, Processing Record]}
+  - {ar: عتبة حجم الخلية, en: Cell Threshold, module: 12, lecture: m12-l05,
+     definition: "ألا يُنشر رقم محسوب على أقل من عدد محدد سلفًا من الأفراد. أرخص ضابط فعّال في النشر، ويلزم حجب خليتين في كل صف لمنع الاستنباط بالطرح.",
+     related: [Generalisation, k-Anonymity]}
+  - {ar: سجل المعالجة, en: Processing Record, module: 12, lecture: m12-l05,
+     definition: "صفحة توثّق الغرض والأساس وفئات البيانات والمصدر والمستفيدين والنقل والضوابط والمدة. لا يخفّض الخطر ويجعله قابلًا للكشف، وهو الشرط التقني لإعمال حقوق أصحاب البيانات.",
+     related: [Data Retention, Data Subject Rights, Accountability]}
+  - {ar: الأساس المشروع, en: Lawful Basis, module: 12, lecture: m12-l06,
+     definition: "السند الذي يجيز المعالجة: موافقة، أو مهمة عمومية، أو مصلحة مشروعة، أو التزام قانوني. والموافقة ليست الأقوى دائمًا: قابلة للسحب وتحتاج حرية يصعب إثباتها في علاقة غير متكافئة.",
+     related: [Informed Consent, Purpose Limitation]}
+  - {ar: الموافقة المستنيرة, en: Informed Consent, module: 12, lecture: m12-l06,
+     definition: "موافقة حرة ومحددة ومستنيرة وقابلة للسحب. واختبار صدقها: هل يستطيع الشخص أن يرفض بلا أي أثر عليه؟ وإن كان للرفض أثر فالموافقة ليست حرة ولا تصلح أساسًا.",
+     related: [Lawful Basis, Data Subject Rights]}
+  - {ar: حقوق أصحاب البيانات, en: Data Subject Rights, module: 12, lecture: m12-l06,
+     definition: "الإعلام، والوصول، والتصحيح، والحذف، والاعتراض والتقييد، وضمانات القرار الآلي. وثلاثة منها تستلزم أن تعرف ما عندك وأين هو، فتبدأ من سجل المعالجة.",
+     related: [Processing Record, Informed Consent, Privacy by Design]}
+  - {ar: الحماية بالتصميم, en: Privacy by Design, module: 12, lecture: m12-l06,
+     definition: "إدراج ضوابط الحماية في تصميم المشروع من بدايته، وجعل الإعدادات الافتراضية أكثرها حمايةً. أرخص من الترقيع اللاحق، والترقيع قد يكون متعذرًا لأن النسخ تكون قد انتشرت.",
+     related: [Data Minimisation, Impact Assessment]}
+  - {ar: تقييم الأثر, en: Impact Assessment, module: 12, lecture: m12-l06,
+     definition: "ست خطوات: وصف المعالجة، والضرورة والتناسب، والمخاطر على الأشخاص، والاحتمال والأثر، والتدابير، والخطر المتبقي. والخطوة الأخيرة أهمها: من يقبل الخطر الباقي؟",
+     related: [Privacy by Design, Processing Record]}

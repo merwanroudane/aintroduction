@@ -1,0 +1,197 @@
+# Module 11 sources. Every DOI verified through the Crossref API on 2026-09-28 (title, venue,
+# year, volume and page range compared against the entry). Preprint and institutional pages were
+# fetched and their titles confirmed. Barocas & Selbst (2016) "Big Data's Disparate Impact" was
+# considered and deliberately NOT included: its DOI resolves but the landing page could not be
+# read to confirm the record, so the legal disparate-impact framing is carried by Selbst et al.
+# (2019) and by the EU AI Act instead.
+references:
+  - id: m11_barocas_hardt_narayanan
+    authors: Barocas, S., Hardt, M., & Narayanan, A.
+    year: 2023
+    title: "Fairness and Machine Learning: Limitations and Opportunities"
+    venue: MIT Press
+    type: book
+    url: https://fairmlbook.org/
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_mehrabi_2021
+    authors: Mehrabi, N., Morstatter, F., Saxena, N., Lerman, K., & Galstyan, A.
+    year: 2021
+    title: A Survey on Bias and Fairness in Machine Learning
+    venue: "ACM Computing Surveys, 54(6), 1–35"
+    type: article
+    doi: 10.1145/3457607
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_mitchell_2021_fairness
+    authors: Mitchell, S., Potash, E., Barocas, S., D'Amour, A., & Lum, K.
+    year: 2021
+    title: "Algorithmic Fairness: Choices, Assumptions, and Definitions"
+    venue: "Annual Review of Statistics and Its Application, 8(1), 141–163"
+    type: article
+    doi: 10.1146/annurev-statistics-042720-125902
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_selbst_2019
+    authors: Selbst, A. D., Boyd, D., Friedler, S. A., Venkatasubramanian, S., & Vertesi, J.
+    year: 2019
+    title: Fairness and Abstraction in Sociotechnical Systems
+    venue: "Proceedings of the Conference on Fairness, Accountability, and Transparency (FAccT), 59–68"
+    type: article
+    doi: 10.1145/3287560.3287598
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_chouldechova_2017
+    authors: Chouldechova, A.
+    year: 2017
+    title: "Fair Prediction with Disparate Impact: A Study of Bias in Recidivism Prediction Instruments"
+    venue: "Big Data, 5(2), 153–163"
+    type: article
+    doi: 10.1089/big.2016.0047
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_kleinberg_2016_tradeoffs
+    authors: Kleinberg, J., Mullainathan, S., & Raghavan, M.
+    year: 2016
+    title: Inherent Trade-Offs in the Fair Determination of Risk Scores
+    venue: arXiv:1609.05807
+    type: preprint
+    url: https://arxiv.org/abs/1609.05807
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_hardt_2016_eo
+    authors: Hardt, M., Price, E., & Srebro, N.
+    year: 2016
+    title: Equality of Opportunity in Supervised Learning
+    venue: arXiv:1610.02413
+    type: preprint
+    url: https://arxiv.org/abs/1610.02413
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_dwork_2012
+    authors: Dwork, C., Hardt, M., Pitassi, T., Reingold, O., & Zemel, R.
+    year: 2012
+    title: Fairness through awareness
+    venue: "Proceedings of the 3rd Innovations in Theoretical Computer Science Conference (ITCS), 214–226"
+    type: article
+    doi: 10.1145/2090236.2090255
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_corbett_davies_2018
+    authors: Corbett-Davies, S., & Goel, S.
+    year: 2018
+    title: "The Measure and Mismeasure of Fairness: A Critical Review of Fair Machine Learning"
+    venue: arXiv:1808.00023
+    type: preprint
+    url: https://arxiv.org/abs/1808.00023
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_buolamwini_2018_gendershades
+    authors: Buolamwini, J., & Gebru, T.
+    year: 2018
+    title: "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification"
+    venue: "Proceedings of Machine Learning Research, 81, 77–91"
+    type: article
+    url: https://proceedings.mlr.press/v81/buolamwini18a.html
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_raji_2019_auditing
+    authors: Raji, I. D., & Buolamwini, J.
+    year: 2019
+    title: "Actionable Auditing: Investigating the Impact of Publicly Naming Biased Performance Results of Commercial AI Products"
+    venue: "Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics, and Society, 429–435"
+    type: article
+    doi: 10.1145/3306618.3314244
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_caliskan_2017
+    authors: Caliskan, A., Bryson, J. J., & Narayanan, A.
+    year: 2017
+    title: Semantics derived automatically from language corpora contain human-like biases
+    venue: "Science, 356(6334), 183–186"
+    type: article
+    doi: 10.1126/science.aal4230
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_mitchell_2019_modelcards
+    authors: Mitchell, M., Wu, S., Zaldivar, A., Barnes, P., Vasserman, L., Hutchinson, B., Spitzer, E., Raji, I. D., & Gebru, T.
+    year: 2019
+    title: Model Cards for Model Reporting
+    venue: "Proceedings of the Conference on Fairness, Accountability, and Transparency (FAccT), 220–229"
+    type: article
+    doi: 10.1145/3287560.3287596
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_gebru_2021_datasheets
+    authors: Gebru, T., Morgenstern, J., Vecchione, B., Vaughan, J. W., Wallach, H., Daumé III, H., & Crawford, K.
+    year: 2021
+    title: Datasheets for datasets
+    venue: "Communications of the ACM, 64(12), 86–92"
+    type: article
+    doi: 10.1145/3458723
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_ribeiro_2016_lime
+    authors: Ribeiro, M. T., Singh, S., & Guestrin, C.
+    year: 2016
+    title: "\"Why Should I Trust You?\": Explaining the Predictions of Any Classifier"
+    venue: "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 1135–1144"
+    type: article
+    doi: 10.1145/2939672.2939778
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_lundberg_2017_shap
+    authors: Lundberg, S. M., & Lee, S.-I.
+    year: 2017
+    title: A Unified Approach to Interpreting Model Predictions
+    venue: arXiv:1705.07874
+    type: preprint
+    url: https://arxiv.org/abs/1705.07874
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_rudin_2019
+    authors: Rudin, C.
+    year: 2019
+    title: Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead
+    venue: "Nature Machine Intelligence, 1(5), 206–215"
+    type: article
+    doi: 10.1038/s42256-019-0048-x
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_eeoc_uniform_1978
+    authors: Equal Employment Opportunity Commission et al. (United States)
+    year: 1978
+    title: "Uniform Guidelines on Employee Selection Procedures, 29 CFR Part 1607 (§ 1607.4(D), the four-fifths rule)"
+    venue: "Code of Federal Regulations, Title 29"
+    type: law
+    url: https://www.law.cornell.edu/cfr/text/29/1607.4
+    topic: AI Ethics
+    verified: "2026-09-29"
+  - id: m11_propublica_2016
+    authors: Angwin, J., Larson, J., Mattu, S., & Kirchner, L.
+    year: 2016
+    title: Machine Bias
+    venue: ProPublica
+    type: web
+    url: https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m11_nist_ai_rmf_2023
+    authors: Tabassi, E. (National Institute of Standards and Technology)
+    year: 2023
+    title: Artificial Intelligence Risk Management Framework (AI RMF 1.0)
+    venue: "NIST AI 100-1, U.S. Department of Commerce"
+    type: standard
+    doi: 10.6028/NIST.AI.100-1
+    url: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
+    topic: AI Governance
+    verified: "2026-09-28"
+  - id: m11_unesco_ethics_2021
+    authors: UNESCO
+    year: 2021
+    title: Recommendation on the Ethics of Artificial Intelligence
+    venue: United Nations Educational, Scientific and Cultural Organization
+    type: standard
+    url: https://www.unesco.org/en/artificial-intelligence/recommendation-ethics
+    topic: AI Governance
+    verified: "2026-09-28"

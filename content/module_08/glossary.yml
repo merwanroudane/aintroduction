@@ -1,0 +1,64 @@
+terms:
+  - {ar: الاستخراج, en: Information Extraction, module: 8, lecture: m08-l03,
+     definition: "تحويل معلومة موجودة في نص غير مهيكل إلى حقول محددة سلفًا ذات أنواع محددة. مخرجه صف في جدول لا نص حر، ويُتحقق منه بالمقارنة الحرفية بالمصدر.",
+     related: [Structured Output, Schema, Classification]}
+  - {ar: التحويل, en: Transformation, module: 8, lecture: m08-l01,
+     definition: "إعادة تقديم محتوى موجود في صيغة أخرى: تلخيص، أو ترجمة، أو إعادة صياغة. يُقاس بالأمانة للمصدر لا بالإبداع.",
+     related: [Faithfulness, Summarisation]}
+  - {ar: المخطط, en: Schema, module: 8, lecture: m08-l03,
+     definition: "تعريف مكتوب مسبقًا لحقول الاستخراج وأنواعها وقيمها المسموحة وقيمة الغياب. أهم ما يُكتب في مهمة استخراج، وأخطر بنوده قاعدة «غير مذكور».",
+     related: [Information Extraction, Structured Output]}
+  - {ar: المخرج المهيكل, en: Structured Output, module: 8, lecture: m08-l03,
+     definition: "مخرج يلتزم بنية محددة (جدول أو JSON) قابلة للفحص الآلي. يضبط الشكل لا المضمون، ولذلك قد يكون سليم البنية خاطئ المحتوى.",
+     related: [Schema, JSON]}
+  - {ar: الملء التلقائي, en: Auto-filling, module: 8, lecture: m08-l03,
+     definition: "نمط فشل يملأ فيه النموذج حقلًا غير مذكور في المصدر بقيمة معقولة من معرفته العامة. علاجه قاعدة null صريحة وحقل مقتطف حرفي داعم.",
+     related: [Schema, Hallucination]}
+  - {ar: الأمانة للمصدر, en: Faithfulness, module: 8, lecture: m08-l02,
+     definition: "ألا يحتوي المخرج إلا ما في المصدر، وألا يحذف منه ما يغيّر المعنى، وألا يبدّل درجة اليقين أو النفي أو الشرط. معيار تقييم مهام التحويل.",
+     related: [Transformation, Summarisation, Distortion]}
+  - {ar: الحذف المخلّ, en: Omission, module: 8, lecture: m08-l02,
+     definition: "إسقاط شرط أو استثناء أو تحفظ منهجي من الملخص، فيبقى النص سليمًا فصيحًا بينما تغيّر المعنى. أصعب أخطاء التلخيص اكتشافًا لغياب أي إشارة إليه.",
+     related: [Faithfulness, Distortion]}
+  - {ar: التشويه, en: Distortion, module: 8, lecture: m08-l02,
+     definition: "تغيير معنى جملة في الملخص أو الترجمة. أخطر مواضعه أربعة: النفي، والاستثناء، والشرط، ودرجة اليقين — وكلها تنقلب بكلمة واحدة.",
+     related: [Faithfulness, Omission, Hedging]}
+  - {ar: أفعال التحفظ, en: Hedging, module: 8, lecture: m08-l02,
+     definition: "صيغ تحديد درجة اليقين في الكتابة العلمية («يُرجَّح»، «قد يشير»، «تحت شروط معينة»). جزء من المضمون العلمي لا زينة أسلوبية، وإسقاطها يغيّر الادعاء نفسه.",
+     related: [Distortion, Faithfulness]}
+  - {ar: دليل الترميز, en: Codebook, module: 8, lecture: m08-l03,
+     definition: "وثيقة تعرّف فئات التصنيف بحدود إيجابية وسلبية وأمثلة حدّية وقاعدة للحالات الغامضة. اختبار صلاحيته أن يتفق مرمّزان مستقلان باستعماله.",
+     related: [Classification, Inter-rater Agreement]}
+  - {ar: الاتفاق بين المرمّزين, en: Inter-rater Agreement, module: 8, lecture: m08-l03,
+     definition: "قياس تطابق ترميزين مستقلين للمادة نفسها. نسبة التطابق وحدها مضللة في البيانات غير المتوازنة، ولذلك تُستعمل معاملات تصحح للاتفاق الصدفي مثل كابا كوهين.",
+     related: [Codebook, Classification]}
+  - {ar: التحقق بالعينة, en: Sample-based Verification, module: 8, lecture: m08-l03,
+     definition: "بروتوكول لفحص مخرج كبير: فحص بنيوي آلي شامل، ثم عينة عشوائية، ثم عينة موجّهة للحالات الحدّية، بعتبة خطأ تُحدد قبل التشغيل وتوثيق للنتيجة.",
+     related: [Structured Output, Verification]}
+  - {ar: الادعاء, en: Claim, module: 8, lecture: m08-l05,
+     definition: "جملة قابلة للفحص يمكن الحكم عليها بالرجوع إلى مصدر. وحدة التحقق الصحيحة، لا الفقرة ولا النص.",
+     related: [Verification, Fact-checking]}
+  - {ar: القراءة الجانبية, en: Lateral Reading, module: 8, lecture: m08-l05,
+     definition: "منهج تحقق يقوم على مغادرة المصدر المجهول والبحث عنه من الخارج بدل التعمق فيه، لأن كل مظاهر الموثوقية داخل المصدر من صنع صاحبه.",
+     related: [Verification, Claim]}
+  - {ar: سلسلة النقل, en: Citation Chain, module: 8, lecture: m08-l05,
+     definition: "تتابع نقل رقم أو نتيجة بين مصادر، يفقد في كل خطوة شرطًا أو سياقًا أو وحدة قياس. التحقق يقتضي الصعود إلى المصدر الأولي.",
+     related: [Primary Source, Verification]}
+  - {ar: المصدر الأولي, en: Primary Source, module: 8, lecture: m08-l05,
+     definition: "الجهة أو الوثيقة التي أنتجت المعلومة أولًا لا التي نقلتها. الوحيد الذي يُعتد به في التحقق من الأرقام والوقائع.",
+     related: [Citation Chain, Verification]}
+  - {ar: المجاملة, en: Sycophancy, module: 8, lecture: m08-l05,
+     definition: "ميل النموذج إلى موافقة مستعمله وتبنّي نبرة سؤاله، فيتراجع عند الشك ويؤكد عند الجزم. ولهذا لا يكون سؤاله عن صحة مخرجه تحققًا.",
+     related: [Verification, Hallucination]}
+  - {ar: الإفصاح, en: Disclosure, module: 8, lecture: m08-l06,
+     definition: "بيان صريح موثّق بما استُعمل من أدوات وفي أي خطوات وبأي قدر. جزء من شفافية المنهج، وشرط لازم غير كافٍ للمقبولية.",
+     related: [Academic Integrity, Authorship]}
+  - {ar: التأليف, en: Authorship, module: 8, lecture: m08-l06,
+     definition: "صفة تحمل مسؤوليات المساءلة والموافقة والإجابة وتحمل التبعات. ولأن الأداة لا تستطيع أيًا منها، لا تكون مؤلفًا في المواقف الرسمية.",
+     related: [Disclosure, Academic Integrity]}
+  - {ar: سجل الاستعمال, en: Usage Log, module: 8, lecture: m08-l06,
+     definition: "جدول يُملأ أثناء العمل بالتاريخ والأداة وإصدارها والخطوة وما فعله الباحث بالمخرج. يحوّل الإفصاح من محاولة تذكّر إلى عملية نسخ.",
+     related: [Disclosure, Academic Integrity]}
+  - {ar: أدوات كشف النص المولَّد, en: AI Text Detectors, module: 8, lecture: m08-l06,
+     definition: "أدوات تقدّر احتمال أن يكون نص مولَّدًا. غير موثوقة لبناء اتهام: إيجابياتها الكاذبة منحازة ضد الكتابة البسيطة المنظمة وغير الناطقين باللغة، ولا معيار فيها قابلًا للتدقيق.",
+     related: [Academic Integrity, Disclosure]}

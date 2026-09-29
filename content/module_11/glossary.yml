@@ -1,0 +1,103 @@
+terms:
+  - {ar: الضرر التخصيصي, en: Allocative Harm, module: 11, lecture: m11-l01,
+     definition: "ضرر يحجب فيه النظام موردًا أو فرصة — قرضًا أو وظيفة أو منحة أو علاجًا. قابل للقياس بمقارنة معدلات القبول والأخطاء بين الفئات.",
+     related: [Representational Harm, Quality-of-Service Harm]}
+  - {ar: الضرر التمثيلي, en: Representational Harm, module: 11, lecture: m11-l01,
+     definition: "ضرر يثبّت فيه النظام صورة نمطية أو يُغيّب فئة دون أن يحجب موردًا مباشرة. أصعب في القياس وأطول أثرًا من الضرر التخصيصي.",
+     related: [Allocative Harm]}
+  - {ar: ضرر جودة الخدمة, en: Quality-of-Service Harm, module: 11, lecture: m11-l01,
+     definition: "ضرر يعمل فيه النظام لكنه يعمل أسوأ لفئة بعينها: تعرّف صوتي أدق في لغة، أو تشخيص أدق في لون بشرة. يخفيه مقياس الأداء المتوسط.",
+     related: [Allocative Harm, Intersectional Bias]}
+  - {ar: النظام الاجتماعي التقني, en: Sociotechnical System, module: 11, lecture: m11-l01,
+     definition: "الوحدة التي يجب تقييمها: البيانات والنموذج والبشر والإجراءات وسبيل الطعن والسياق معًا، لا الخوارزمية وحدها.",
+     related: [Abstraction Traps, Accountability]}
+  - {ar: مصائد التجريد, en: Abstraction Traps, module: 11, lecture: m11-l01,
+     definition: "خمس مصائد يقع فيها العمل على الإنصاف الخوارزمي حين يجرّد المسألة من سياقها: التأطير، والقابلية للنقل، والشكلية، وأثر الموجة، والحلولية.",
+     related: [Sociotechnical System]}
+  - {ar: تحيّز القياس, en: Measurement Bias, module: 11, lecture: m11-l02,
+     definition: "تحيّز ينشأ من أن المتغير المستعمل ليس الظاهرة بل بديلًا عنها، فيحمل أثر النظام السابق على تسجيلها. وأشهر صوره اختيار متغير هدف بديل.",
+     related: [Target Variable Choice, Proxy Variable, Label Bias]}
+  - {ar: اختيار المتغير الهدف, en: Target Variable Choice, module: 11, lecture: m11-l02,
+     definition: "تحويل مفهوم لا يُقاس مباشرة (الحاجة، الجدارة، الإجرام) إلى متغير قابل للقياس. قرار قِيَمي يُتخذ بصيغة تقنية، وهو أخطر مواضع دخول التحيّز.",
+     related: [Measurement Bias, Proxy Variable]}
+  - {ar: تحيّز الوسم, en: Label Bias, module: 11, lecture: m11-l02,
+     definition: "تحيّز في المتغير التابع نفسه، لأن الوسم ناتج قرار بشري سابق متحيّز. ولا يُعالَج بأي تعديل في المتغيرات المستقلة لأن مصدره في y لا في x.",
+     related: [Measurement Bias, Target Variable Choice]}
+  - {ar: تحيّز التمثيل, en: Representation Bias, module: 11, lecture: m11-l02,
+     definition: "نقص فئات أو غيابها من بيانات التدريب أو التقييم، فيضعف أداء النظام عليها دون أن يظهر ذلك في المقاييس المتوسطة.",
+     related: [Aggregation Bias, Intersectional Bias]}
+  - {ar: تحيّز التجميع, en: Aggregation Bias, module: 11, lecture: m11-l02,
+     definition: "استعمال نموذج واحد لفئات مختلفة البنية، فيُحسَّن أداؤه على الفئة الأكبر ويضعف على غيرها.",
+     related: [Representation Bias, Intersectional Bias]}
+  - {ar: تحيّز النشر, en: Deployment Bias, module: 11, lecture: m11-l02,
+     definition: "استعمال النظام في سياق غير الذي بُني وقُيِّم له، أو تغيّر توزيع مدخلاته بعد التشغيل فينحرف أداؤه عما قِيس.",
+     related: [Feedback Loop, Model Card]}
+  - {ar: المتغير الوكيل, en: Proxy Variable, module: 11, lecture: m11-l02,
+     definition: "متغير لا يقيس الانتماء لكنه مرتبط به فينقل أثره إلى القرار: الحي، والرمز البريدي، والمدرسة، ومدة التعامل مع البنك. ولهذا لا يمنع حذف المتغير الحسّاس التمييز.",
+     related: [Fairness Through Unawareness, Measurement Bias]}
+  - {ar: العمى عن الانتماء, en: Fairness Through Unawareness, module: 11, lecture: m11-l02,
+     definition: "فكرة أن حذف المتغير الحسّاس يجعل النظام محايدًا. ونتيجتها معاكسة لمقصدها: لا تمنع التمييز عبر الوكلاء، وتمنع قياس الفجوة وتصحيحها والتدقيق عليها.",
+     related: [Proxy Variable, External Audit]}
+  - {ar: التحيّز المتقاطع, en: Intersectional Bias, module: 11, lecture: m11-l02,
+     definition: "تحيّز يظهر عند تقاطع صفتين أو أكثر ويكون أشد من كل تحيّز منفرد. لا يراه الفحص المتغير-بمتغير ولا المتوسطات، ويحتاج جداول أداء متقاطعة بأحجام خلايا معلنة.",
+     related: [Representation Bias, Disaggregated Performance]}
+  - {ar: المعدل القاعدي, en: Base Rate, module: 11, lecture: m11-l03,
+     definition: "نسبة من يتحقق فيهم الحدث فعلًا داخل فئة معيّنة. اختلافه بين الفئات هو السبب الرياضي المباشر لتعارض معايير الإنصاف.",
+     related: [Impossibility Result, Calibration]}
+  - {ar: التكافؤ الديموغرافي, en: Demographic Parity, module: 11, lecture: m11-l03,
+     definition: "معيار إنصاف يشترط تساوي نسبة القبول بين الفئات. يحمي التوزيع العادل للنتائج، ويُعترض عليه بأنه يتجاهل الاستحقاق.",
+     related: [Equalized Odds, Predictive Parity]}
+  - {ar: تكافؤ الأخطاء, en: Equalized Odds, module: 11, lecture: m11-l03,
+     definition: "معيار إنصاف يشترط تساوي معدل الإيجابي الكاذب ومعدل السلبي الكاذب بين الفئات. وصيغته المخفَّفة «تكافؤ الفرص» تشترط تساوي السلبي الكاذب وحده.",
+     related: [Equal Opportunity, Predictive Parity, Impossibility Result]}
+  - {ar: تكافؤ الفرص, en: Equal Opportunity, module: 11, lecture: m11-l03,
+     definition: "صيغة مخفَّفة من تكافؤ الأخطاء تشترط تساوي معدل السلبي الكاذب وحده، بحجة أخلاقية أن أشد الأخطاء ضررًا هو حرمان مستحق.",
+     related: [Equalized Odds]}
+  - {ar: المعايرة, en: Calibration, module: 11, lecture: m11-l03,
+     definition: "أن تعني الدرجة الشيء نفسه لكل الفئات: فمن أُعطي 0.7 يتحقق فيه الحدث بنسبة 70٪ في كل فئة. متوافقة مع فجوات كبيرة في معدلات الخطأ.",
+     related: [Predictive Parity, Base Rate, Impossibility Result]}
+  - {ar: تكافؤ القيمة التنبؤية, en: Predictive Parity, module: 11, lecture: m11-l03,
+     definition: "معيار إنصاف يشترط تساوي القيمة التنبؤية الموجبة بين الفئات، أي أن نسبة من تحقق فيهم الحدث من بين المقبولين واحدة في كل فئة.",
+     related: [Calibration, Equalized Odds]}
+  - {ar: التعارض المُثبَت, en: Impossibility Result, module: 11, lecture: m11-l03,
+     definition: "نتيجة رياضية مبرهنة: لا تجتمع معايير الإنصاف الرئيسية إلا إذا تساوت المعدلات القاعدية أو كان التنبؤ تامًا. تمنع الكمال لا التحسين، وتحوّل السؤال من هندسي إلى سياسي موثَّق.",
+     related: [Base Rate, Calibration, Equalized Odds, Governance]}
+  - {ar: الإنصاف الفردي, en: Individual Fairness, module: 11, lecture: m11-l03,
+     definition: "مبدأ يشترط أن يُعامَل المتشابهان في ما يخص القرار معاملة متشابهة. يحتاج دالّة تشابه، فينقل السؤال القِيَمي إليها ولا يُلغيه.",
+     related: [Demographic Parity, Impossibility Result]}
+  - {ar: القابلية للتفسير, en: Interpretability, module: 11, lecture: m11-l04,
+     definition: "خاصية للنموذج نفسه تُقرَّر قبل التدريب: أن يستطيع إنسان تتبّع منطقه كاملًا، كشجرة قرار قصيرة أو نظام نقاط أو انحدار بمتغيرات قليلة.",
+     related: [Post-hoc Explanation, Counterfactual Explanation]}
+  - {ar: التفسير اللاحق, en: Post-hoc Explanation, module: 11, lecture: m11-l04,
+     definition: "تقريب يُبنى بعد التدريب لصندوق أسود ليقول أي المتغيرات أثّرت في مخرج. يعتمد على قرارات بنائه فقد تنقلب إشارته، ولا يثبت شيئًا سببيًا ولا أن النموذج يعمل هكذا.",
+     related: [Interpretability, Feature Importance]}
+  - {ar: أهمية المتغيرات, en: Feature Importance, module: 11, lecture: m11-l04,
+     definition: "مقياس لمساهمة متغير في تنبؤ النموذج. ليس أثرًا سببيًا، وتتقاسمه المتغيرات المترابطة اعتباطيًا، ويعتمد على الطريقة المفترضة لحجب المتغير.",
+     related: [Post-hoc Explanation]}
+  - {ar: الشرح المضاد, en: Counterfactual Explanation, module: 11, lecture: m11-l04,
+     definition: "أصغر تغيير كان سيقلب القرار. أنفع صيغة للمتأثر بشرط أن يكون قابلًا للتحقيق وصادقًا ومستقرًا. وإن كان التغيير المطلوب صفة غير قابلة للتغيير فهو أداة تدقيق تكشف عطبًا.",
+     related: [Recourse, Post-hoc Explanation]}
+  - {ar: سبيل الطعن, en: Recourse, module: 11, lecture: m11-l04,
+     definition: "أن يُعلَم المتأثر بأن قرارًا آليًا مسّه، وأن يعرف إلى من يطلب مراجعته وفي أي مدة. الطبقة التي بدونها تصير الشفافية إعلانًا.",
+     related: [Accountability, Counterfactual Explanation]}
+  - {ar: بطاقة النموذج, en: Model Card, module: 11, lecture: m11-l05,
+     definition: "وثيقة تُرفق بنموذج تحدد الاستعمال المقصود وغير المقصود والأداء مفصّلًا بالفئات وبيانات التقييم والحدود. وقسماها الحاسمان هما الاستعمال غير المقصود والحدود، وكل جملة فيهما يجب أن تكون قابلة للتكذيب.",
+     related: [Datasheet, Disaggregated Performance, External Audit]}
+  - {ar: صحيفة البيانات, en: Datasheet for Datasets, module: 11, lecture: m11-l05,
+     definition: "وثيقة ترافق مجموعة بيانات وتجيب عن دافع جمعها وتركيبها وطريقة جمعها ووسمها واستعمالاتها غير الملائمة. وسؤالها الأهم: من يظهر فيها ومن يغيب؟",
+     related: [Model Card, Representation Bias]}
+  - {ar: الأداء المفصّل, en: Disaggregated Performance, module: 11, lecture: m11-l05,
+     definition: "عرض مقاييس الأداء لكل فئة وتقاطع مع حجم كل خلية، بدل متوسط واحد. لازم لأن المتوسط يخفي ضرر الفئات الصغيرة بحكم التعريف.",
+     related: [Intersectional Bias, Model Card]}
+  - {ar: التدقيق المستقل, en: External Audit, module: 11, lecture: m11-l05,
+     definition: "فحص من طرف مستقل بمعايير معلنة وبيانات اختبار مصمّمة للكشف. ضروري لأن التدقيق الذاتي يفحص ما يعرف الفريق أن يبحث عنه. وللتدقيق العلني أثر مقيس على إصلاح المنتجات.",
+     related: [Model Card, Accountability, Governance]}
+  - {ar: المساءلة, en: Accountability, module: 11, lecture: m11-l04,
+     definition: "أعلى طبقات الشفافية: تحديد المسؤول وسبيل الطعن والتصحيح. وبدونها يصير نشر الرمز والتفسير والتوثيق إجراءات بلا أثر.",
+     related: [Recourse, Governance, External Audit]}
+  - {ar: التنظيم القائم على المخاطر, en: Risk-based Regulation, module: 11, lecture: m11-l06,
+     definition: "تنظيم تتبع فيه الالتزامات الاستعمال ومستوى المخاطر لا نوع التقنية ولا قوة النموذج، بفئات تتدرّج من الحظر التام إلى انعدام الالتزام.",
+     related: [Governance, Human Oversight]}
+  - {ar: الحكامة, en: Governance, module: 11, lecture: m11-l06,
+     definition: "أربع طبقات تختلف في قوة الإلزام: مبادئ دولية، وأطر إدارة مخاطر، وتشريع ملزم، وسياسة مؤسسة. وهي من يجيب عن سؤال من يختار معيار الإنصاف ومن يُلزِم به.",
+     related: [Risk-based Regulation, Impossibility Result, Accountability]}

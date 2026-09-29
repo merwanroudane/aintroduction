@@ -1,0 +1,105 @@
+# Module 12 sources. Every DOI verified through the Crossref API on 2026-09-29 (title, venue, year,
+# volume and page range compared against the entry); preprints verified through the arXiv API; legal
+# and institutional pages fetched. Module 12 cites NO vendor-specific data-retention claim: vendor
+# policies change without notice, so the module teaches the questions to ask and directs the reader
+# to the current official policy page instead of asserting a policy's content. See research/logs/m12.md.
+references:
+  - id: m12_gdpr_2016
+    authors: European Parliament & Council of the European Union
+    year: 2016
+    title: "Regulation (EU) 2016/679 — General Data Protection Regulation (GDPR)"
+    venue: Official Journal of the European Union
+    type: law
+    url: https://eur-lex.europa.eu/eli/reg/2016/679/oj
+    topic: Privacy
+    verified: "2026-09-29"
+  - id: m12_rocher_2019
+    authors: Rocher, L., Hendrickx, J. M., & de Montjoye, Y.-A.
+    year: 2019
+    title: Estimating the success of re-identifications in incomplete datasets using generative models
+    venue: "Nature Communications, 10, 3069"
+    type: article
+    doi: 10.1038/s41467-019-10933-3
+    topic: Privacy
+    verified: "2026-09-29"
+  - id: m12_montjoye_2013
+    authors: de Montjoye, Y.-A., Hidalgo, C. A., Verleysen, M., & Blondel, V. D.
+    year: 2013
+    title: "Unique in the Crowd: The privacy bounds of human mobility"
+    venue: "Scientific Reports, 3, 1376"
+    type: article
+    doi: 10.1038/srep01376
+    topic: Privacy
+    verified: "2026-09-29"
+  - id: m12_narayanan_2008
+    authors: Narayanan, A., & Shmatikov, V.
+    year: 2008
+    title: Robust De-anonymization of Large Sparse Datasets
+    venue: "2008 IEEE Symposium on Security and Privacy, 111–125"
+    type: article
+    doi: 10.1109/SP.2008.33
+    topic: Privacy
+    verified: "2026-09-29"
+  - id: m12_sweeney_2002
+    authors: Sweeney, L.
+    year: 2002
+    title: "k-Anonymity: A Model for Protecting Privacy"
+    venue: "International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems, 10(5), 557–570"
+    type: article
+    doi: 10.1142/S0218488502001648
+    topic: Privacy
+    verified: "2026-09-29"
+  - id: m12_dwork_2006
+    authors: Dwork, C., McSherry, F., Nissim, K., & Smith, A.
+    year: 2006
+    title: Calibrating Noise to Sensitivity in Private Data Analysis
+    venue: "Theory of Cryptography (TCC), Lecture Notes in Computer Science, 265–284"
+    type: article
+    doi: 10.1007/11681878_14
+    topic: Privacy
+    verified: "2026-09-29"
+  - id: m12_dwork_roth_2014
+    authors: Dwork, C., & Roth, A.
+    year: 2014
+    title: The Algorithmic Foundations of Differential Privacy
+    venue: "Foundations and Trends in Theoretical Computer Science, 9(3–4), 211–487"
+    type: article
+    doi: 10.1561/0400000042
+    topic: Privacy
+    verified: "2026-09-29"
+  - id: m12_shokri_2017
+    authors: Shokri, R., Stronati, M., Song, C., & Shmatikov, V.
+    year: 2017
+    title: Membership Inference Attacks Against Machine Learning Models
+    venue: "2017 IEEE Symposium on Security and Privacy, 3–18"
+    type: article
+    doi: 10.1109/SP.2017.41
+    topic: Privacy
+    verified: "2026-09-29"
+  - id: m12_carlini_2021_extract
+    authors: Carlini, N., Tramèr, F., Wallace, E., Jagielski, M., Herbert-Voss, A., Lee, K., Roberts, A., Brown, T., Song, D., Erlingsson, Ú., Oprea, A., & Raffel, C.
+    year: 2020
+    title: Extracting Training Data from Large Language Models
+    venue: arXiv:2012.07805
+    type: preprint
+    url: https://arxiv.org/abs/2012.07805
+    topic: Privacy
+    verified: "2026-09-29"
+  - id: m12_carlini_2022_memorization
+    authors: Carlini, N., Ippolito, D., Jagielski, M., Lee, K., Tramèr, F., & Zhang, C.
+    year: 2022
+    title: Quantifying Memorization Across Neural Language Models
+    venue: arXiv:2202.07646
+    type: preprint
+    url: https://arxiv.org/abs/2202.07646
+    topic: Privacy
+    verified: "2026-09-29"
+  - id: m12_nasr_2023_extract
+    authors: Nasr, M., Carlini, N., Hayase, J., Jagielski, M., Cooper, A. F., Ippolito, D., Choquette-Choo, C. A., Wallace, E., Tramèr, F., & Lee, K.
+    year: 2023
+    title: Scalable Extraction of Training Data from (Production) Language Models
+    venue: arXiv:2311.17035
+    type: preprint
+    url: https://arxiv.org/abs/2311.17035
+    topic: Privacy
+    verified: "2026-09-29"

@@ -1,0 +1,103 @@
+# Course-wide references used by several modules. Module-specific sources live in
+# content/module_XX/references.yml. Every entry was checked (DOI via doi.org/Crossref,
+# arXiv via the arXiv API, web pages fetched) on the date in `verified`.
+references:
+  - id: russell_norvig_2021
+    authors: Russell, S., & Norvig, P.
+    year: 2021
+    title: "Artificial Intelligence: A Modern Approach (4th ed.)"
+    venue: Pearson
+    type: book
+    url: https://aima.cs.berkeley.edu/
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: mccarthy_2007_whatisai
+    authors: McCarthy, J.
+    year: 2007
+    title: What is Artificial Intelligence? (Basic Questions)
+    venue: Stanford University
+    type: web
+    url: http://jmc.stanford.edu/artificial-intelligence/what-is-ai/index.html
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: turing_1950
+    authors: Turing, A. M.
+    year: 1950
+    title: Computing Machinery and Intelligence
+    venue: Mind, 59(236), 433–460
+    type: article
+    doi: 10.1093/mind/LIX.236.433
+    topic: AI History
+    verified: "2026-09-26"
+  - id: oecd_2024_ai_system
+    authors: OECD
+    year: 2024
+    title: Explanatory memorandum on the updated OECD definition of an AI system
+    venue: OECD Artificial Intelligence Papers, No. 8
+    type: report
+    doi: 10.1787/623da898-en
+    topic: AI Governance
+    verified: "2026-09-26"
+  - id: oecd_ai_principles
+    authors: OECD
+    year: 2024
+    title: OECD AI Principles (adopted 2019, updated 2024)
+    venue: OECD.AI Policy Observatory
+    type: standard
+    url: https://oecd.ai/en/ai-principles
+    topic: AI Governance
+    verified: "2026-09-26"
+  - id: eu_ai_act_2024
+    authors: European Parliament & Council of the European Union
+    year: 2024
+    title: "Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)"
+    venue: Official Journal of the European Union
+    type: law
+    url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+    topic: AI Governance
+    verified: "2026-09-26"
+  - id: unesco_2024_students
+    authors: UNESCO (Miao, F., Shiohira, K., & Lao, N.)
+    year: 2024
+    title: AI competency framework for students
+    venue: UNESCO, Paris
+    type: standard
+    url: https://unesdoc.unesco.org/ark:/48223/pf0000391105
+    topic: AI Education
+    verified: "2026-09-26"
+  - id: unesco_2024_teachers
+    authors: UNESCO (Miao, F., & Cukurova, M.)
+    year: 2024
+    title: AI competency framework for teachers
+    venue: UNESCO, Paris
+    type: standard
+    url: https://unesdoc.unesco.org/ark:/48223/pf0000391104
+    topic: AI Education
+    verified: "2026-09-26"
+  - id: bommasani_2021
+    authors: Bommasani, R., Hudson, D. A., Adeli, E., et al.
+    year: 2021
+    title: On the Opportunities and Risks of Foundation Models
+    venue: arXiv:2108.07258 (Stanford CRFM)
+    type: preprint
+    url: https://arxiv.org/abs/2108.07258
+    topic: LLMs
+    verified: "2026-09-26"
+  - id: stanford_ai_index_2025
+    authors: Stanford Institute for Human-Centered AI (HAI)
+    year: 2025
+    title: The 2025 AI Index Report
+    venue: Stanford University
+    type: report
+    url: https://hai.stanford.edu/ai-index/2025-ai-index-report
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: jordan_mitchell_2015
+    authors: Jordan, M. I., & Mitchell, T. M.
+    year: 2015
+    title: "Machine learning: Trends, perspectives, and prospects"
+    venue: Science, 349(6245), 255–260
+    type: article
+    doi: 10.1126/science.aaa8415
+    topic: Machine Learning
+    verified: "2026-09-26"

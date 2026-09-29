@@ -1,0 +1,156 @@
+# Module 9 sources. Verified 2026-09-28 (arXiv API for preprints, pages fetched for standards
+# and documentation; EU AI Act Article 50 text read on the AI Act Explorer and on EUR-Lex).
+references:
+  - id: m09_goodfellow_2014_gan
+    authors: Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., & Bengio, Y.
+    year: 2014
+    title: Generative Adversarial Networks
+    venue: arXiv:1406.2661
+    type: preprint
+    url: https://arxiv.org/abs/1406.2661
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m09_ho_2020_ddpm
+    authors: Ho, J., Jain, A., & Abbeel, P.
+    year: 2020
+    title: Denoising Diffusion Probabilistic Models
+    venue: arXiv:2006.11239
+    type: preprint
+    url: https://arxiv.org/abs/2006.11239
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m09_dhariwal_2021
+    authors: Dhariwal, P., & Nichol, A.
+    year: 2021
+    title: Diffusion Models Beat GANs on Image Synthesis
+    venue: arXiv:2105.05233
+    type: preprint
+    url: https://arxiv.org/abs/2105.05233
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m09_rombach_2022_ldm
+    authors: Rombach, R., Blattmann, A., Lorenz, D., Esser, P., & Ommer, B.
+    year: 2022
+    title: High-Resolution Image Synthesis with Latent Diffusion Models
+    venue: arXiv:2112.10752
+    type: preprint
+    url: https://arxiv.org/abs/2112.10752
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m09_radford_2021_clip
+    authors: Radford, A., Kim, J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry, G., Askell, A., Mishkin, P., Clark, J., Krueger, G., & Sutskever, I.
+    year: 2021
+    title: Learning Transferable Visual Models From Natural Language Supervision
+    venue: arXiv:2103.00020
+    type: preprint
+    url: https://arxiv.org/abs/2103.00020
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m09_ramesh_2022_dalle2
+    authors: Ramesh, A., Dhariwal, P., Nichol, A., Chu, C., & Chen, M.
+    year: 2022
+    title: Hierarchical Text-Conditional Image Generation with CLIP Latents
+    venue: arXiv:2204.06125
+    type: preprint
+    url: https://arxiv.org/abs/2204.06125
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m09_saharia_2022_imagen
+    authors: Saharia, C., Chan, W., Saxena, S., Li, L., Whang, J., Denton, E., et al.
+    year: 2022
+    title: Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding
+    venue: arXiv:2205.11487
+    type: preprint
+    url: https://arxiv.org/abs/2205.11487
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m09_oord_2016_wavenet
+    authors: van den Oord, A., Dieleman, S., Zen, H., Simonyan, K., Vinyals, O., Graves, A., et al.
+    year: 2016
+    title: "WaveNet: A Generative Model for Raw Audio"
+    venue: arXiv:1609.03499
+    type: preprint
+    url: https://arxiv.org/abs/1609.03499
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m09_radford_2022_whisper
+    authors: Radford, A., Kim, J. W., Xu, T., Brockman, G., McLeavey, C., & Sutskever, I.
+    year: 2022
+    title: Robust Speech Recognition via Large-Scale Weak Supervision
+    venue: arXiv:2212.04356
+    type: preprint
+    url: https://arxiv.org/abs/2212.04356
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m09_agostinelli_2023_musiclm
+    authors: Agostinelli, A., Denk, T. I., Borsos, Z., Engel, J., Verzetti, M., Caillon, A., et al.
+    year: 2023
+    title: "MusicLM: Generating Music From Text"
+    venue: arXiv:2301.11325
+    type: preprint
+    url: https://arxiv.org/abs/2301.11325
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m09_singer_2022_makeavideo
+    authors: Singer, U., Polyak, A., Hayes, T., Yin, X., An, J., Zhang, S., et al.
+    year: 2022
+    title: "Make-A-Video: Text-to-Video Generation without Text-Video Data"
+    venue: arXiv:2209.14792
+    type: preprint
+    url: https://arxiv.org/abs/2209.14792
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m09_bianchi_2023
+    authors: Bianchi, F., Kalluri, P., Durmus, E., Ladhak, F., Cheng, M., Nozza, D., Hashimoto, T., Jurafsky, D., Zou, J., & Caliskan, A.
+    year: 2023
+    title: Easily Accessible Text-to-Image Generation Amplifies Demographic Stereotypes at Large Scale
+    venue: arXiv:2211.03759
+    type: preprint
+    url: https://arxiv.org/abs/2211.03759
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m09_luccioni_2023_stablebias
+    authors: Luccioni, A. S., Akiki, C., Mitchell, M., & Jernite, Y.
+    year: 2023
+    title: "Stable Bias: Analyzing Societal Representations in Diffusion Models"
+    venue: arXiv:2303.11408
+    type: preprint
+    url: https://arxiv.org/abs/2303.11408
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m09_c2pa_spec
+    authors: Coalition for Content Provenance and Authenticity (C2PA)
+    year: 2026
+    title: C2PA Technical Specification
+    venue: C2PA
+    type: standard
+    url: https://c2pa.org/specifications/specifications/2.1/index.html
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m09_content_credentials
+    authors: Content Authenticity Initiative / C2PA
+    year: 2026
+    title: Content Credentials
+    venue: contentcredentials.org
+    type: documentation
+    url: https://contentcredentials.org/
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m09_synthid
+    authors: Google DeepMind
+    year: 2026
+    title: "SynthID: watermarking and identifying AI-generated content"
+    venue: Google DeepMind
+    type: documentation
+    url: https://deepmind.google/technologies/synthid/
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m09_eu_ai_act_50
+    authors: European Union
+    year: 2024
+    title: "Regulation (EU) 2024/1689 (Artificial Intelligence Act) — Article 50, transparency obligations"
+    venue: Official Journal of the European Union
+    type: standard
+    url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+    topic: AI Ethics
+    verified: "2026-09-28"

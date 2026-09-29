@@ -1,0 +1,82 @@
+terms:
+  - {ar: التعلم الآلي, en: Machine Learning, acronym: ML, module: 4, lecture: m04-l01,
+     definition: "مناهج تستنتج القواعد من البيانات بدل أن يكتبها الخبير. تعريف Mitchell: برنامج يتعلم من الخبرة E في مهمة T بمقياس P إذا تحسّن أداؤه بازدياد E.",
+     related: [Deep Learning, Artificial Intelligence]}
+  - {ar: التعلم العميق, en: Deep Learning, acronym: DL, module: 4, lecture: m04-l01,
+     definition: "عائلة من طرق التعلم الآلي تستعمل شبكات عصبية متعددة الطبقات تتعلم التمثيلات بنفسها من البيانات.",
+     related: [Machine Learning, Representation Learning]}
+  - {ar: النموذج التمييزي, en: Discriminative Model, module: 4, lecture: m04-l01,
+     definition: "نموذج يتعلم الحدود بين الفئات بتقدير P(y|x): يجيب عن سؤال «إلى أي فئة ينتمي هذا المثال؟».",
+     related: [Generative Model, Classification]}
+  - {ar: النموذج التوليدي, en: Generative Model, module: 4, lecture: m04-l01,
+     definition: "نموذج يتعلم بنية البيانات وتوزيعها بتقدير P(x) أو P(x,y)، فيستطيع توليد أمثلة جديدة تشبه بيانات التدريب.",
+     related: [Discriminative Model, Generative AI]}
+  - {ar: التدريب, en: Training, module: 4, lecture: m04-l01,
+     definition: "مرحلة تُضبط فيها معاملات النموذج على بيانات التدريب؛ تحدث مرة أو دوريًا وتستهلك معظم الحوسبة.",
+     related: [Inference, Parameters]}
+  - {ar: الاستدلال, en: Inference, module: 4, lecture: m04-l01,
+     definition: "مرحلة استعمال النموذج بعد التدريب، ومعاملاته ثابتة لا تتغير؛ تتكرر مع كل استعمال وتحدد كلفة التشغيل.",
+     related: [Training]}
+  - {ar: التعلم الموجَّه, en: Supervised Learning, module: 4, lecture: m04-l02,
+     definition: "تعلم من أمثلة مقترنة بالإجابة الصحيحة (وسم)؛ ينقسم إلى تصنيف (مخرج فئة) وانحدار (مخرج عددي).",
+     related: [Label, Classification, Regression]}
+  - {ar: التعلم غير الموجَّه, en: Unsupervised Learning, module: 4, lecture: m04-l02,
+     definition: "تعلم من بيانات بلا أوسمة لاكتشاف بنية: تجميع، أو تقليل أبعاد، أو كشف شذوذ. أداة استكشاف يصعب تقييمها موضوعيًا.",
+     related: [Clustering, Dimensionality Reduction]}
+  - {ar: التعلم الذاتي الإشراف, en: Self-supervised Learning, module: 4, lecture: m04-l02,
+     definition: "تعلم يُشتق فيه هدف التدريب من البيانات نفسها (إخفاء جزء والتنبؤ به)، فيتيح استعمال بيانات ضخمة غير موسومة؛ أساس النماذج اللغوية.",
+     related: [Pretraining, Foundation Models]}
+  - {ar: التعلم المعزز, en: Reinforcement Learning, acronym: RL, module: 4, lecture: m04-l02,
+     definition: "وكيل يتعلم سياسة تعظّم المكافأة التراكمية بالتفاعل مع بيئة؛ تحدياته المكافأة المؤجلة والموازنة بين الاستكشاف والاستغلال وتصميم المكافأة.",
+     related: [Reward, Policy, RLHF]}
+  - {ar: التعلم المعزز من التغذية الراجعة البشرية, en: RLHF, acronym: RLHF, module: 4, lecture: m04-l02,
+     definition: "مقاربة تجمع الضبط على تعليمات بشرية ثم تدريب نموذج مكافأة من تفضيلات بشرية ثم تحسين النموذج مقابله (Ouyang et al., 2022).",
+     related: [Reinforcement Learning, Alignment]}
+  - {ar: السمة, en: Feature, module: 4, lecture: m04-l03,
+     definition: "عمود يصف الملاحظة (العمر، المساحة). يقابلها في الاقتصاد القياسي المتغير المستقل أو التفسيري.",
+     related: [Label, Observation]}
+  - {ar: الوسم, en: Label, module: 4, lecture: m04-l03,
+     definition: "الإجابة الصحيحة المرفقة بالملاحظة في التعلم الموجَّه. يقابلها في الاقتصاد القياسي المتغير التابع. وجودتها سقف لجودة النموذج.",
+     related: [Feature, Supervised Learning, Label Bias]}
+  - {ar: المعاملات, en: Parameters, module: 4, lecture: m04-l03,
+     definition: "الأعداد التي يتعلمها النموذج من البيانات (أوزان الشبكة، معاملات الانحدار)؛ قد تبلغ المليارات.",
+     related: [Hyperparameters, Weights]}
+  - {ar: المعاملات الفائقة, en: Hyperparameters, module: 4, lecture: m04-l03,
+     definition: "إعدادات يحددها المصمم قبل التدريب (معدل التعلم، عدد الطبقات، قوة التنظيم) وتُضبط على مجموعة التحقق.",
+     related: [Parameters, Validation Set]}
+  - {ar: مجموعة التحقق, en: Validation Set, module: 4, lecture: m04-l03,
+     definition: "جزء من البيانات يُستعمل لاختيار المعاملات الفائقة ومقارنة النماذج، دون ضبط المعاملات عليه ودون المساس بمجموعة الاختبار.",
+     related: [Test Set, Cross-validation]}
+  - {ar: تسرب البيانات, en: Data Leakage, module: 4, lecture: m04-l03,
+     definition: "تسلل معلومات غير متاحة وقت التنبؤ الحقيقي (أو من مجموعة الاختبار) إلى التدريب، فينتج أداء متفائل كاذب ينهار عند النشر.",
+     related: [Validation Set, Overfitting]}
+  - {ar: دالة الخسارة, en: Loss Function, module: 4, lecture: m04-l05,
+     definition: "دالة تقيس بعد التنبؤ عن الصواب وتحوّل الخطأ إلى عدد يقلله التدريب؛ اختيارها قرار بشري يحدد ما يُعد خطأ.",
+     related: [MSE, Cross-entropy, Gradient Descent]}
+  - {ar: النزول التدريجي, en: Gradient Descent, module: 4, lecture: m04-l05,
+     definition: "خوارزمية تحسين تحدّث كل معامل في عكس اتجاه ميل الخسارة بخطوة يحددها معدل التعلم: w ← w − η∂L/∂w.",
+     related: [Learning Rate, Backpropagation]}
+  - {ar: معدل التعلم, en: Learning Rate, module: 4, lecture: m04-l05,
+     definition: "معامل فائق يحدد حجم خطوة التحديث؛ الصغير جدًا يبطئ التقارب والكبير جدًا يجعل التدريب يتذبذب أو يتباعد.",
+     related: [Gradient Descent, Adam]}
+  - {ar: الإفراط في التوافق, en: Overfitting, module: 4, lecture: m04-l05,
+     definition: "حفظ النموذج لتفاصيل بيانات التدريب وضجيجها فيفشل في التعميم؛ يُشخّص بفجوة كبيرة بين خطأ التدريب وخطأ الاختبار.",
+     related: [Underfitting, Regularization, Generalization]}
+  - {ar: نقص التوافق, en: Underfitting, module: 4, lecture: m04-l05,
+     definition: "عجز النموذج عن التقاط البنية الحقيقية لبساطته؛ يظهر بخطأ كبير على التدريب والاختبار معًا.",
+     related: [Overfitting, Model Capacity]}
+  - {ar: التنظيم, en: Regularization, module: 4, lecture: m04-l05,
+     definition: "إضافة عقوبة على تعقيد النموذج (مثل مجموع مربعات الأوزان) إلى دالة الخسارة لتفضيل الحلول الأبسط وكبح الإفراط في التوافق.",
+     related: [Overfitting, Dropout, Early Stopping]}
+  - {ar: مصفوفة الارتباك, en: Confusion Matrix, module: 4, lecture: m04-l06,
+     definition: "جدول يقاطع التنبؤ بالواقع فينتج أربع خانات: إيجابي صحيح، سلبي صحيح، إيجابي كاذب (إنذار كاذب)، سلبي كاذب (حالة فائتة).",
+     related: [Precision, Recall]}
+  - {ar: الاستدعاء, en: Recall, module: 4, lecture: m04-l06,
+     definition: "TP/(TP+FN): من بين الحالات الإيجابية فعلًا، كم اكتشف النظام؟ يهم حين تكون الحالة الفائتة خطرة.",
+     related: [Precision, F1, Confusion Matrix]}
+  - {ar: الدقة الإيجابية, en: Precision, module: 4, lecture: m04-l06,
+     definition: "TP/(TP+FP): من بين ما أعلنه النظام إيجابيًا، كم كان صحيحًا؟ يهم حين يكون الإنذار الكاذب مكلفًا.",
+     related: [Recall, F1]}
+  - {ar: عتبة القرار, en: Decision Threshold, module: 4, lecture: m04-l06,
+     definition: "القيمة التي يتحول عندها احتمال النموذج إلى قرار؛ اختيارها قرار قيمي يوازن بين كلفتي نوعي الخطأ ولا تحدده الرياضيات وحدها.",
+     related: [Precision, Recall]}

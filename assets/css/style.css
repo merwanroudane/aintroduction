@@ -1,0 +1,399 @@
+/* =====================================================================
+   Design system — مقدمة في الذكاء الاصطناعي
+   Warm, light, multi-colour academic theme. RTL-first.
+   Sections: 1 tokens · 2 RTL + layout · 3 right navigation · 4 typography
+             5 educational cards · 6 sticky notes · 7 hero + module cards
+             8 flow diagrams · 9 tables + code · 10 responsive
+   ===================================================================== */
+
+/* ---------- 1. Design tokens ----------
+   The canvas is near-neutral on purpose. Colour in this app carries meaning — which
+   module you are in, which kind of card you are reading — so the page behind it stays
+   quiet and lets thirteen hues read as thirteen hues. A tinted canvas would pull every
+   one of them toward itself and the whole app would read as one colour.
+   Nothing here is dark: the darkest token is body text. */
+:root {
+  --bg-main: #FCFBF9;
+  --bg-secondary: #F5F3F0;
+  --bg-card: #FFFFFF;
+  --bg-sidebar: #F7F5F2;
+
+  /* The spectrum. Same thirteen hues as MODULE_COLORS, available to any component. */
+  --hue-coral:    #E4695A;
+  --hue-orange:   #D97D2E;
+  --hue-amber:    #B98A0E;
+  --hue-olive:    #7F9C2B;
+  --hue-green:    #46AB68;
+  --hue-emerald:  #2FA391;
+  --hue-teal:     #2E9FB8;
+  --hue-sky:      #3E8FD0;
+  --hue-blue:     #4A72D8;
+  --hue-indigo:   #7B5FD6;
+  --hue-violet:   #A257C8;
+  --hue-orchid:   #C455A6;
+  --hue-rose:     #D95B7E;
+
+  /* Interface accents, drawn from the same spectrum so nothing sits outside it. */
+  --accent-primary: #3E8FD0;
+  --accent-primary-deep: #1B4E7C;
+  --accent-secondary: #A257C8;
+  --accent-warm: #D97D2E;
+
+  --text-main: #2F2C33;
+  --text-muted: #6E6A75;
+  --text-soft: #8A8593;
+  --border-soft: #E8E4DF;
+  --border-strong: #D6D1CB;
+
+  --shadow-soft: 0 2px 10px rgba(60, 50, 70, 0.07);
+  --shadow-hover: 0 8px 22px rgba(60, 50, 70, 0.13);
+  --radius-card: 14px;
+  --space-1: 0.35rem;
+  --space-2: 0.7rem;
+  --space-3: 1.1rem;
+  --space-4: 1.6rem;
+  --reading-width: 58rem;
+
+  /* Per-module variables. Any page that knows its module overrides these three, and
+     every component below inherits the right hue without being told about modules. */
+  --mod-accent: var(--accent-primary);
+  --mod-bg: #EBF4FD;
+  --mod-deep: var(--accent-primary-deep);
+}
+
+/* ---------- 2. RTL + layout ---------- */
+.stApp, [data-testid="stAppViewContainer"], [data-testid="stSidebar"],
+[data-testid="stMain"], [data-testid="stHeader"] {
+  direction: rtl;
+}
+.stMarkdown, .stMarkdown p, .stMarkdown li, .stCaption,
+[data-testid="stExpander"] summary, [data-testid="stWidgetLabel"] {
+  text-align: right;
+}
+.stMarkdown ul, .stMarkdown ol { padding-right: 1.4rem; padding-left: 0; }
+
+/* LTR islands: code, equations, JSON, URLs, English blocks */
+code, pre, .katex-display, .katex, [data-testid="stCode"],
+[data-testid="stCodeBlock"], .ltr, .ltr * {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: isolate;
+}
+.stMarkdown code { unicode-bidi: isolate; }
+
+/* Comfortable reading width for long text in the main column */
+[data-testid="stMainBlockContainer"] {
+  max-width: 76rem;
+  padding-top: 2.2rem;
+}
+
+/* ---------- 3. Right navigation ----------
+   The app root is RTL, so Streamlit's sidebar flex item is laid out on the right. The
+   rules below pin it there rather than relying on that alone: `order` wins even if a
+   future Streamlit build sets an explicit flex order on the two panes. */
+section[data-testid="stSidebar"] {
+  /* stAppViewContainer is a flex row and the app root is RTL, so its FIRST flex item is
+     the right-hand one. The sidebar is already first in the DOM; order:-1 pins it there
+     even if a later Streamlit build wraps the main pane or reorders the two. */
+  order: -1;
+  border-left: 1px solid var(--border-soft);
+  border-right: none;
+  min-width: 272px;
+  max-width: 312px;
+  background: var(--bg-sidebar);
+}
+/* The collapse and expand controls belong on the sidebar's inner edge, which is its left. */
+[data-testid="stSidebarCollapseButton"], [data-testid="stSidebarCollapsedControl"] {
+  right: auto;
+  left: 0.5rem;
+}
+
+[data-testid="stSidebarNav"] a span { font-weight: 500; }
+[data-testid="stSidebarNavSeparator"] { border-color: var(--border-soft); }
+
+/* The active page gets a coloured spine on the right — the edge nearest the reader in RTL. */
+[data-testid="stSidebarNav"] a[aria-current="page"] {
+  background: linear-gradient(270deg, rgba(62, 143, 208, 0.16), rgba(62, 143, 208, 0.02));
+  border-right: 4px solid var(--accent-primary);
+  font-weight: 700;
+}
+[data-testid="stSidebarNav"] a:hover {
+  background: rgba(62, 143, 208, 0.07);
+}
+
+/* Each nav section takes its own hue, so the sidebar itself shows the course's structure
+   at a glance instead of being thirteen identical grey rows. */
+[data-testid="stNavSectionHeader"] {
+  font-weight: 800;
+  letter-spacing: 0;
+  font-size: 0.82rem;
+  text-transform: none;
+  opacity: 1;
+}
+[data-testid="stNavSectionHeader"]:nth-of-type(1) { color: var(--hue-teal); }
+[data-testid="stNavSectionHeader"]:nth-of-type(2) { color: var(--hue-blue); }
+[data-testid="stNavSectionHeader"]:nth-of-type(3) { color: var(--hue-violet); }
+[data-testid="stNavSectionHeader"]:nth-of-type(4) { color: var(--hue-orange); }
+[data-testid="stNavSectionHeader"]:nth-of-type(5) { color: var(--hue-green); }
+
+/* ---------- 4. Typography ---------- */
+h1, h2, h3, h4 { color: var(--text-main); line-height: 1.45; }
+.stMarkdown p, .stMarkdown li { line-height: 1.95; }
+/* The rule under every h2 is drawn in the current module's hue, so a lecture is visibly
+   "in" its module all the way down the page, not only in the banner at the top. */
+.stMarkdown h2 {
+  border-bottom: 2px solid var(--mod-accent);
+  padding-bottom: 0.3rem;
+  margin-top: 1.6rem;
+}
+.stMarkdown h3 { color: var(--mod-deep); margin-top: 1.1rem; }
+.lead { font-size: 1.12rem; color: var(--text-muted); line-height: 1.9; }
+.term-en { direction: ltr; unicode-bidi: isolate; color: var(--hue-indigo); font-weight: 600; }
+
+/* ---------- 5. Educational cards ----------
+   Each card is a keyed st.container → class "st-key-card-TYPE-ID". */
+div[class*="st-key-card-"] {
+  border-radius: var(--radius-card);
+  padding: 1rem 1.2rem 0.6rem 1.2rem;
+  margin: 0.6rem 0 1rem 0;
+  box-shadow: var(--shadow-soft);
+  border-right: 6px solid var(--card-accent, var(--mod-accent));
+  background: var(--card-bg, #FFFFFF);
+}
+div[class*="st-key-card-"] h5, div[class*="st-key-card-"] .card-title {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.02rem;
+  color: var(--card-accent-text, var(--text-main));
+}
+/* Each kind of card owns a hue, and the hue is the same everywhere in the course, so a
+   reader learns the code once: teal defines, amber states the key point, blue cites
+   evidence, red warns, violet is the instructor. Every background sits near 96%
+   lightness and every title colour clears 7:1 against it. */
+div[class*="st-key-card-definition"]    { --card-bg: #E5F5F9; --card-accent: #2E9FB8; --card-accent-text: #0C5263; }
+div[class*="st-key-card-key"]           { --card-bg: #FFF7E0; --card-accent: #B98A0E; --card-accent-text: #664B03; }
+div[class*="st-key-card-example"]       { --card-bg: #EBF8EF; --card-accent: #46AB68; --card-accent-text: #1B5A32; }
+div[class*="st-key-card-applied"]       { --card-bg: #E6F7F4; --card-accent: #2FA391; --card-accent-text: #0D564C; }
+div[class*="st-key-card-method"]        { --card-bg: #F4FAE4; --card-accent: #7F9C2B; --card-accent-text: #40520F; }
+div[class*="st-key-card-instructor"]    { --card-bg: #F5EDFA; --card-accent: #A257C8; --card-accent-text: #5C2A7B;
+                                          border-style: dashed; border-width: 1px 1px 1px 6px;
+                                          border-color: #DFC6EE; border-right: 6px solid #A257C8; }
+div[class*="st-key-card-warning"]       { --card-bg: #FFF0EE; --card-accent: #E4695A; --card-accent-text: #8E3427; }
+div[class*="st-key-card-didyouknow"]    { --card-bg: #EDF1FD; --card-accent: #4A72D8; --card-accent-text: #243C82; }
+div[class*="st-key-card-discussion"]    { --card-bg: #FBEDF7; --card-accent: #C455A6; --card-accent-text: #722A5E; }
+div[class*="st-key-card-activity"]      { --card-bg: #FFF4E9; --card-accent: #D97D2E; --card-accent-text: #7A3E0C; }
+div[class*="st-key-card-case"]          { --card-bg: #F1EEFC; --card-accent: #7B5FD6; --card-accent-text: #40308B; }
+div[class*="st-key-card-recap"]         { --card-bg: #EBF4FD; --card-accent: #3E8FD0; --card-accent-text: #1B4E7C;
+                                          border-right-width: 8px; }
+div[class*="st-key-card-check"]         { --card-bg: #FDEDF1; --card-accent: #D95B7E; --card-accent-text: #842944; }
+div[class*="st-key-card-modern"]        { --card-accent: #7B5FD6; --card-accent-text: #40308B;
+                                          background: linear-gradient(135deg, #F1EEFC 0%, #E5F5F9 100%); }
+div[class*="st-key-card-verify"]        { --card-bg: #EBF8EF; --card-accent: #2FA391; --card-accent-text: #0D564C; }
+div[class*="st-key-card-crosslink"]     { --card-bg: #EBF4FD; --card-accent: #3E8FD0; --card-accent-text: #1B4E7C; }
+div[class*="st-key-card-misconception"] { --card-bg: #FFF0EE; --card-accent: #C0392B; --card-accent-text: #7E2418;
+                                          border-right-style: double; border-right-width: 8px; }
+/* The exercise is the one card a student must act on, so it is the one card with a full
+   outline rather than a single spine. */
+div[class*="st-key-card-exercise"]      { --card-bg: #FFFFFF; --card-accent: #D97D2E; --card-accent-text: #7A3E0C;
+                                          border: 2px dashed #EFC79B; border-right: 6px solid #D97D2E; }
+div[class*="st-key-card-selfstudy"]     { --card-bg: #F4FAE4; --card-accent: #7F9C2B; --card-accent-text: #40520F; }
+
+.card-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.75);
+  color: var(--card-accent-text, var(--text-main));
+  border: 1px solid var(--card-accent, var(--mod-accent));
+  margin-left: 0.4rem;
+}
+
+/* ---------- 6. Sticky notes ---------- */
+div[class*="st-key-sticky-"] {
+  background: #FFF3B8;
+  border-radius: 4px 4px 14px 4px;
+  padding: 0.9rem 1.1rem 0.4rem 1.1rem;
+  box-shadow: 3px 5px 12px rgba(150, 110, 20, 0.18);
+  transform: rotate(-0.6deg);
+  margin: 0.8rem 0.3rem 1.2rem 0.3rem;
+  border-top: 10px solid #FFE27A;
+}
+/* Sticky notes keep the pastel paper look, but on spectrum hues rather than three
+   shades of pink. The names stay as the content already writes them. */
+div[class*="st-key-sticky-rose"]     { background: #DFF3E8; border-top-color: #A8DCC1; }
+div[class*="st-key-sticky-lavender"] { background: #E9E4FB; border-top-color: #C3B6ED; transform: rotate(0.5deg); }
+div[class*="st-key-sticky-peach"]    { background: #DEEEFA; border-top-color: #A9CFEC; transform: rotate(0.4deg); }
+
+/* ---------- 7. Hero + module cards ----------
+   The hero shows the whole spectrum the course is built from: a pale sweep through the
+   same thirteen hues, plus a saturated band along the top edge that spells them out.
+   It reads as colourful without any one hue owning it. */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 140% at 88% 0%, rgba(46, 159, 184, 0.16) 0%, transparent 55%),
+    radial-gradient(110% 130% at 50% 0%, rgba(123, 95, 214, 0.14) 0%, transparent 55%),
+    radial-gradient(120% 140% at 12% 10%, rgba(217, 125, 46, 0.14) 0%, transparent 55%),
+    linear-gradient(115deg, #FFFDF8 0%, #FAFCFE 45%, #FBF9FE 100%);
+  border: 1px solid var(--border-soft);
+  border-radius: 22px;
+  padding: 2.4rem 2rem 1.9rem 2rem;
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 1.2rem;
+}
+/* The spectrum band: every module hue, in course order, right to left. */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 6px;
+  background: linear-gradient(270deg,
+    #E4695A, #D97D2E, #B98A0E, #7F9C2B, #46AB68, #2FA391, #2E9FB8,
+    #3E8FD0, #4A72D8, #7B5FD6, #A257C8, #C455A6, #D95B7E);
+}
+.hero h1 { font-size: 2.35rem; margin: 0; color: var(--text-main); }
+.hero h2 { font-size: 1.25rem; margin: 0.2rem 0 0.8rem 0; color: var(--hue-indigo);
+           direction: ltr; text-align: right; border: none; }
+.hero .subtitle { font-size: 1.15rem; color: var(--text-muted); line-height: 1.9; }
+.hero .author { margin-top: 1rem; font-weight: 700; color: var(--hue-teal); }
+.hero .author span { direction: ltr; unicode-bidi: isolate; color: var(--hue-indigo); }
+
+div[class*="st-key-modcard-"] {
+  border-radius: 16px;
+  padding: 0.9rem 1rem 0.6rem 1rem;
+  background: var(--mod-bg, #FFFFFF);
+  border: 1px solid var(--border-soft);
+  border-top: 6px solid var(--mod-accent);
+  box-shadow: var(--shadow-soft);
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+  min-height: 12.5rem;
+}
+div[class*="st-key-modcard-"]:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+.modnum {
+  display: inline-block; min-width: 2.1rem; text-align: center;
+  font-weight: 800; border-radius: 10px; padding: 0.05rem 0.45rem;
+  background: var(--mod-accent, #E07A5F); color: #FFFFFF; margin-left: 0.4rem;
+}
+.pill {
+  display: inline-block; font-size: 0.8rem; padding: 0.08rem 0.55rem;
+  border-radius: 999px; background: var(--mod-bg); border: 1px solid var(--border-soft);
+  margin: 0.1rem 0 0.1rem 0.25rem; color: var(--text-muted);
+}
+
+/* ---------- 8. Flow diagrams (pure HTML/CSS) ---------- */
+.flow {
+  display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center;
+  gap: 0.35rem; margin: 0.8rem 0 1.2rem 0; direction: rtl;
+}
+.flow.vertical { flex-direction: column; align-items: center; }
+.flow .step {
+  background: var(--step-bg, var(--mod-bg));
+  border: 1.5px solid var(--step-border, var(--mod-accent));
+  border-radius: 12px; padding: 0.55rem 0.8rem; min-width: 7.5rem; max-width: 14rem;
+  text-align: center; box-shadow: var(--shadow-soft); font-size: 0.95rem; line-height: 1.55;
+}
+.flow .step b { display: block; color: var(--text-main); }
+.flow .step small { display: block; color: var(--text-muted); direction: ltr; unicode-bidi: isolate; }
+.flow .arrow { align-self: center; color: var(--mod-accent); font-size: 1.35rem; font-weight: 700; }
+.flow.vertical .arrow { transform: rotate(-90deg); }
+.flow.loop { border: 1.5px dashed var(--border-strong); border-radius: 18px; padding: 0.8rem; position: relative; }
+.flow-caption { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: -0.6rem; }
+
+.nested { border-radius: 18px; padding: 0.8rem 1rem 1rem 1rem; margin: 0.4rem; border: 2px solid; }
+.nested > .label { font-weight: 800; margin-bottom: 0.4rem; }
+.nested > .label small { direction: ltr; unicode-bidi: isolate; font-weight: 600; opacity: 0.8; }
+
+/* ---------- 9. Tables + code ---------- */
+.stMarkdown table { display: block; overflow-x: auto; max-width: 100%; border-collapse: collapse; }
+.stMarkdown th { background: var(--mod-bg); color: var(--text-main); text-align: right; }
+.stMarkdown td, .stMarkdown th { border: 1px solid var(--border-soft); padding: 0.45rem 0.7rem; text-align: right; vertical-align: top; }
+.stMarkdown tr:nth-child(even) td { background: #FAF9F7; }
+pre, [data-testid="stCode"] pre { background: #F6F4F1 !important; border: 1px solid var(--border-soft); border-radius: 10px; }
+
+/* Buttons + focus states */
+.stButton button, .stFormSubmitButton button, [data-testid="stPageLink"] a {
+  border-radius: 10px;
+}
+.stButton button:focus-visible, [data-testid="stPageLink"] a:focus-visible,
+a:focus-visible { outline: 3px solid var(--accent-primary); outline-offset: 2px; }
+
+/* Breadcrumb */
+.crumbs { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.3rem; }
+.crumbs b { color: var(--mod-deep); }
+
+/* Footer */
+.footer {
+  margin-top: 2.5rem; padding: 1.1rem; border-top: 2px solid var(--border-soft);
+  text-align: center; color: var(--text-muted); font-size: 0.92rem; line-height: 1.8;
+}
+.footer .en { direction: ltr; unicode-bidi: isolate; color: var(--hue-indigo); }
+
+/* ---------- 10. Responsive ---------- */
+@media (max-width: 760px) {
+  .hero { padding: 1.3rem 1rem; }
+  .hero h1 { font-size: 1.7rem; }
+  .flow .step { min-width: 6rem; font-size: 0.88rem; }
+  div[class*="st-key-modcard-"] { min-height: 0; }
+  [data-testid="stMainBlockContainer"] { padding-left: 1rem; padding-right: 1rem; }
+}
+
+/* ---------- 11. Module banner + lecture header ---------- */
+.modbanner, .lechead {
+  background: linear-gradient(120deg, var(--mod-bg, #FFF1EA) 0%, #FFFDF9 70%);
+  border: 1px solid var(--border-soft);
+  border-right: 8px solid var(--mod-accent);
+  border-radius: 18px;
+  padding: 1.3rem 1.5rem 1rem 1.5rem;
+  margin: 0.4rem 0 0.9rem 0;
+  box-shadow: var(--shadow-soft);
+}
+.lechead { background: linear-gradient(120deg, #FFF8F1 0%, #FFFFFF 80%); }
+.modbanner h1, .lechead h1 { font-size: 1.85rem; margin: 0.15rem 0 0.1rem 0; color: var(--text-main); }
+.modbanner-num, .lechead-num {
+  display: inline-block; font-weight: 800; font-size: 0.85rem; color: #FFFFFF;
+  background: var(--mod-accent, #E07A5F); border-radius: 999px; padding: 0.1rem 0.8rem;
+}
+.modbanner-en { font-size: 1.02rem; }
+.modbanner-meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1.1rem; margin: 0.35rem 0 0.4rem 0;
+                  color: var(--text-muted); font-size: 0.92rem; }
+
+/* Three learning layers from the course card */
+.layers { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0.3rem 0 0.8rem 0; }
+.layer { border-radius: 999px; padding: 0.2rem 0.85rem; font-size: 0.85rem; border: 1px solid; }
+.layer b { margin-left: 0.3rem; }
+.layer.l1 { background: #E5F5F9; border-color: #8FCEDE; color: #0C5263; }
+.layer.l2 { background: #FFF7E0; border-color: #E0C264; color: #664B03; }
+.layer.l3 { background: #EBF8EF; border-color: #93D3AB; color: #1B5A32; }
+
+/* ---------- 12. Concept tiles ---------- */
+.tiles { display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); gap: 0.7rem; margin: 0.6rem 0 1rem 0; }
+.tile { border-radius: 14px; padding: 0.75rem 0.9rem; box-shadow: var(--shadow-soft); border: 1px solid var(--border-soft); }
+.tile b { display: block; color: var(--text-main); font-size: 1rem; }
+.tile small { display: block; direction: ltr; unicode-bidi: isolate; text-align: right; color: var(--hue-indigo); font-weight: 600; }
+.tile p { margin: 0.35rem 0 0 0; font-size: 0.92rem; line-height: 1.75; color: var(--text-muted); }
+
+/* Module chips: one per module, each in its own hue. */
+.modchips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.2rem 0 0.9rem 0; }
+.modchip {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.85rem; font-weight: 600; color: var(--d);
+  background: var(--b); border: 1px solid var(--c);
+  border-radius: 999px; padding: 0.15rem 0.7rem;
+}
+.modchip b {
+  background: var(--c); color: #FFFFFF; border-radius: 999px;
+  min-width: 1.35rem; text-align: center; padding: 0 0.32rem; font-size: 0.8rem;
+}
+
+/* ---------- 13. Labs, lecture cards, pills ---------- */
+div[class*="st-key-lab-"] { background: #FFFDF9; border-radius: var(--radius-card); }
+div[class*="st-key-leccard-"]:hover { box-shadow: var(--shadow-hover); }
+div[class*="st-key-lec"] [data-testid="stPills"] button { font-size: 0.88rem; }
+div[class*="st-key-q-"] { padding: 0.2rem 0; }
+
+@media (max-width: 760px) {
+  .tiles { grid-template-columns: 1fr; }
+  .modbanner h1, .lechead h1 { font-size: 1.4rem; }
+}

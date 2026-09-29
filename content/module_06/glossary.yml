@@ -1,0 +1,52 @@
+terms:
+  - {ar: تفكيك المهمة, en: Task Decomposition, module: 6, lecture: m06-l01,
+     definition: "تحويل مهمة مركّبة إلى خطوات لكل منها مدخل ومخرج محددان ومعيار نجاح خاص، بدل أمر واحد كبير.",
+     related: [Prompt Chaining, Workflow]}
+  - {ar: سلسلة الأوامر, en: Prompt Chaining, module: 6, lecture: m06-l01,
+     definition: "ربط خطوات متتابعة يكون مخرج كل خطوة مدخل التالية، مع نقطة تحقق بينهما لقطع تراكم الخطأ.",
+     related: [Task Decomposition, Validation]}
+  - {ar: المخرجات المنظمة, en: Structured Outputs, module: 6, lecture: m06-l02,
+     definition: "مخرج بشكل محدد (غالبًا JSON بمخطط) يمكن معالجته برمجيًا والتحقق منه آليًا؛ وبعض المنصات توفر خاصية تقيّد التوليد بالمخطط.",
+     related: [Schema, JSON, Validation]}
+  - {ar: المخطط, en: Schema, module: 6, lecture: m06-l02,
+     definition: "وصف دقيق لبنية المخرج: أسماء الحقول وأنواعها وقواعد قيمها وسلوكها عند غياب المعلومة.",
+     related: [Structured Outputs, Validation]}
+  - {ar: التحقق من المخرجات, en: Output Validation, module: 6, lecture: m06-l02,
+     definition: "فحص برمجي لمخرج النموذج (الشكل والأنواع والمجالات) قبل استعماله؛ إغفاله خطر معياري (LLM05).",
+     related: [Schema, Prompt Injection]}
+  - {ar: التقييد بالمصدر, en: Grounding, module: 6, lecture: m06-l03,
+     definition: "إلزام النموذج ببناء مخرجه حصريًا على نص مرفق، والتصريح بعدم توفر المعلومة بدل التخمين.",
+     related: [Retrieval, RAG, Hallucination]}
+  - {ar: الإسناد, en: Attribution, module: 6, lecture: m06-l03,
+     definition: "ذكر موضع كل ادعاء في المصدر (رقم فقرة أو مادة أو اقتباس)، فيصبح المخرج قابلًا للمراجعة في ثوانٍ.",
+     related: [Grounding, Evidence Table]}
+  - {ar: جدول الأدلة, en: Evidence Table, module: 6, lecture: m06-l03,
+     definition: "جدول يقرن كل ادعاء بدليله وموضعه ودرجة دعمه (مباشر / جزئي / لا دليل)، فيفضح الادعاءات غير المسندة.",
+     related: [Attribution, Verification]}
+  - {ar: التبرير المنظم, en: Structured Justification, module: 6, lecture: m06-l03,
+     definition: "طلب القاعدة المطبقة والدليل ودرجة اليقين وخطوات قابلة لإعادة التنفيذ، بدل طلب كشف سلسلة التفكير الداخلية.",
+     related: [Evidence Table, Verification]}
+  - {ar: حقن الأوامر, en: Prompt Injection, module: 6, lecture: m06-l04,
+     definition: "محتوى يتسبب في جعل النموذج يتجاهل تعليمات المستخدم أو المطوّر أو ينفّذ تعليمات لم يقصدها أي منهما؛ الخطر الأول في قائمة OWASP لتطبيقات النماذج اللغوية 2025.",
+     related: [Indirect Prompt Injection, Instruction Hierarchy]}
+  - {ar: الحقن غير المباشر, en: Indirect Prompt Injection, module: 6, lecture: m06-l04,
+     definition: "حقن يأتي من محتوى خارجي يقرؤه النظام (صفحة ويب، بريد، ملف)؛ أخطر من المباشر لأن الضحية لم تكتب التعليمة ولا تعلم بها.",
+     related: [Prompt Injection, Untrusted Content]}
+  - {ar: التسلسل الهرمي للتعليمات, en: Instruction Hierarchy, module: 6, lecture: m06-l04,
+     definition: "ترتيب سلطة التعليمات: سياسات النظام والمطوّر أولًا، ثم تعليمات المستخدم، ثم المحتوى الخارجي بوصفه بيانات بلا سلطة.",
+     related: [Prompt Injection, Untrusted Content]}
+  - {ar: مبدأ أقل صلاحية, en: Least Privilege, module: 6, lecture: m06-l05,
+     definition: "منح كل مكوّن أضيق صلاحية تكفي لأداء مهمته ولا شيء أكثر؛ ابدأ بصفر وأضف عند الحاجة المثبتة.",
+     related: [Excessive Agency, Human Approval]}
+  - {ar: الوكالة المفرطة, en: Excessive Agency, module: 6, lecture: m06-l05,
+     definition: "منح النظام قدرة على الفعل أوسع مما تحتاجه مهمته؛ خطر معياري (LLM06) يتضاعف مع المحتوى غير الموثوق.",
+     related: [Least Privilege, AI Agent]}
+  - {ar: قابلية العكس, en: Reversibility, module: 6, lecture: m06-l05,
+     definition: "معيار تصنيف الأفعال: قابل للعكس يُؤتمت، وصعب العكس يحتاج إلى موافقة، وغير قابل للعكس يحتاج إلى موافقة صريحة موثقة أو يُمنع.",
+     related: [Human Approval, Audit Trail]}
+  - {ar: الدفاع في العمق, en: Defense in Depth, module: 6, lecture: m06-l05,
+     definition: "تراكم طبقات ضوابط بحيث يحتاج الضرر إلى فشل كل الطبقات معًا، لا الاعتماد على ضابط واحد.",
+     related: [Least Privilege, Audit Trail]}
+  - {ar: سجل التدقيق, en: Audit Trail, module: 6, lecture: m06-l05,
+     definition: "تسجيل كل فعل ومصدره وزمنه، فيصبح الخلل قابلًا للكشف والتصحيح وتحديد المسؤولية.",
+     related: [Defense in Depth, Accountability]}

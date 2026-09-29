@@ -1,0 +1,49 @@
+terms:
+  - {ar: الذكاء الاصطناعي الضيق, en: Artificial Narrow Intelligence, acronym: ANI, module: 3, lecture: m03-l01,
+     definition: "نظام قوي داخل نطاق محدد من المهام ويفشل خارجه، وغالبًا دون أن يدرك خروجه عن نطاقه. كل ما هو متحقق اليوم ينتمي إلى هذه الفئة.",
+     related: [Artificial General Intelligence, Brittleness]}
+  - {ar: الذكاء الاصطناعي العام, en: Artificial General Intelligence, acronym: AGI, module: 3, lecture: m03-l01,
+     definition: "مفهوم يصف نظامًا افتراضيًا يؤدي أي مهمة فكرية بشرية وينقل خبرته بين المجالات. لا يوجد له تعريف واحد ولا مقياس متفق عليه، والنقاش حوله مفتوح.",
+     related: [ANI, Generalization, Levels of AGI]}
+  - {ar: الذكاء الاصطناعي الفائق, en: Artificial Superintelligence, acronym: ASI, module: 3, lecture: m03-l01,
+     definition: "مفهوم نظري بالكامل لنظام يتجاوز أفضل العقول البشرية في كل المجالات؛ يُبحث تحليليًا في أدبيات المخاطر والتحكم.",
+     related: [AGI, Value Alignment Problem]}
+  - {ar: القدرة, en: Capability, module: 3, lecture: m03-l04,
+     definition: "ما يستطيع النظام فعله في مهمة محددة مقيسًا بمقياس أداء واضح؛ لا معنى لها دون تحديد المهمة والمقياس.",
+     related: [Intelligence, Benchmark]}
+  - {ar: الاستقلالية, en: Autonomy, module: 3, lecture: m03-l04,
+     definition: "مقدار ما ينفذه النظام دون موافقة بشرية مسبقة؛ درجات لا حالة ثنائية، وخيار تصميمي يحدده منح الصلاحيات.",
+     related: [Agency, Human-in-the-Loop]}
+  - {ar: الوكالة, en: Agency, module: 3, lecture: m03-l04,
+     definition: "قدرة النظام على المبادرة بأفعال في بيئته سعيًا إلى هدف، لا مجرد الاستجابة لمدخل.",
+     related: [AI Agent, Autonomy]}
+  - {ar: التكيف, en: Adaptation, module: 3, lecture: m03-l04,
+     definition: "تغيير النظام سلوكه استجابة لتغير البيئة بعد النشر؛ ميزة ومصدر مخاطر رقابية في آن، لأن النظام لا يبقى كما اختُبر.",
+     related: [Model Drift, Monitoring]}
+  - {ar: التعميم, en: Generalization, module: 3, lecture: m03-l04,
+     definition: "نجاح النظام في حالات جديدة لم ترد في بيانات تدريبه؛ وهو المفهوم المركزي في النقاش حول الذكاء العام.",
+     related: [Overfitting, Out-of-distribution]}
+  - {ar: الوكيل الذكي, en: AI Agent, module: 3, lecture: m03-l04,
+     definition: "نظام يستعمل نموذجًا للتخطيط واستدعاء أدوات وملاحظة النتائج وتحديث حالته ضمن صلاحيات يمنحها البشر. الوكيل ليس ذكاءً عامًا.",
+     related: [Agency, Tool Use, AGI]}
+  - {ar: مستويات الذكاء العام, en: Levels of AGI, module: 3, lecture: m03-l02,
+     definition: "إطار اقترحه Morris وزملاؤه (2023) يستبدل بالعتبة الواحدة سلمًا متدرجًا على بعدي الأداء والعمومية، مع فصل القدرة عن الاستقلالية.",
+     related: [AGI, Generality]}
+  - {ar: كفاءة اكتساب المهارة, en: Skill-acquisition Efficiency, module: 3, lecture: m03-l02,
+     definition: "مقياس للذكاء اقترحه Chollet (2019): قدرة النظام على اكتساب مهارة جديدة من أمثلة قليلة وخبرة سابقة محدودة، لا الأداء في مهارة دُرّب عليها مكثفًا.",
+     related: [Generalization, Benchmark]}
+  - {ar: تسرب بيانات الاختبار, en: Data Contamination, module: 3, lecture: m03-l02,
+     definition: "وجود أسئلة الاختبار أو ما يشبهها ضمن بيانات التدريب، فيصبح النجاح فيها غير مميز بين الاستدلال والاسترجاع.",
+     related: [Benchmark, Evaluation]}
+  - {ar: الآلات التفاعلية, en: Reactive Machines, module: 3, lecture: m03-l03,
+     definition: "أنظمة تستجيب للمدخل الحالي دون استعمال ذاكرة للتفاعلات السابقة أثناء الاستعمال.",
+     related: [Limited Memory]}
+  - {ar: الذاكرة المحدودة, en: Limited Memory, module: 3, lecture: m03-l03,
+     definition: "أنظمة تستعمل معلومات من الماضي القريب ضمن نافذة محدودة؛ توصف بها أغلب الأنظمة المستعملة اليوم.",
+     related: [Context Window, Reactive Machines]}
+  - {ar: نظرية العقل, en: Theory of Mind, module: 3, lecture: m03-l03,
+     definition: "في علم النفس: نسبة حالات ذهنية إلى الآخرين وفهم أن معتقدهم قد يخالف الواقع (Premack & Woodruff, 1978). ونقلها إلى الآلات فئة افتراضية يصعب اختبارها.",
+     related: [False Belief Task, Data Contamination]}
+  - {ar: الوعي الذاتي في الآلة, en: Self-aware AI, module: 3, lecture: m03-l03,
+     definition: "فئة افتراضية بالكامل تفترض وعي النظام بذاته؛ لا تعريف علمي متفق عليه للوعي ولا اختبار مقبول له في الآلات.",
+     related: [Theory of Mind]}

@@ -1,0 +1,146 @@
+# Module 2 sources. Verified 2026-09-27 (DOIs via Crossref, arXiv via the arXiv API, pages fetched).
+references:
+  - id: m02_mcculloch_pitts_1943
+    authors: McCulloch, W. S., & Pitts, W.
+    year: 1943
+    title: A logical calculus of the ideas immanent in nervous activity
+    venue: The Bulletin of Mathematical Biophysics, 5, 115–133
+    type: article
+    doi: 10.1007/BF02478259
+    topic: AI History
+    verified: "2026-09-27"
+  - id: m02_dartmouth_1955
+    authors: McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E.
+    year: 1955
+    title: A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence
+    venue: "Dartmouth College (the proposal that coined the term; the workshop was held in 1956)"
+    type: report
+    url: http://raysolomonoff.com/dartmouth/boxa/dart564props.pdf
+    topic: AI History
+    verified: "2026-09-27"
+  - id: m02_rosenblatt_1958
+    authors: Rosenblatt, F.
+    year: 1958
+    title: "The perceptron: A probabilistic model for information storage and organization in the brain"
+    venue: Psychological Review, 65(6), 386–408
+    type: article
+    doi: 10.1037/h0042519
+    topic: AI History
+    verified: "2026-09-27"
+  - id: m02_samuel_1959
+    authors: Samuel, A. L.
+    year: 1959
+    title: Some Studies in Machine Learning Using the Game of Checkers
+    venue: IBM Journal of Research and Development, 3(3), 210–229
+    type: article
+    doi: 10.1147/rd.33.0210
+    topic: AI History
+    verified: "2026-09-27"
+  - id: m02_lighthill_1973
+    authors: Lighthill, J.
+    year: 1973
+    title: "Artificial Intelligence: A General Survey (the Lighthill Report)"
+    venue: Science Research Council, UK
+    type: report
+    url: https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/contents.htm
+    topic: AI History
+    verified: "2026-09-27"
+  - id: m02_lindsay_1993
+    authors: Lindsay, R. K., Buchanan, B. G., Feigenbaum, E. A., & Lederberg, J.
+    year: 1993
+    title: "DENDRAL: A case study of the first expert system for scientific hypothesis formation"
+    venue: Artificial Intelligence, 61(2), 209–261
+    type: article
+    doi: 10.1016/0004-3702(93)90068-M
+    topic: AI History
+    verified: "2026-09-27"
+  - id: m02_rumelhart_1986
+    authors: Rumelhart, D. E., Hinton, G. E., & Williams, R. J.
+    year: 1986
+    title: Learning representations by back-propagating errors
+    venue: Nature, 323, 533–536
+    type: article
+    doi: 10.1038/323533a0
+    topic: AI History
+    verified: "2026-09-27"
+  - id: m02_lecun_1998
+    authors: LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P.
+    year: 1998
+    title: Gradient-based learning applied to document recognition
+    venue: Proceedings of the IEEE, 86(11), 2278–2324
+    type: article
+    doi: 10.1109/5.726791
+    topic: Deep Learning
+    verified: "2026-09-27"
+  - id: m02_deng_2009
+    authors: Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., & Fei-Fei, L.
+    year: 2009
+    title: "ImageNet: A large-scale hierarchical image database"
+    venue: 2009 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
+    type: article
+    doi: 10.1109/CVPR.2009.5206848
+    topic: AI History
+    verified: "2026-09-27"
+  - id: m02_krizhevsky_2012
+    authors: Krizhevsky, A., Sutskever, I., & Hinton, G. E.
+    year: 2012
+    title: ImageNet classification with deep convolutional neural networks (AlexNet)
+    venue: "NeurIPS 2012; reprinted in Communications of the ACM, 60(6), 2017"
+    type: article
+    doi: 10.1145/3065386
+    topic: Deep Learning
+    verified: "2026-09-27"
+  - id: m02_mnih_2015
+    authors: Mnih, V., Kavukcuoglu, K., Silver, D., et al.
+    year: 2015
+    title: Human-level control through deep reinforcement learning
+    venue: Nature, 518, 529–533
+    type: article
+    doi: 10.1038/nature14236
+    topic: AI History
+    verified: "2026-09-27"
+  - id: m02_bahdanau_2014
+    authors: Bahdanau, D., Cho, K., & Bengio, Y.
+    year: 2014
+    title: Neural Machine Translation by Jointly Learning to Align and Translate
+    venue: arXiv:1409.0473 (ICLR 2015)
+    type: preprint
+    url: https://arxiv.org/abs/1409.0473
+    topic: AI History
+    verified: "2026-09-27"
+  - id: m02_vaswani_2017
+    authors: Vaswani, A., Shazeer, N., Parmar, N., et al.
+    year: 2017
+    title: Attention Is All You Need
+    venue: arXiv:1706.03762 (NeurIPS 2017)
+    type: preprint
+    url: https://arxiv.org/abs/1706.03762
+    topic: LLMs
+    verified: "2026-09-27"
+  - id: m02_searle_1980
+    authors: Searle, J. R.
+    year: 1980
+    title: Minds, brains, and programs
+    venue: Behavioral and Brain Sciences, 3(3), 417–424
+    type: article
+    doi: 10.1017/S0140525X00005756
+    topic: AI History
+    verified: "2026-09-27"
+  - id: m02_silver_2018
+    authors: Silver, D., Hubert, T., Schrittwieser, J., et al.
+    year: 2018
+    title: A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play
+    venue: Science, 362(6419), 1140–1144
+    type: article
+    doi: 10.1126/science.aar6404
+    topic: AI History
+    verified: "2026-09-27"
+  - id: m02_ibm_deepblue
+    authors: IBM
+    year: 2024
+    title: Deep Blue (IBM History)
+    venue: IBM
+    type: web
+    url: https://www.ibm.com/history/deep-blue
+    topic: AI History
+    verified: "2026-09-27"

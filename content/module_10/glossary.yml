@@ -1,0 +1,91 @@
+terms:
+  - {ar: الاستدلال السببي, en: Causal Inference, module: 10, lecture: m10-l02,
+     definition: "تقدير ما يحدث لمخرج ما لو تدخّلنا في متغير، لا مجرد وصف ارتباطه به. ومعياره قابلية التعرّف وصحة التصميم، لا دقة التنبؤ.",
+     related: [Prediction, Identification, Confounder]}
+  - {ar: قابلية التعرّف, en: Identification, module: 10, lecture: m10-l02,
+     definition: "أن يكون التباين في متغير المعالجة مستقلًا عن محددات المخرج الأخرى، فتصير المعلمة السببية قابلة للاستخراج من البيانات. وهي خاصية للتصميم لا للبيانات ولا للخوارزمية.",
+     related: [Causal Inference, Confounder]}
+  - {ar: المُربِك, en: Confounder, module: 10, lecture: m10-l02,
+     definition: "متغير يؤثر في متغير المعالجة وفي المخرج معًا، فينشئ ارتباطًا بينهما لا يعكس أثرًا سببيًا. وإهماله هو مشكلة المتغير المحذوف.",
+     related: [Causal Inference, Identification, Double Machine Learning]}
+  - {ar: مسألة سياسة التنبؤ, en: Prediction Policy Problem, module: 10, lecture: m10-l02,
+     definition: "مسألة سياسة يتوقف فيها القرار على توقع حالة لا على أثر تدخّل، كفرز الملفات وتخصيص موارد محدودة. والتعلّم الآلي أداة مناسبة لها تمامًا.",
+     related: [Prediction, Causal Inference]}
+  - {ar: تحيّز الانتظام, en: Regularisation Bias, module: 10, lecture: m10-l03,
+     definition: "تحيّز يصيب معامل المعالجة حين يقلّص الانتظام معاملات المتغيرات الضابطة، فتتسرب آثارها إليه. وهو تحيّز لا عدم دقة، فلا تصلحه زيادة حجم العينة.",
+     related: [Double Machine Learning, Double Lasso]}
+  - {ar: التعلّم الآلي المزدوج, en: Double Machine Learning, acronym: DML, module: 10, lecture: m10-l03,
+     definition: "إطار يفصل مرحلتين: تعلّم آلي للتنبؤ بالمخرج وبالمعالجة من الضوابط، ثم تقدير الأثر من البواقي وحدها بلا انتظام، مع تقسيم متقاطع للعينة.",
+     related: [Regularisation Bias, Cross-fitting, Confounder]}
+  - {ar: تقسيم العينة المتقاطع, en: Cross-fitting, module: 10, lecture: m10-l03,
+     definition: "حساب باقي كل مشاهدة بنموذج قُدِّر على مشاهدات أخرى، فلا يمكن أن يكون قد فرط ملاءمتها. وهو ما يمنع فرط الملاءمة من تلويث التقدير دون هدر للبيانات.",
+     related: [Double Machine Learning, Overfitting]}
+  - {ar: الأثر غير المتجانس, en: Heterogeneous Treatment Effect, module: 10, lecture: m10-l03,
+     definition: "اختلاف أثر التدخّل باختلاف خصائص المستفيد. وأثر متوسط قدره صفر قد يخفي نفعًا لفئة وضررًا لأخرى، ولهذا يكون سؤال السياسة الحقيقي غالبًا.",
+     related: [Causal Forest, Causal Inference]}
+  - {ar: الغابة السببية, en: Causal Forest, module: 10, lecture: m10-l03,
+     definition: "غابة عشوائية معدّلة يهدف كل انقسام فيها إلى أكبر اختلاف في الأثر المقدَّر لا إلى أفضل تنبؤ، فتقدّر الأثر عند كل قيمة للخصائص مع فترات ثقة.",
+     related: [Heterogeneous Treatment Effect, Double Machine Learning]}
+  - {ar: لاسو المزدوج, en: Double Lasso, module: 10, lecture: m10-l03,
+     definition: "اختيار المتغيرات الضابطة بتطبيق لاسو مرتين — على المخرج وعلى المعالجة — ثم التقدير على اتحاد المجموعتين بلا انتظام، لأن المُربِك يهدد إن ارتبط بأيٍّ منهما.",
+     related: [Regularisation Bias, Double Machine Learning]}
+  - {ar: التنبؤ الآني, en: Nowcasting, module: 10, lecture: m10-l04,
+     definition: "تقدير قيمة متغير للفترة الجارية أو لفترة قريبة لم يصدر رقمها الرسمي بعد، بمؤشرات متاحة الآن. فالحدث وقع ولم يُقَس.",
+     related: [Release Lag, Alternative Data, Real-time Data]}
+  - {ar: فجوة الإصدار, en: Release Lag, module: 10, lecture: m10-l04,
+     definition: "المدة بين نهاية الفترة المرجعية لمؤشر رسمي وتاريخ نشر رقمه، ثم مراجعته لاحقًا. وهي مبرر وجود التنبؤ الآني.",
+     related: [Nowcasting, Real-time Data]}
+  - {ar: قاعدة الزمن الحقيقي, en: Real-time Data Vintage, module: 10, lecture: m10-l04,
+     definition: "تقييم نموذج بالقيم التي كانت متاحة فعلًا في كل تاريخ، لا بالقيم المراجَعة المعروفة اليوم. واستعمال المراجَعة صورة من التسرّب الزمني.",
+     related: [Nowcasting, Temporal Leakage]}
+  - {ar: شرط التوفر اللحظي, en: Point-in-time Availability, module: 10, lecture: m10-l04,
+     definition: "ألا يدخل النموذج متغير غير متاح في اللحظة التي يُطلب فيها التنبؤ. والسؤال الكاشف لكل عمود: متى يُسجَّل هذا فعلًا؟",
+     related: [Data Leakage, Temporal Leakage]}
+  - {ar: البيانات البديلة, en: Alternative Data, module: 10, lecture: m10-l04,
+     definition: "بيانات لم تُجمع لغرض إحصائي وتحمل إشارة اقتصادية، كمعاملات الدفع وحركة الشحن وصور الأقمار. وتُقيَّم بالتغطية والتمثيل والاستمرارية والاستقرار لا بالحجم.",
+     related: [Nowcasting, Text as Data]}
+  - {ar: النص بوصفه بيانات, en: Text as Data, module: 10, lecture: m10-l05,
+     definition: "تحويل نصوص غير مهيكلة إلى قياس عددي عبر مسار من ست خطوات، أخطرها قرار الاشتمال، وآخرها التحقق الخارجي الذي يمنح المؤشر معناه.",
+     related: [Corpus Selection, External Validation, Alternative Data]}
+  - {ar: قرار الاشتمال, en: Corpus Selection, module: 10, lecture: m10-l05,
+     definition: "تحديد ما يدخل مجموعة النصوص وما يخرج منها. قرار بحثي لا تقني، وهو ما يحدد ما يقيسه المؤشر فعلًا، وتغيّر تركيبة المجموعة عبر الزمن أخطر أثاره.",
+     related: [Text as Data, External Validation]}
+  - {ar: التحقق الخارجي, en: External Validation, module: 10, lecture: m10-l05,
+     definition: "إثبات أن المؤشر يقيس ما يُدّعى أنه يقيسه، بمقارنته بتصنيف بشري أو بمقياس مستقل أو بأحداث معروفة أو باختبار متانته. والحساب يعطي رقمًا، والتحقق يعطيه معنى.",
+     related: [Text as Data, Corpus Selection]}
+  - {ar: إطار المهام, en: Task-based Framework, module: 10, lecture: m10-l06,
+     definition: "تحليل أثر التقنية على العمل عبر المهام لا الوظائف، بثلاثة آثار متزامنة: الإزاحة، والإنتاجية، والمهام الجديدة. والمحصلة مسألة قياس لا مسألة رأي.",
+     related: [Displacement Effect, Reinstatement Effect, Productivity J-Curve]}
+  - {ar: أثر الإزاحة, en: Displacement Effect, module: 10, lecture: m10-l06,
+     definition: "أداء الآلة مهامًا كان يؤديها البشر، فينخفض الطلب على العمل في تلك المهام. أحد ثلاثة آثار متزامنة في إطار المهام لا الأثر الوحيد.",
+     related: [Task-based Framework, Reinstatement Effect]}
+  - {ar: أثر المهام الجديدة, en: Reinstatement Effect, module: 10, lecture: m10-l06,
+     definition: "ظهور مهام جديدة يتفوق فيها البشر، فيعود الطلب على العمل ويتغير محتواه. موثّق تاريخيًا، ولا يضمن وقوعه بالسرعة الكافية ولا لصالح من أُزيحوا.",
+     related: [Task-based Framework, Displacement Effect]}
+  - {ar: منحنى الإنتاجية على شكل J, en: Productivity J-Curve, module: 10, lecture: m10-l06,
+     definition: "نمط تبدو فيه الإنتاجية المقيسة منخفضة أولًا ثم مرتفعة لاحقًا، لأن الاستثمار في الأصول غير الملموسة يُنفَق مبكرًا ولا تلتقطه الإحصاءات بوصفه أصلًا.",
+     related: [Intangible Assets, Task-based Framework]}
+  - {ar: الأصول غير الملموسة, en: Intangible Assets, module: 10, lecture: m10-l06,
+     definition: "المهارات وإعادة تنظيم العمليات وبناء البيانات ونماذج الأعمال. استثمار مكمّل لازم لتحقيق مكاسب التقنية، وتسجّله الحسابات تكلفة جارية لا أصلًا.",
+     related: [Productivity J-Curve]}
+  - {ar: التعرّض, en: Exposure, module: 10, lecture: m10-l06,
+     definition: "نسبة مهام الوظيفة القابلة لأن تتأثر بالتقنية. وهو ما تقيسه أغلب الدراسات، ويختلف اختلافًا كاملًا عن فقدان الوظيفة — والخلط بينهما يقع في العنوان لا في الدراسة.",
+     related: [Task-based Framework, Displacement Effect]}
+  - {ar: تسرّب البيانات, en: Data Leakage, module: 10, lecture: m10-l07,
+     definition: "وصول معلومة إلى التدريب أو الاختيار ما كان ينبغي أن تصله — من المستقبل، أو من عينة الاختبار، أو حاملةً جواب المسألة. ولا تكشفه مقاييس الأداء لأنه يحسّنها.",
+     related: [Temporal Leakage, Point-in-time Availability, Reproducibility]}
+  - {ar: التسرّب الزمني, en: Temporal Leakage, module: 10, lecture: m10-l07,
+     definition: "تدريب على بيانات لاحقة للفترة المتنبَّأ بها. أشيع أنماط التسرّب في الاقتصاد، وسببه المعتاد التقسيم العشوائي لبيانات مؤرّخة.",
+     related: [Data Leakage, Real-time Data Vintage]}
+  - {ar: المرجع الساذج, en: Naive Baseline, module: 10, lecture: m10-l07,
+     definition: "نموذج بسيط جدًا يُقارَن به النموذج المعقّد، كقيمة الفترة السابقة أو انحدار لوجستي. وهو ما يقيس ما أضافه نموذجك فعلًا، وتفوّق هائل عليه فرضية تسرّب.",
+     related: [Data Leakage, Reproducibility]}
+  - {ar: درجات حرية الباحث, en: Researcher Degrees of Freedom, module: 10, lecture: m10-l07,
+     definition: "مجموع القرارات المشروعة ظاهريًا في التحليل، التي يتيح تعددها بلوغ نتيجة دالة بالتجريب المتكرر. والخلل في معيار التوقف لا في القرارات نفسها.",
+     related: [Reproducibility, Data Leakage]}
+  - {ar: قابلية إعادة الإنتاج, en: Reproducibility, module: 10, lecture: m10-l07,
+     definition: "ثلاثة مستويات: إعادة التشغيل بالرمز والبيانات نفسها، وإعادة الإنتاج بيد باحث مستقل، وإعادة التحقق على بيانات جديدة. والأول شرط لما بعده ويقع كله تحت سيطرة الباحث.",
+     related: [Model Info Sheet, Researcher Degrees of Freedom]}
+  - {ar: بطاقة النموذج, en: Model Info Sheet, module: 10, lecture: m10-l07,
+     definition: "وثيقة موحّدة تُرفق بالادعاء القائم على نموذج، تسأل صراحةً عن السؤال والبيانات ولحظة تسجيل كل متغير والتقسيم والمعالجة وما جُرِّب والمرجع والحدود.",
+     related: [Reproducibility, Data Leakage]}

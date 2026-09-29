@@ -1,0 +1,119 @@
+# Module 4 sources. Verified 2026-09-28 (DOIs via Crossref, arXiv via the arXiv API, pages fetched).
+references:
+  - id: m04_lecun_2015
+    authors: LeCun, Y., Bengio, Y., & Hinton, G.
+    year: 2015
+    title: Deep learning
+    venue: Nature, 521, 436–444
+    type: article
+    doi: 10.1038/nature14539
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m04_goodfellow_2016
+    authors: Goodfellow, I., Bengio, Y., & Courville, A.
+    year: 2016
+    title: Deep Learning
+    venue: MIT Press
+    type: book
+    url: https://www.deeplearningbook.org/
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m04_james_islr
+    authors: James, G., Witten, D., Hastie, T., Tibshirani, R., & Taylor, J.
+    year: 2023
+    title: "An Introduction to Statistical Learning (with Applications in Python)"
+    venue: Springer
+    type: book
+    url: https://www.statlearning.com/
+    topic: Machine Learning
+    verified: "2026-09-28"
+  - id: m04_mitchell_1997
+    authors: Mitchell, T. M.
+    year: 1997
+    title: Machine Learning
+    venue: McGraw-Hill
+    type: book
+    url: http://www.cs.cmu.edu/~tom/mlbook.html
+    topic: Machine Learning
+    verified: "2026-09-28"
+  - id: m04_hornik_1989
+    authors: Hornik, K., Stinchcombe, M., & White, H.
+    year: 1989
+    title: Multilayer feedforward networks are universal approximators
+    venue: Neural Networks, 2(5), 359–366
+    type: article
+    doi: 10.1016/0893-6080(89)90020-8
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m04_cortes_vapnik_1995
+    authors: Cortes, C., & Vapnik, V.
+    year: 1995
+    title: Support-vector networks
+    venue: Machine Learning, 20, 273–297
+    type: article
+    doi: 10.1007/BF00994018
+    topic: Machine Learning
+    verified: "2026-09-28"
+  - id: m04_breiman_2001
+    authors: Breiman, L.
+    year: 2001
+    title: Random Forests
+    venue: Machine Learning, 45, 5–32
+    type: article
+    doi: 10.1023/A:1010933404324
+    topic: Machine Learning
+    verified: "2026-09-28"
+  - id: m04_friedman_2001
+    authors: Friedman, J. H.
+    year: 2001
+    title: "Greedy function approximation: A gradient boosting machine"
+    venue: The Annals of Statistics, 29(5), 1189–1232
+    type: article
+    doi: 10.1214/aos/1013203451
+    topic: Machine Learning
+    verified: "2026-09-28"
+  - id: m04_zhang_2016
+    authors: Zhang, C., Bengio, S., Hardt, M., Recht, B., & Vinyals, O.
+    year: 2016
+    title: Understanding deep learning requires rethinking generalization
+    venue: arXiv:1611.03530 (ICLR 2017)
+    type: preprint
+    url: https://arxiv.org/abs/1611.03530
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m04_kingma_2014
+    authors: Kingma, D. P., & Ba, J.
+    year: 2014
+    title: "Adam: A Method for Stochastic Optimization"
+    venue: arXiv:1412.6980 (ICLR 2015)
+    type: preprint
+    url: https://arxiv.org/abs/1412.6980
+    topic: Deep Learning
+    verified: "2026-09-28"
+  - id: m04_ouyang_2022
+    authors: Ouyang, L., Wu, J., Jiang, X., et al.
+    year: 2022
+    title: Training language models to follow instructions with human feedback
+    venue: arXiv:2203.02155 (NeurIPS 2022)
+    type: preprint
+    url: https://arxiv.org/abs/2203.02155
+    topic: LLMs
+    verified: "2026-09-28"
+  - id: m04_sklearn_metrics
+    authors: scikit-learn developers
+    year: 2026
+    title: "Metrics and scoring: quantifying the quality of predictions"
+    venue: scikit-learn documentation
+    type: documentation
+    url: https://scikit-learn.org/stable/modules/model_evaluation.html
+    topic: Machine Learning
+    verified: "2026-09-28"
+  - id: m04_google_mlcc
+    authors: Google
+    year: 2026
+    title: Machine Learning Crash Course
+    venue: Google for Developers
+    type: course
+    url: https://developers.google.com/machine-learning/crash-course
+    topic: Machine Learning
+    verified: "2026-09-28"

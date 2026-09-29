@@ -1,0 +1,110 @@
+# Module 3 sources. Verified 2026-09-26/27 (arXiv API, Crossref, pages fetched).
+references:
+  - id: m03_morris_2023
+    authors: Morris, M. R., Sohl-Dickstein, J., Fiedel, N., et al.
+    year: 2023
+    title: Levels of AGI for Operationalizing Progress on the Path to AGI
+    venue: arXiv:2311.02462 (Google DeepMind)
+    type: preprint
+    url: https://arxiv.org/abs/2311.02462
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m03_chollet_2019
+    authors: Chollet, F.
+    year: 2019
+    title: On the Measure of Intelligence
+    venue: arXiv:1911.01547
+    type: preprint
+    url: https://arxiv.org/abs/1911.01547
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m03_goertzel_2014
+    authors: Goertzel, B.
+    year: 2014
+    title: "Artificial General Intelligence: Concept, State of the Art, and Future Prospects"
+    venue: Journal of Artificial General Intelligence, 5(1), 1–48
+    type: article
+    doi: 10.2478/jagi-2014-0001
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m03_bubeck_2023
+    authors: Bubeck, S., Chandrasekaran, V., Eldan, R., et al.
+    year: 2023
+    title: "Sparks of Artificial General Intelligence: Early experiments with GPT-4"
+    venue: arXiv:2303.12712 (Microsoft Research)
+    type: preprint
+    url: https://arxiv.org/abs/2303.12712
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m03_ullman_2023
+    authors: Ullman, T.
+    year: 2023
+    title: Large Language Models Fail on Trivial Alterations to Theory-of-Mind Tasks
+    venue: arXiv:2302.08399
+    type: preprint
+    url: https://arxiv.org/abs/2302.08399
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m03_grace_2024
+    authors: Grace, K., Stewart, H., Sandkühler, J. F., Thomas, S., Weinstein-Raun, B., & Brauner, J.
+    year: 2024
+    title: Thousands of AI Authors on the Future of AI
+    venue: arXiv:2401.02843
+    type: preprint
+    url: https://arxiv.org/abs/2401.02843
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m03_bostrom_2014
+    authors: Bostrom, N.
+    year: 2014
+    title: "Superintelligence: Paths, Dangers, Strategies"
+    venue: Oxford University Press
+    type: book
+    url: https://global.oup.com/academic/product/superintelligence-9780199678112
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m03_russell_2019
+    authors: Russell, S.
+    year: 2019
+    title: "Human Compatible: Artificial Intelligence and the Problem of Control"
+    venue: Viking
+    type: book
+    url: https://people.eecs.berkeley.edu/~russell/hc.html
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m03_premack_woodruff_1978
+    authors: Premack, D., & Woodruff, G.
+    year: 1978
+    title: Does the chimpanzee have a theory of mind?
+    venue: Behavioral and Brain Sciences, 1(4), 515–526
+    type: article
+    doi: 10.1017/S0140525X00076512
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m03_hintze_2016
+    authors: Hintze, A.
+    year: 2016
+    title: "Understanding the four types of AI, from reactive robots to self-aware beings"
+    venue: The Conversation
+    type: web
+    url: https://theconversation.com/understanding-the-four-types-of-ai-from-reactive-robots-to-self-aware-beings-67616
+    topic: AI Foundations
+    verified: "2026-09-26"
+  - id: m03_sae_j3016
+    authors: SAE International
+    year: 2021
+    title: "J3016: Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles"
+    venue: SAE International
+    type: standard
+    url: https://www.sae.org/standards/content/j3016_202104/
+    topic: AI Governance
+    verified: "2026-09-26"
+  - id: m03_mitchell_book_2019
+    authors: Mitchell, M.
+    year: 2019
+    title: "Artificial Intelligence: A Guide for Thinking Humans"
+    venue: Farrar, Straus and Giroux
+    type: book
+    url: https://melaniemitchell.me/aibook/
+    topic: AI Foundations
+    verified: "2026-09-26"

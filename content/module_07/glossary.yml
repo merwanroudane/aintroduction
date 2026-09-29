@@ -1,0 +1,64 @@
+terms:
+  - {ar: النموذج اللغوي الكبير, en: Large Language Model, acronym: LLM, module: 7, lecture: m07-l01,
+     definition: "نموذج يقدّر توزيع احتمالات الرمز التالي بمعلومية ما سبقه، ويولّد النص بتكرار هذه العملية. حالة خاصة من النماذج التأسيسية وسيطها النص.",
+     related: [Foundation Models, Transformer, Token]}
+  - {ar: الرمز, en: Token, module: 7, lecture: m07-l01,
+     definition: "أصغر وحدة يعالجها النموذج، وقد تكون كلمة أو جزءًا منها أو علامة ترقيم. نافذة السياق والتكلفة تُقاسان بالرموز لا بالكلمات.",
+     related: [Tokenization, Context Window]}
+  - {ar: التقطيع, en: Tokenization, module: 7, lecture: m07-l01,
+     definition: "تحويل النص إلى تسلسل رموز ثم إلى معرّفات عددية. يعتمد وحدات أصغر من الكلمة لتمثيل أي كلمة نادرة بتركيب أجزائها.",
+     related: [Token, Subword]}
+  - {ar: التضمين, en: Embedding, module: 7, lecture: m07-l01,
+     definition: "متجه عددي يمثل الرمز في فضاء متعدد الأبعاد، والتقارب في المعنى يقابله تقارب في الفضاء. في المحوّل يكون التمثيل سياقيًا يتغير بتغير الجوار.",
+     related: [Semantic Search, Self-attention]}
+  - {ar: درجة الحرارة, en: Temperature, module: 7, lecture: m07-l01,
+     definition: "معامل يُقسَم عليه الدرجات قبل Softmax: أقل من 1 يجعل التوزيع أحدّ وأكثر حتمية، وأكبر من 1 يسطّحه فيزيد التنوع. يضبط التنوع لا الصحة.",
+     related: [Softmax, Top-p]}
+  - {ar: أخذ النواة, en: Top-p sampling, module: 7, lecture: m07-l01,
+     definition: "الاحتفاظ بأصغر مجموعة رموز يبلغ مجموع احتمالاتها p ثم إعادة التوزيع عليها، فيُقتطع ذيل التوزيع وتقل الاختيارات الشاذة.",
+     related: [Temperature, Sampling]}
+  - {ar: الانتباه الذاتي, en: Self-attention, module: 7, lecture: m07-l02,
+     definition: "آلية يحسب فيها كل رمز وزنًا لكل رمز آخر في السياق ثم يبني تمثيله مزيجًا مرجحًا بها، وفق softmax(QKᵀ/√d_k)V.",
+     related: [Transformer, Query Key Value]}
+  - {ar: الاستعلام والمفتاح والقيمة, en: Query, Key, Value, module: 7, lecture: m07-l02,
+     definition: "ثلاثة متجهات تُشتق من كل رمز: الاستعلام يمثل ما يبحث عنه، والمفتاح ما يقدمه للمطابقة، والقيمة المحتوى المنقول بعد الترجيح.",
+     related: [Self-attention]}
+  - {ar: الترميز الموضعي, en: Positional Encoding, module: 7, lecture: m07-l02,
+     definition: "إضافة معلومة موقع الرمز في التسلسل صراحة، لأن الانتباه مجموع مرجح لا يتأثر بإعادة الترتيب فلا يرى الترتيب وحده.",
+     related: [Transformer, Self-attention]}
+  - {ar: نافذة السياق, en: Context Window, module: 7, lecture: m07-l03,
+     definition: "الحد الأقصى لعدد الرموز التي يعالجها النموذج في المرة الواحدة، شاملًا الأمر وتاريخ المحادثة والمرفقات والمخرج. ليست ذاكرة دائمة.",
+     related: [Token, Memory]}
+  - {ar: تاريخ قطع المعرفة, en: Knowledge Cutoff, module: 7, lecture: m07-l03,
+     definition: "التاريخ الذي تتوقف عنده معرفة النموذج المكتسبة من التدريب المسبق؛ وما بعده لا يعرفه إلا إذا زُوّد به في السياق أو عبر أداة.",
+     related: [Pretraining, RAG]}
+  - {ar: التدريب المسبق, en: Pretraining, module: 7, lecture: m07-l03,
+     definition: "المرحلة التي يتعلم فيها النموذج ذاتيًا الإشراف من نصوص ضخمة بالتنبؤ بالرمز التالي، وفيها تتكون قدراته ومعرفته وحدودها الزمنية.",
+     related: [Instruction Tuning, Alignment]}
+  - {ar: ضبط التعليمات, en: Instruction Tuning, module: 7, lecture: m07-l03,
+     definition: "تعلم موجَّه على أمثلة (تعليمة ← استجابة) يجعل النموذج يتبع الطلبات بدل مواصلة النص فحسب.",
+     related: [Pretraining, Alignment]}
+  - {ar: المواءمة, en: Alignment, module: 7, lecture: m07-l03,
+     definition: "مرحلة تدريب من تفضيلات بشرية (مثل RLHF) لجعل سلوك النموذج أكثر نفعًا وصدقًا وأقل ضررًا.",
+     related: [RLHF, Instruction Tuning]}
+  - {ar: الهلوسة, en: Hallucination, module: 7, lecture: m07-l03,
+     definition: "إنتاج محتوى يبدو معقولًا وليس مسندًا إلى واقع ولا إلى المصدر المعطى. سببها الجذري أن النموذج يولّد الأرجح لغويًا لا الأصح واقعيًا.",
+     related: [Grounding, RAG, Verification]}
+  - {ar: الاسترجاع المعزز بالتوليد, en: Retrieval-Augmented Generation, acronym: RAG, module: 7, lecture: m07-l04,
+     definition: "بنية تجمع مسترجِعًا يبحث عن مقاطع ذات صلة ومولِّدًا مقيَّدًا بها. لا تغيّر معاملات النموذج، فالتحديث فوري والإسناد ممكن، ولا تضمن الصحة.",
+     related: [Grounding, Semantic Search, Vector Database]}
+  - {ar: البحث الدلالي, en: Semantic Search, module: 7, lecture: m07-l04,
+     definition: "بحث يقارن تضمين السؤال بتضمينات المقاطع (بتشابه جيب التمام غالبًا)، فيلتقط التشابه في المعنى لا في اللفظ.",
+     related: [Embedding, RAG]}
+  - {ar: استعمال الأدوات, en: Tool Use, module: 7, lecture: m07-l04,
+     definition: "آلية يطلب فيها النموذج استدعاء أداة بمعاملات محددة، وينفّذ النظام الاستدعاء ويعيد النتيجة إلى السياق. تعالج حدودًا بنيوية كالحساب والمعرفة الحديثة.",
+     related: [Function Calling, AI Agent, Excessive Agency]}
+  - {ar: الضبط الدقيق, en: Fine-tuning, module: 7, lecture: m07-l04,
+     definition: "تعديل معاملات النموذج على أمثلة خاصة. يناسب الأسلوب والصيغة المتكررة بكثافة، ولا يناسب الوقائع المتغيرة لأنه يجمّدها ويفقد الإسناد.",
+     related: [RAG, Prompt Engineering]}
+  - {ar: حلقة الوكيل, en: Agent Loop, module: 7, lecture: m07-l05,
+     definition: "تكرار: تخطيط ← اختيار أداة ← تنفيذ ← ملاحظة ← تحديث حالة ← متابعة أو توقف، حتى بلوغ الهدف أو تحقق شرط إنهاء.",
+     related: [AI Agent, ReAct, Stopping Conditions]}
+  - {ar: شروط التوقف, en: Stopping Conditions, module: 7, lecture: m07-l05,
+     definition: "قيود تنهي حلقة الوكيل: بلوغ الهدف، وحد أقصى للخطوات، وحد للتكلفة والزمن، وكشف التكرار، والتوقف عند فشل الأداة.",
+     related: [Agent Loop, Unbounded Consumption]}

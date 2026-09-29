@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Streamlit secrets — never commit these
+.streamlit/secrets.toml
+
+# The build specification and the syllabus card photos are private working material,
+# not part of the published platform. They normally live outside this folder; these
+# rules exist so that copying one in by accident does not publish it.
+MASTER_PROMPT*.md
+_CRAN_*.md
+1.jpeg
+2.jpeg
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local run artefacts
+*.log
+scratch/
+
+# Local Claude Code dev-server config
+.claude/

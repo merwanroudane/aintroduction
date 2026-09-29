@@ -1,0 +1,84 @@
+# Module 6 sources. Verified 2026-09-28 (arXiv API; OWASP, NIST and vendor pages fetched).
+references:
+  - id: m06_greshake_2023
+    authors: Greshake, K., Abdelnabi, S., Mishra, S., et al.
+    year: 2023
+    title: "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection"
+    venue: arXiv:2302.12173 (AISec 2023)
+    type: preprint
+    url: https://arxiv.org/abs/2302.12173
+    topic: Security
+    verified: "2026-09-28"
+  - id: m06_perez_2022
+    authors: Perez, F., & Ribeiro, I.
+    year: 2022
+    title: "Ignore Previous Prompt: Attack Techniques For Language Models"
+    venue: arXiv:2211.09527
+    type: preprint
+    url: https://arxiv.org/abs/2211.09527
+    topic: Security
+    verified: "2026-09-28"
+  - id: m06_owasp_llm_2025
+    authors: OWASP Foundation (GenAI Security Project)
+    year: 2025
+    title: OWASP Top 10 for LLM Applications 2025
+    venue: OWASP
+    type: standard
+    url: https://genai.owasp.org/llm-top-10/
+    topic: Security
+    verified: "2026-09-28"
+  - id: m06_nist_genai_2024
+    authors: National Institute of Standards and Technology (NIST)
+    year: 2024
+    title: "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1)"
+    venue: NIST
+    type: standard
+    doi: 10.6028/NIST.AI.600-1
+    url: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
+    topic: AI Governance
+    verified: "2026-09-28"
+  - id: m06_yao_2022_react
+    authors: Yao, S., Zhao, J., Yu, D., et al.
+    year: 2022
+    title: "ReAct: Synergizing Reasoning and Acting in Language Models"
+    venue: arXiv:2210.03629 (ICLR 2023)
+    type: preprint
+    url: https://arxiv.org/abs/2210.03629
+    topic: LLMs
+    verified: "2026-09-28"
+  - id: m06_lewis_2020_rag
+    authors: Lewis, P., Perez, E., Piktus, A., et al.
+    year: 2020
+    title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+    venue: arXiv:2005.11401 (NeurIPS 2020)
+    type: preprint
+    url: https://arxiv.org/abs/2005.11401
+    topic: LLMs
+    verified: "2026-09-28"
+  - id: m06_openai_structured
+    authors: OpenAI
+    year: 2026
+    title: Structured model outputs (API documentation)
+    venue: OpenAI Developers
+    type: documentation
+    url: https://developers.openai.com/api/docs/guides/structured-outputs
+    topic: Official Product Documentation
+    verified: "2026-09-28"
+  - id: m06_google_structured
+    authors: Google
+    year: 2026
+    title: Structured outputs (Gemini API documentation)
+    venue: Google AI for Developers
+    type: documentation
+    url: https://ai.google.dev/gemini-api/docs/structured-output
+    topic: Official Product Documentation
+    verified: "2026-09-28"
+  - id: m06_anthropic_cot
+    authors: Anthropic
+    year: 2026
+    title: Prompting best practices — thinking and structured reasoning
+    venue: Anthropic / Claude Platform Docs
+    type: documentation
+    url: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/chain-of-thought
+    topic: Official Product Documentation
+    verified: "2026-09-28"

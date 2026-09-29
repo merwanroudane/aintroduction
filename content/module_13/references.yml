@@ -1,0 +1,68 @@
+# Module 13 sources. Every DOI verified through the Crossref API on 2026-09-29 (title, venue, year,
+# volume, issue and page range compared against the entry). The human-factors literature cited here
+# predates modern AI by decades, and that is pedagogically deliberate: the failure modes of human
+# oversight were established in aviation and process control long before they were rediscovered in AI.
+references:
+  - id: m13_bainbridge_1983
+    authors: Bainbridge, L.
+    year: 1983
+    title: Ironies of automation
+    venue: "Automatica, 19(6), 775–779"
+    type: article
+    doi: 10.1016/0005-1098(83)90046-8
+    topic: Human Oversight
+    verified: "2026-09-29"
+  - id: m13_parasuraman_1997
+    authors: Parasuraman, R., & Riley, V.
+    year: 1997
+    title: "Humans and Automation: Use, Misuse, Disuse, Abuse"
+    venue: "Human Factors, 39(2), 230–253"
+    type: article
+    doi: 10.1518/001872097778543886
+    topic: Human Oversight
+    verified: "2026-09-29"
+  - id: m13_skitka_1999
+    authors: Skitka, L. J., Mosier, K. L., & Burdick, M.
+    year: 1999
+    title: Does automation bias decision-making?
+    venue: "International Journal of Human-Computer Studies, 51(5), 991–1006"
+    type: article
+    doi: 10.1006/ijhc.1999.0252
+    topic: Human Oversight
+    verified: "2026-09-29"
+  - id: m13_parasuraman_2000_levels
+    authors: Parasuraman, R., Sheridan, T. B., & Wickens, C. D.
+    year: 2000
+    title: A model for types and levels of human interaction with automation
+    venue: "IEEE Transactions on Systems, Man, and Cybernetics — Part A, 30(3), 286–297"
+    type: article
+    doi: 10.1109/3468.844354
+    topic: Human Oversight
+    verified: "2026-09-29"
+  - id: m13_lee_see_2004
+    authors: Lee, J. D., & See, K. A.
+    year: 2004
+    title: "Trust in Automation: Designing for Appropriate Reliance"
+    venue: "Human Factors, 46(1), 50–80"
+    type: article
+    doi: 10.1518/hfes.46.1.50_30392
+    topic: Human Oversight
+    verified: "2026-09-29"
+  - id: m13_parasuraman_manzey_2010
+    authors: Parasuraman, R., & Manzey, D. H.
+    year: 2010
+    title: "Complacency and Bias in Human Use of Automation: An Attentional Integration"
+    venue: "Human Factors, 52(3), 381–410"
+    type: article
+    doi: 10.1177/0018720810376055
+    topic: Human Oversight
+    verified: "2026-09-29"
+  - id: m13_green_chen_2019
+    authors: Green, B., & Chen, Y.
+    year: 2019
+    title: The Principles and Limits of Algorithm-in-the-Loop Decision Making
+    venue: "Proceedings of the ACM on Human-Computer Interaction, 3(CSCW), 1–24"
+    type: article
+    doi: 10.1145/3359152
+    topic: Human Oversight
+    verified: "2026-09-29"

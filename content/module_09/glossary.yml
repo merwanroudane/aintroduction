@@ -1,0 +1,64 @@
+terms:
+  - {ar: نموذج الانتشار, en: Diffusion Model, module: 9, lecture: m09-l02,
+     definition: "نموذج توليدي يُدرَّب على التنبؤ بالضجيج المضاف إلى صورة، ثم يولّد بالبدء من ضجيج خالص وإزالته تدريجيًا عبر عشرات الخطوات.",
+     related: [Denoising, Latent Space, GAN]}
+  - {ar: المسار الأمامي, en: Forward Process, module: 9, lecture: m09-l02,
+     definition: "إضافة ضجيج تدريجي إلى صورة حقيقية حتى تصير عشوائية خالصة. عملية محددة سلفًا لا تحتاج تعلّمًا، وتسمح بالقفز إلى أي خطوة مباشرة.",
+     related: [Diffusion Model, Reverse Process]}
+  - {ar: المسار العكسي, en: Reverse Process, module: 9, lecture: m09-l02,
+     definition: "إزالة الضجيج خطوة خطوة انطلاقًا من ضجيج عشوائي. هو ما تتعلمه الشبكة، وتكراره هو ما يبني الصورة.",
+     related: [Diffusion Model, Forward Process]}
+  - {ar: الفضاء الكامن, en: Latent Space, module: 9, lecture: m09-l01,
+     definition: "تمثيل مضغوط للبيانات يحفظ ما يهم بصريًا ويسقط ما لا يهم. إجراء الانتشار فيه بدل البكسل خفّض الكلفة بمراتب وأتاح التقنية على عتاد عادي.",
+     related: [Diffusion Model, Encoder, Decoder]}
+  - {ar: التمثيل المشترك نص–صورة, en: Joint Text-Image Embedding, module: 9, lecture: m09-l01,
+     definition: "فضاء متجهي واحد تُوضع فيه الصورة ووصفها في موضعين متقاربين، ويُدرَّب بتقريب كل صورة من وصفها وإبعادها عن أوصاف غيرها. هو ما يجعل النص قادرًا على توجيه الصورة.",
+     related: [Embedding, Conditioning]}
+  - {ar: التوجيه بالنص, en: Text Conditioning, module: 9, lecture: m09-l01,
+     definition: "استعمال متجه الوصف لتوجيه إزالة الضجيج في كل خطوة من خطوات التوليد، لا في البداية فحسب.",
+     related: [Joint Text-Image Embedding, Guidance Scale]}
+  - {ar: قوة التوجيه, en: Guidance Scale, module: 9, lecture: m09-l02,
+     definition: "معامل يحدد شدة دفع التوليد نحو الوصف. مقايضة بين الالتزام والواقعية: رفعه يزيد المطابقة ويقلّل التنوّع وقد يسبب التشبّع.",
+     related: [Text Conditioning, Seed]}
+  - {ar: البذرة, en: Seed, module: 9, lecture: m09-l02,
+     definition: "قيمة تحدد الضجيج الابتدائي، فيصير التوليد قابلًا للتكرار. تثبيتها شرط للمقارنة المنهجية لأنها تضبط المتغير الدخيل.",
+     related: [Guidance Scale, Diffusion Model]}
+  - {ar: الشبكات التوليدية التنافسية, en: Generative Adversarial Network, acronym: GAN, module: 9, lecture: m09-l02,
+     definition: "معمارية توليدية يتنافس فيها مولّد ومميّز. سريعة في التوليد لكن تدريبها هشّ وتميل إلى انهيار النمط، وقد تفوقت عليها نماذج الانتشار في الجودة والتنوّع.",
+     related: [Diffusion Model, Mode Collapse]}
+  - {ar: انهيار النمط, en: Mode Collapse, module: 9, lecture: m09-l02,
+     definition: "أن يتعلم المولّد إنتاج عدد قليل من المخرجات التي تخدع المميّز فيهمل بقية تنوّع البيانات. لا يظهر في الخسارة، فالنموذج يبدو ناجحًا وهو يكرر نفسه.",
+     related: [GAN, Diffusion Model]}
+  - {ar: الأمر البصري, en: Visual Prompt, module: 9, lecture: m09-l03,
+     definition: "قائمة عناصر لا جملة إنشائية: موضوع، ومشهد، وتركيب، وإضاءة، وأسلوب، وتفاصيل تقنية، واستبعاد. الاكتمال فيه أهم من الترتيب.",
+     related: [Seed, Guidance Scale]}
+  - {ar: التغيير المفرد, en: Single-Variable Iteration, module: 9, lecture: m09-l03,
+     definition: "منهج ضبط يثبّت البذرة ويغيّر عنصرًا واحدًا في كل دورة مع توثيق النتيجة، فيصير أثر كل عنصر معلومًا وقابلًا للنقل.",
+     related: [Seed, Visual Prompt]}
+  - {ar: التفريغ الآلي, en: Automatic Transcription, module: 9, lecture: m09-l04,
+     definition: "تحويل تسجيل صوتي إلى نص مكتوب. مهمة تحويل تُقاس بالأمانة للمصدر، وأخطاؤها منتظمة فتُوجَّه إليها المراجعة بدل مراجعة الكل بالتساوي.",
+     related: [Speech Synthesis, Faithfulness]}
+  - {ar: استنساخ الصوت, en: Voice Cloning, module: 9, lecture: m09-l04,
+     definition: "توليد كلام بصوت شخص معيّن من عيّنة قصيرة. أسقط قيمة الصوت دليلًا على الهوية، ويستلزم ضوابط مثل معاودة الاتصال وكلمة سر متفق عليها.",
+     related: [Speech Synthesis, Deepfake]}
+  - {ar: الاتساق الزمني, en: Temporal Consistency, module: 9, lecture: m09-l04,
+     definition: "بقاء الأجسام والأشخاص والإضاءة هي نفسها عبر الإطارات المتتابعة مع حركة معقولة فيزيائيًا. هو ما يجعل توليد الفيديو أصعب من توليد الصورة.",
+     related: [Video Generation, Diffusion Model]}
+  - {ar: تضخيم الصور النمطية, en: Stereotype Amplification, module: 9, lecture: m09-l05,
+     definition: "أن تزيد مخرجات النظام على الميل الموجود في الواقع بدل أن تعكسه، فتُمثَّل الفئات المهمّشة تمثيلًا أقل من نسبتها الفعلية. نتيجة مقيسة في دراسات منشورة.",
+     related: [Bias, Training Data]}
+  - {ar: الوصف الافتراضي, en: Default Depiction, module: 9, lecture: m09-l05,
+     definition: "ما يملأ به النموذج ما لم يحدده الأمر. الفراغ الذي يتركه المستعمل ليس محايدًا، ولهذا تظهر الأنماط حتى في الأوامر التي لا تذكر أي هوية.",
+     related: [Stereotype Amplification, Visual Prompt]}
+  - {ar: التزييف العميق, en: Deepfake, module: 9, lecture: m09-l06,
+     definition: "محتوى مرئي أو صوتي مولَّد أو معدَّل آليًا يُقدَّم على أنه حقيقي. يخضع في قانون الاتحاد الأوروبي لموجب إفصاح على من ينشره، باستثناءات محددة.",
+     related: [Provenance, Liar's Dividend]}
+  - {ar: إثبات المنشأ, en: Content Provenance, module: 9, lecture: m09-l06,
+     definition: "سجل موقّع تشفيريًا يرافق الملف ويوثّق إنشاءه وما جرى عليه من تعديل. يثبت تاريخ الملف، ولا يثبت صدق مضمونه، ولا يدل غيابه على شيء.",
+     related: [C2PA, Watermarking, Deepfake]}
+  - {ar: العلامة المائية غير المرئية, en: Invisible Watermarking, module: 9, lecture: m09-l06,
+     definition: "تعديل دقيق داخل المحتوى نفسه يحمل إشارة تُكشف آليًا ولا يدركها الإنسان. تصمد أمام تعديلات شائعة، لكنها تخص منتجًا بعينه وغيابها ليس دليلًا.",
+     related: [Content Provenance, Deepfake]}
+  - {ar: عائد الكاذب, en: Liar's Dividend, module: 9, lecture: m09-l06,
+     definition: "أن يمنح انتشار التزييف ذريعة جاهزة لإنكار محتوى حقيقي بدعوى أنه مولَّد. قد يكون أخطر من التزييف لأنه لا يحتاج صناعة شيء.",
+     related: [Deepfake, Content Provenance]}

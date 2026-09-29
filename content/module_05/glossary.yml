@@ -1,0 +1,43 @@
+terms:
+  - {ar: الأمر, en: Prompt, module: 5, lecture: m05-l01,
+     definition: "كل النص الذي يستقبله النموذج قبل التوليد: التعليمات والسياق والأمثلة والبيانات وتاريخ المحادثة. ليس سؤالًا بل الشرط الذي يُبنى عليه ما يأتي بعده.",
+     related: [Prompt Engineering, Context Window]}
+  - {ar: هندسة الأوامر, en: Prompt Engineering, module: 5, lecture: m05-l01,
+     definition: "ممارسة منهجية لتصميم الأمر وتحسينه تكراريًا بالاعتماد على فهم أثر السياق، وعلى قياس كل تغيير مقابل معيار نجاح محدد مسبقًا.",
+     related: [Prompt, Success Criteria, Iteration]}
+  - {ar: معيار النجاح, en: Success Criteria, module: 5, lecture: m05-l01,
+     definition: "شروط قابلة للفحص تحدد متى تُعد الإجابة جيدة؛ أكثر مكونات الأمر إهمالًا، وبدونه يصبح التحسين انطباعيًا.",
+     related: [Evaluation, Test Set]}
+  - {ar: القيود, en: Constraints, module: 5, lecture: m05-l01,
+     definition: "ما يجب على النموذج تجنبه: حدود الطول، والمصادر المسموح بها، والسلوك عند الغموض، والأسلوب.",
+     related: [Grounding, Hallucination]}
+  - {ar: شكل المخرج, en: Output Format, module: 5, lecture: m05-l01,
+     definition: "البنية المطلوبة للناتج: جدول، أو قائمة، أو JSON، أو فقرات معنونة. كلما دقّ سهل التحقق من صحته.",
+     related: [Structured Outputs, JSON]}
+  - {ar: التوجيه بلا أمثلة, en: Zero-shot Prompting, module: 5, lecture: m05-l02,
+     definition: "إعطاء تعليمات دون أي مثال للمخرج؛ يكفي للمهام الشائعة المعروفة وهو أقصر وأرخص.",
+     related: [Few-shot Prompting]}
+  - {ar: التوجيه بأمثلة قليلة, en: Few-shot Prompting, module: 5, lecture: m05-l02,
+     definition: "تضمين عدة أمثلة (3–5 عادةً) لمدخلات ومخرجاتها داخل الأمر لضبط الشكل والنبرة والحالات الحدية.",
+     related: [Zero-shot Prompting, In-context Learning]}
+  - {ar: التعلم داخل السياق, en: In-context Learning, module: 5, lecture: m05-l02,
+     definition: "استنتاج النموذج للنمط من أمثلة داخل الأمر دون أي تغيير في معاملاته؛ أثره داخل الأمر فقط وينتهي بانتهائه.",
+     related: [Few-shot Prompting, Fine-tuning]}
+  - {ar: الفواصل, en: Delimiters, module: 5, lecture: m05-l03,
+     definition: "وسوم أو رموز أو عناوين تفصل التعليمات عن البيانات داخل الأمر؛ ضرورية للوضوح وخط دفاع أول ضد حقن الأوامر.",
+     related: [Prompt Injection, Untrusted Content]}
+  - {ar: المحتوى غير الموثوق, en: Untrusted Content, module: 5, lecture: m05-l03,
+     definition: "كل محتوى لم يكتبه المستخدم نفسه (صفحات ويب، بريد، ملفات من الغير)؛ يُعامل بيانات تُعالَج لا تعليمات تُنفَّذ.",
+     related: [Prompt Injection, Delimiters]}
+  - {ar: قالب الأمر, en: Prompt Template, module: 5, lecture: m05-l03,
+     definition: "أمر مكتوب مرة بمتغيرات تُملأ عند كل استعمال، مرفق بتعليمات استعماله وحدوده؛ يحوّل الأمر إلى أصل قابل للمشاركة والتحسين.",
+     related: [Prompt, Reusability]}
+  - {ar: مجموعة اختبار الأوامر, en: Prompt Test Set, module: 5, lecture: m05-l04,
+     definition: "مجموعة صغيرة (5–15 حالة) ممثلة ومتنوعة وثابتة، تُشغَّل عليها كل نسخة من الأمر لمقارنة النسخ مقارنة عادلة.",
+     related: [Success Criteria, Baseline]}
+  - {ar: قاعدة التغيير الواحد, en: One-change Rule, module: 5, lecture: m05-l04,
+     definition: "تغيير عنصر واحد فقط في كل دورة تحسين، حتى يمكن نسبة أي فرق في النتيجة إلى سببه.",
+     related: [Iteration, Experiment Design]}
+  - {ar: هندسة السياق, en: Context Engineering, module: 5, lecture: m05-l05,
+     definition: "توسيع حديث لهندسة الأوامر يشمل ما يوضع في السياق أصلًا: أي مصادر، وبأي ترتيب، وكم مقطعًا، وكيف تُدار الذاكرة عبر الخطوات.",
+     related: [Prompt Engineering, RAG]}

@@ -1,0 +1,104 @@
+# Module 8 sources. Verified 2026-09-28 (arXiv API, Crossref, pages fetched or confirmed by search).
+references:
+  - id: m08_apa_cite_ai
+    authors: American Psychological Association (McAdoo, T.)
+    year: 2026
+    title: How to cite ChatGPT (APA Style blog)
+    venue: APA Style
+    type: documentation
+    url: https://apastyle.apa.org/blog/how-to-cite-chatgpt
+    topic: AI Education
+    verified: "2026-09-28"
+  - id: m08_apa_ai_references
+    authors: American Psychological Association
+    year: 2026
+    title: AI references (APA Style guidelines)
+    venue: APA Style
+    type: documentation
+    url: https://apastyle.apa.org/style-grammar-guidelines/references/examples/ai-references
+    topic: AI Education
+    verified: "2026-09-28"
+  - id: m08_cope_ai
+    authors: Committee on Publication Ethics (COPE)
+    year: 2023
+    title: Authorship and AI tools (COPE position statement)
+    venue: COPE Council
+    type: standard
+    doi: 10.24318/cCVRZBms
+    url: https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools
+    bot_blocked: true
+    note: "الموقع يرفض الطلبات الآلية (403). قُرئت الصفحة في متصفح يوم 2026-09-28، وتحقق معرّف DOI عبر Crossref."
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m08_icmje
+    authors: International Committee of Medical Journal Editors (ICMJE)
+    year: 2026
+    title: Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work in Medical Journals
+    venue: ICMJE
+    type: standard
+    url: https://www.icmje.org/recommendations/
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m08_nature_ai_policy
+    authors: Springer Nature
+    year: 2026
+    title: Artificial Intelligence (AI) — editorial policies
+    venue: Nature Portfolio
+    type: documentation
+    url: https://www.nature.com/nature-portfolio/editorial-policies/ai
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m08_chan_2017
+    authors: Chan, M. S., Jones, C. R., Hall Jamieson, K., & Albarracín, D.
+    year: 2017
+    title: "Debunking: A Meta-Analysis of the Psychological Efficacy of Messages Countering Misinformation"
+    venue: Psychological Science, 28(11), 1531–1546
+    type: article
+    doi: 10.1177/0956797617714579
+    topic: AI Ethics
+    verified: "2026-09-28"
+  - id: m08_rawte_2023
+    authors: Rawte, V., Sheth, A., & Das, A.
+    year: 2023
+    title: A Survey of Hallucination in Large Foundation Models
+    venue: arXiv:2309.05922
+    type: preprint
+    url: https://arxiv.org/abs/2309.05922
+    topic: LLMs
+    verified: "2026-09-28"
+  - id: m08_hayes_krippendorff
+    authors: Hayes, A. F., & Krippendorff, K.
+    year: 2007
+    title: Answering the Call for a Standard Reliability Measure for Coding Data
+    venue: "Communication Methods and Measures, 1(1), 77–89"
+    type: article
+    doi: 10.1080/19312450709336664
+    topic: AI Education
+    verified: "2026-09-28"
+  - id: m08_sandve_2013
+    authors: Sandve, G. K., Nekrutenko, A., Taylor, J., & Hovig, E.
+    year: 2013
+    title: Ten Simple Rules for Reproducible Computational Research
+    venue: "PLoS Computational Biology, 9(10), e1003285"
+    type: article
+    doi: 10.1371/journal.pcbi.1003285
+    topic: AI Education
+    verified: "2026-09-28"
+  - id: m08_wineburg_lateral
+    authors: Wineburg, S., & McGrew, S.
+    year: 2019
+    title: "Lateral Reading and the Nature of Expertise: Reading Less and Learning More When Evaluating Digital Information"
+    venue: "Teachers College Record, 121(11), 1–40"
+    type: article
+    doi: 10.1177/016146811912101102
+    topic: AI Education
+    verified: "2026-09-28"
+  - id: m08_noy_zhang
+    authors: Noy, S., & Zhang, W.
+    year: 2023
+    title: Experimental evidence on the productivity effects of generative artificial intelligence
+    venue: Science, 381(6654), 187–192
+    type: article
+    doi: 10.1126/science.adh2586
+    topic: Economics + AI
+    verified: "2026-09-28"
