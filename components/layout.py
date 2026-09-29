@@ -108,6 +108,10 @@ def footer() -> None:
         <b>{esc(c['title'])}</b> · <span class="en">{esc(c['title_en'])}</span><br>
         {esc(c['tagline'])}<br>
         إعداد وتصميم: <b>{esc(c['author_ar'])}</b> · <span class="en">{esc(c['author_en'])}</span><br>
+        <span class="footer-links">
+          <a href="{esc(c['app_url'])}" target="_blank" rel="noopener">المنصة على الإنترنت</a> ·
+          <a href="{esc(c['repo_url'])}" target="_blank" rel="noopener">الشفرة المصدرية</a>
+        </span><br>
         <span style="font-size:0.82rem">آخر تحديث للمحتوى: {esc(c['last_update'])}</span>
         </div>"""
     )

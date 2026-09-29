@@ -8,6 +8,12 @@
 
 <br>
 
+### 🚀 &nbsp; [**افتح المنصة مباشرة — aicourses.streamlit.app**](https://aicourses.streamlit.app/)
+
+[![Open the app](https://img.shields.io/badge/▶%20جرّب%20المنصة%20الآن-aicourses.streamlit.app-E4695A?style=for-the-badge&logo=streamlit&logoColor=white&labelColor=2F2C33)](https://aicourses.streamlit.app/)
+
+<br>
+
 [![Modules](https://img.shields.io/badge/المحاور-13-E4695A?style=for-the-badge&labelColor=2F2C33)](#what-is-in-the-course)
 [![Lectures](https://img.shields.io/badge/المحاضرات-72-D97D2E?style=for-the-badge&labelColor=2F2C33)](#what-is-in-the-course)
 [![Questions](https://img.shields.io/badge/أسئلة%20التقييم-286-46AB68?style=for-the-badge&labelColor=2F2C33)](#what-is-in-the-course)
@@ -15,6 +21,7 @@
 [![Sources](https://img.shields.io/badge/مصادر%20موثّقة-192-7B5FD6?style=for-the-badge&labelColor=2F2C33)](SOURCES.md)
 [![TD topics](https://img.shields.io/badge/مواضيع%20بحوث%20TD-65-C455A6?style=for-the-badge&labelColor=2F2C33)](#for-the-tutorial-hour-td)
 
+[![Live](https://img.shields.io/badge/الحالة-تعمل%20مباشرة-46AB68?logo=streamlit&logoColor=white)](https://aicourses.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.11+-3E8FD0?logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.63-E4695A?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Plotly](https://img.shields.io/badge/Plotly-6.5-7B5FD6?logo=plotly&logoColor=white)](https://plotly.com/python/)
@@ -38,6 +45,11 @@ works in a lecture hall with no internet and costs the university nothing.
 ---
 
 ## Quick start
+
+**Nothing to install** — the platform is deployed and running at
+**<https://aicourses.streamlit.app/>**. Open it and start teaching.
+
+To run your own copy:
 
 ```bash
 pip install -r requirements.txt
@@ -257,9 +269,10 @@ use the network. The app itself never does.
 The repository is laid out so a host can run it unchanged: `app.py` at the root,
 `requirements.txt` beside it, and no runtime secrets.
 
-**Streamlit Community Cloud** — point a new app at this repository, branch `main`,
-main file `app.py`. Nothing else to configure: there is no API key to set, because the
-app never calls one.
+**Streamlit Community Cloud** — this is how the live copy at
+<https://aicourses.streamlit.app/> is hosted. Point a new app at this repository, branch
+`main`, main file `app.py`. Nothing else to configure: there is no API key to set, because
+the app never calls one.
 
 **Anywhere else** — any host that can run Python:
 
