@@ -18,7 +18,7 @@
 [![Python](https://img.shields.io/badge/Python-3.11+-3E8FD0?logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.63-E4695A?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Plotly](https://img.shields.io/badge/Plotly-6.5-7B5FD6?logo=plotly&logoColor=white)](https://plotly.com/python/)
-[![Tests](https://img.shields.io/badge/tests-93%20passing-46AB68?logo=pytest&logoColor=white)](#checks)
+[![Tests](https://img.shields.io/badge/tests-96%20passing-46AB68?logo=pytest&logoColor=white)](#checks)
 [![RTL](https://img.shields.io/badge/RTL-العربية-2FA391)](#)
 [![Offline](https://img.shields.io/badge/يعمل%20بلا%20إنترنت-100%25-7F9C2B)](#quick-start)
 [![No API key](https://img.shields.io/badge/بلا%20مفاتيح%20API-مجاني-B98A0E)](#quick-start)
@@ -205,7 +205,7 @@ Four tools, from fastest to slowest:
 ```bash
 python -m pytest tests/ -q
 ```
-93 tests, well under a minute. Structure, cross-links, every one of the 286 answer keys, the
+96 tests, about a minute. Structure, cross-links, every one of the 286 answer keys, the
 registries, project files, and a boot smoke test that opens the app and twelve static pages.
 Includes regression tests for bugs that already happened once: a `<` in the stylesheet that
 made the sanitizer drop all CSS, and a query-param binding that wrote the Arabic label into
